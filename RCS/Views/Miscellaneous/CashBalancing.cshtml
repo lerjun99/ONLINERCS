@@ -1,0 +1,320 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string message = "";
+    if (ViewData["Message"] != null)
+    {
+        message = ViewData["Message"].ToString();
+    }
+}
+<div id="dashboard-main-container">
+    <div class="title-main-container-2">
+        <div class="content-container">
+            <span class="text-left">Date: January 12, 2023</span>
+            <span class="text-left">Time: 03:30:42 PM</span>
+        </div>
+    </div>
+
+    <div class="top-main-container">
+        <div class="content-filter">
+            <div class="sub-content">
+                <div class="mod-form-cb">
+                    <span >Cash Balancing</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-filter-cb">
+            <div class="cb-content-fees">
+                <div class="mod-form">
+                    <span class="text-left">Office Code</span>
+                    <div class="input-container">
+                        <input type="text" value="" id="search" class="
+
+
+
+
+
+" placeholder="Transaction ID" />
+                    </div>
+                    <span class="text-left">Currency Code</span>
+                    <div class="input-container">
+                        <select id="op" style="width:100%">
+                            <option value="" selected>PHP</option>
+                            <option value="" selected>USD</option>
+                            <option value="" selected>HNK</option>
+                            <option value="" selected>CHN</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mod-form">
+                    <span class="text-left">Collection Date</span>
+                    <div class="input-container">
+                        <input type="date" value="" id="search" class="mod-inputs" placeholder="Date" />
+                    </div>
+                    <span class="text-left">Collection Type</span>
+                    <div class="input-container">
+                        <select id="op" style="width:100%">
+                            <option value="" selected>Operations</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mod-form-btn">
+                    <div class="btn-container">
+                        <input type="submit" value="Search" id="btn-save" />
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="cb-container">
+        <div class="content-filter">
+            @* <table id="myTable"> *@
+            <table id="myTable" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Mode of Payment</th>
+                        <th>IT Fee</th>
+                        <th>Currency</th>
+                        <th>Amount</th>
+                        <th>Checque Type</th>
+                        <th>Reference No.</th>
+                        <th>Checque Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>CASH</option>
+                                <option value="" selected>Cheque</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="select-checkbox">
+                        </td>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>PHP</option>
+                                <option value="" selected>USD</option>
+                                <option value="" selected>HNK</option>
+                                <option value="" selected>CHN</option>
+                            </select>
+                        </td>
+                        <td>0.00</td>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>Checque Type</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>CASH</option>
+                                <option value="" selected>Cheque</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="select-checkbox">
+                        </td>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>PHP</option>
+                                <option value="" selected>USD</option>
+                                <option value="" selected>HNK</option>
+                                <option value="" selected>CHN</option>
+                            </select>
+                        </td>
+                        <td>0.00</td>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>Checque Type</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="content-filter">
+            @* <table id="myTable"> *@
+            <table id="myTable1" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Mode of Payment</th>
+                        <th>IT Fee</th>
+                        <th>Currency</th>
+                        <th>Amount</th>
+                        <th>Checque Type</th>
+                        <th>Reference No.</th>
+                        <th>Checque Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>CASH</option>
+                                <option value="" selected>Cheque</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="select-checkbox">
+                        </td>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>PHP</option>
+                                <option value="" selected>USD</option>
+                                <option value="" selected>HNK</option>
+                                <option value="" selected>CHN</option>
+                            </select>
+                        </td>
+                        <td>0.00</td>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>Checque Type</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>CASH</option>
+                                <option value="" selected>Cheque</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="select-checkbox">
+                        </td>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>PHP</option>
+                                <option value="" selected>USD</option>
+                                <option value="" selected>HNK</option>
+                                <option value="" selected>CHN</option>
+                            </select>
+                        </td>
+                        <td>0.00</td>
+                        <td>
+                            <select id="op" style="width:100%">
+                                <option value="" selected>Checque Type</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <div class="tbl-btn-container-cb">
+        <div class="content-filter">
+            <div class="sub-content-top-footer-2">
+                <div class="mod-form">
+
+                    <span class="text-left">Total</span>
+                    <div class="input-container">
+                    </div>
+
+                </div>
+                <div class="mod-form">
+
+
+                    <div class="input-container">
+                    </div>
+
+                </div>
+                <div class="mod-form">
+
+
+                    <div class="input-container">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sub-content-top-footer">
+
+                <div class="mod-form">
+
+                    <span class="text-left">Cash</span>
+                    <div class="input-container">
+                        <input type="text" value="" id="search" class="mod-inputs" />
+                    </div>
+                    <span class="text-left">Cheque</span>
+                    <div class="input-container">
+                        <input type="text" value="" id="search" class="mod-inputs" />
+                    </div>
+                </div>
+                <div class="mod-form">
+                    <span class="text-left">Deposit Payment:</span>
+                    <div class="input-container">
+                        <input type="text" value="" id="search" class="mod-inputs" />
+                    </div>
+                    <span class="text-left">Over Payment:</span>
+                    <div class="input-container">
+                        <input type="text" value="" id="search" class="mod-inputs" />
+                    </div>
+                </div>
+                <div class="mod-form">
+
+                    <div class="input-container">
+                    </div>
+
+                    <div class="input-container">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-container-cb">
+        <div class="btn-footer-container-cb">
+            <div class="btn-container">
+                <input type="submit" value="PAY" id="btn-print-or" class="btn-footer" onclick="loadModal('/Dashboard/OR_Print','#defaultmodal','LTO OR','xl', false)" />
+                @* <input type="submit" value="PAY" id="btn-print-or" class="btn-footer" data-toggle="modal" data-target="#modal-xl" /> *@
+                <input type="submit" value="CANCEL" id="btn-cancel" class="btn-footer" onclick="window.location= '@Url.Action( "Index", "Dashboard")'" />
+            </div>
+
+        </div>
+    </div>
+
+    @section Scripts {
+        <script>
+            var table = $("#myTable1").DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            var myTbl = $("#myTable").DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        </script>
+    }

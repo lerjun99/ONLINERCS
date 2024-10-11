@@ -1,0 +1,144 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor;
+<style>
+    .selected {
+        background-color: #17a2b8;
+        color: var(--light);
+    }
+</style>
+
+<div class="sidebar" id="mysidebar">
+        <div>
+          <a href="#" style="display: flex; align-items: center; gap: 8px;" class="nav-item" id="toggle-sidebar" >
+        <i class="fa-solid fa-bars"></i>
+    </a>
+        </div>
+    <div class="img-container">
+       @*  <a href="../../Dashboard/Index" style="display: flex; align-items: center; gap: 8px;" class="nav-item">
+ *@
+            <div style="display: flex;
+    flex-direction: column;
+    align-items: center;">
+                <div class="userpanel">
+                        <i class="fa-solid fa-user custom-icon" style="margin: 0 auto;"></i>
+                </div>
+                <div class ="emp-info">
+            <span style="color: white;font-weight:bolder">Employee</span>
+            <span style="color: white;">Cashier</span>
+                <span style="color: white;">DO0104</span>
+                </div>
+            </div>
+      @*   </a> *@
+    </div>
+
+    <ul class="sidebar-content">
+        <div>
+        <li>
+            <div>
+                <a href="../../Dashboard/Index" style="display: flex; align-items: center; gap: 8px;" class="nav-item">
+                    <i class="fa-sharp fa-solid fa-cart-shopping" style="font-size: 20px;margin-right:5px"></i>
+                    <span style="color: white;">Pending Payments</span>
+                </a>
+            </div>
+        </li>
+        <li class="maintenance">
+            <div>
+                <a href="../../Dashboard/Process" style="display: flex; align-items: center; gap: 8px;" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1200 1200">
+                        <path fill="white" d="M860,80q4.5,41,9,82c2.016,6.778,4.493,14.941,5,23l27,11v1h3v1l6,2v-1a18.952,18.952,0,0,0,7-3q0.5-1,1-2l4-1v-1l3-1q0.5-1,1-2h2v-1l3-1q0.5-1,1-2h2l2-3h2q0.5-1,1-2l3-1,2-3h2q0.5-1,1-2l3-1,2-3h2l2-3h2q0.5-1,1-2h2q0.5-1,1-2l3-1,2-3h2l2-3h2l2-3h2l2-3h2l2-3h2q0.5-1,1-2h2l2-3c2.267-1.607,4.314-1.91,6-4,2.01,0.574.865-.12,2,1a7.937,7.937,0,0,1,4,2v1l3,1c0.33,0.667.67,1.333,1,2h2c0.33,0.667.67,1.333,1,2h1c0.67,1,1.33,2,2,3l3,1c1.33,1.667,2.67,3.333,4,5h2q4.995,5.5,10,11h1c0.33,0.667.67,1.333,1,2h2v1l3,2v2q6.495,6,13,12v2l6,5v2c1.67,1.333,3.33,2.667,5,4v2l3,2c1.61,2.279,1.93,4.286,4,6-0.57,2.01.12,0.865-1,2a22.528,22.528,0,0,1-4,7c-0.67.333-1.33,0.667-2,1v2l-3,2v2c-0.67.333-1.33,0.667-2,1v2l-3,2v2c-0.67.333-1.33,0.667-2,1-0.33,1-.67,2-1,3l-3,2v2c-0.67.333-1.33,0.667-2,1-0.33,1-.67,2-1,3l-3,2v2l-3,2v2c-0.67.333-1.33,0.667-2,1v2c-0.67.333-1.33,0.667-2,1-0.33,1-.67,2-1,3l-3,2v2l-3,2v2l-3,2v2l-3,2v2c-0.67.333-1.33,0.667-2,1v2c-0.67.333-1.33,0.667-2,1v2c-0.67.333-1.33,0.667-2,1v2c-0.67.333-1.33,0.667-2,1-0.33,1.333-.67,2.667-1,4h-1c-0.33,1-.67,2-1,3-0.67.333-1.33,0.667-2,1-1.17,1.8.03,2.275-2,4l15,36c7.88,0.017,15.75,3.1,22,5h9c12.28,3.574,28.7,2.464,41,6h9v1l23,2c0.33,1,.67,2,1,3,2.2,2.423.88,6.276,2,10h1v6h1v10c1.61,5.816,1,15.555,1,23q-0.495,17.5-1,35-1.995,9-4,18h-1v1h-7v1h-9c-9.55,2.743-22.45,2.276-32,5h-9v1h-9v1h-7v1h-9v1h-4c-5.24,1.766-11.23,3.738-18,4q-5.5,13.5-11,27h-1v3h-1c-0.67,2-1.33,4-2,6h1c0.33,1,.67,2,1,3h1v2h1v2c0.67,0.333,1.33.667,2,1v2c0.67,0.333,1.33.667,2,1,0.33,1.333.67,2.667,1,4,0.67,0.333,1.33.667,2,1v2c0.67,0.333,1.33.667,2,1v2c0.67,0.333,1.33.667,2,1v2c0.67,0.333,1.33.667,2,1,0.33,1,.67,2,1,3l3,2v2l3,2v2l3,2v2l3,2c0.33,1,.67,2,1,3,0.67,0.333,1.33.667,2,1v2c0.67,0.333,1.33.667,2,1v2l3,2v2c0.67,0.333,1.33.667,2,1,0.33,1,.67,2,1,3l3,2v2l3,2v2l3,2v2l3,2v2c0.67,0.333,1.33.667,2,1v2l3,2c1.61,2.267,1.91,4.313,4,6-0.57,2.01.12,0.865-1,2a7.938,7.938,0,0,1-2,4h-1c-0.33,1-.67,2-1,3-0.67.333-1.33,0.667-2,1v2c-1.33,1-2.67,2-4,3v2c-0.67.333-1.33,0.667-2,1v1c-1.67,1.333-3.33,2.667-5,4v2q-5.505,5-11,10v1c-0.67.333-1.33,0.667-2,1v2h-1c-0.67,1-1.33,2-2,3h-2l-12,13h-2l-6,7h-2l-3,4h-2c-0.67,1-1.33,2-2,3-2.28,1.609-4.286,1.928-6,4-2.01-.574-0.865.12-2-1a22.556,22.556,0,0,1-7-4q-0.5-1-1-2h-2l-2-3h-2q-0.5-1-1-2h-2l-2-3h-2q-0.5-1-1-2l-3-1-2-3h-2l-2-3-3-1q-0.5-1-1-2h-2q-0.5-1-1-2h-2l-2-3h-2l-2-3h-2l-2-3h-2l-2-3h-2l-2-3h-2l-2-3h-2q-0.5-1-1-2h-2q-0.5-1-1-2h-2q-0.5-1-1-2h-2q-0.5-1-1-2l-4-1q-0.5-1-1-2h-2v-1h-2q-0.5-1-1-2h-2v-1l-36,15c-0.083,8-3.047,16.374-5,23q-4.5,41-9,82c-5.879,1.089-13.463,2.428-19,4l-36,1H783v-1H773v-1h-7c-3.122-.92-7.484-2.336-11-3-2.46-7.047-1.928-17.765-4-25v-8h-1v-8c-2.822-9.778-2.2-23.179-5-33v-9c-1.958-6.444-4.523-14.2-5-22l-27-11v-1h-3v-1l-6-2v1l-15,8q-0.5,1-1,2h-2q-0.5,1-1,2h-2q-0.5,1-1,2h-2q-0.5,1-1,2l-3,1-2,3h-2l-2,3h-2l-2,3-3,1q-0.5,1-1,2h-2q-0.5,1-1,2h-2q-0.5,1-1,2l-3,1-2,3h-2q-0.5,1-1,2l-3,1-2,3h-2l-2,3-3,1q-0.5,1-1,2h-2q-0.5,1-1,2h-2q-0.5,1-1,2l-3,1-2,3c-2.266,1.608-4.313,1.911-6,4-2.01-.574-0.865.12-2-1a7.945,7.945,0,0,1-4-2v-1l-3-1q-0.5-1-1-2h-2q-0.5-1-1-2h-1l-2-3-3-1-4-5h-2l-9-10h-2l-6-7-3-2v-2l-11-10v-2l-5-4v-2l-5-4v-2l-3-2c-1.609-2.279-1.928-4.286-4-6,0.574-2.01-.12-0.865,1-2a7.728,7.728,0,0,1,2-4h1v-2l2-1v-2l3-2v-2l3-2v-2l3-2v-2l2-1q0.5-1.5,1-3l3-2v-2l3-2q0.5-1.5,1-3l2-1v-2l2-1v-2l3-2v-2l3-2v-2l3-2v-2l3-2v-2l3-2v-2l3-2v-2l2-1v-2l2-1v-2l2-1v-2l2-1q0.5-2,1-4h1q0.5-1.5,1-3l2-1c1.171-1.8-.03-2.275,2-4l-15-36c-7.877-.017-15.757-3.094-22-5h-8v-1h-9c-12.631-3.676-29.333-2.32-42-6l-23-2-1-3c-2.175-2.329-.894-5.3-2-9h-1v-7h-1v-9c-1.536-5.531-1-14.852-1-22q0.5-18.5,1-37a122.089,122.089,0,0,0,4-19l83-9v-1h4c5.251-1.771,11.223-3.725,18-4l11-27h1v-3h1q1-3,2-6h-1q-4-7.5-8-15l-2-1v-2l-2-1v-2l-2-1v-2l-2-1q-0.5-1.5-1-3l-3-2v-2l-3-2v-2l-3-2v-2l-3-2q-0.5-1.5-1-3l-2-1v-2l-2-1v-2l-3-2v-2l-2-1q-0.5-1.5-1-3l-3-2v-2l-3-2v-2l-3-2v-2l-3-2v-2l-2-1v-2l-3-2c-1.607-2.267-1.91-4.313-4-6,0.574-2.01-.12-0.865,1-2a7.945,7.945,0,0,1,2-4h1q0.5-1.5,1-3l2-1v-2l4-3v-2l2-1v-1l5-4v-2l10-9v-2l7-6,2-3h2l9-10h2l6-7h2l3-4h2l2-3c2.279-1.609,4.286-1.928,6-4,2.01,0.574.865-.12,2,1a22.556,22.556,0,0,1,7,4q0.5,1,1,2h2l2,3h2q0.5,1,1,2h2l2,3h2q0.5,1,1,2l3,1,2,3h2l2,3,3,1q0.5,1,1,2h2q0.5,1,1,2h2l2,3h2l2,3h2l2,3h2l2,3h2l2,3h2l2,3h2q0.5,1,1,2h2q0.5,1,1,2h2q0.5,1,1,2h2q0.5,1,1,2l4,1q0.5,1,1,2h2v1h2q0.5,1,1,2h2v1l36-15c0.056-5.5,1.743-9.07,3-13q0.5-4.5,1-9h1q1-13,2-26h1v-8h1v-8h1v-8h1q1.5-16,3-32c3.1-1.643,1.8-1.9,7-2V78h6V77h6V76h10c6.1-1.686,16.258-1,24-1h25v1h9v1h7C851.349,77.994,856.165,79.274,860,80ZM181,127H424c4.773,0,15.192-1.436,18,1,8.315,1.886,17.7,16.442,15,26v6h-1q-0.5,2.5-1,5l-2,1v2l-2,1-1,4-2,1v2l-2,1v2l-2,1-1,4-2,1-1,4-2,1v2h-1v2h-1v2h-1v2l-2,1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1l-1,4h-1v2h-1v2h-1v2h-1v2h-1l-1,4h-1v2h-1v3h-1l-1,4h-1v3h-1l-1,4h-1v3h-1v2h-1q-1,4.5-2,9h-1v2h-1q-0.5,3-1,6h-1v3h-1v3h-1v3h-1v3h-1q-0.5,3.5-1,7h-1q-0.5,3.5-1,7h-1l-10,48v8h-1v8h-1v10h-1v16h-1v23q0.5,15.5,1,31h1v10h1v8h1v7h1q0.5,6.5,1,13h1v5h1v5h1v5h1v5h1q0.5,4,1,8h1q0.5,4,1,8h1q0.5,3.5,1,7h1v3h1v4h1v3h1v3h1v3h1v3h1q0.5,3,1,6h1v2h1q1,4.5,2,9h1v2h1v3h1l1,4h1v3h1l1,4h1v3h1v2h1l1,4h1v2h1v2h1v2h1v2h1v2h1l7,16,2,1,2,6,2,1,1,4,2,1,1,4h1l1,3,2,1v2l2,1,1,3h1l1,4,2,1c2.5,4.007,2.648,12.95,1,18v4h-1v2h-1l-1,4-2,1v2l-8,6h-2v1h-2v1h-3v1H228c-16.952,0-44.987,2.361-58-2h-4v-1h-2v-1h-3v-1l-4-1q-0.5-1-1-2h-2q-0.5-1-1-2h-2l-6-7-3-2v-2l-2-1v-2l-2-1c-7.008-11.148-6-29.824-6-48V195c0-12.762-.939-27.046,3-36h1v-2h1q1-3,2-6l2-1v-2l3-2v-2l2-1,3-4h2l2-3h2q0.5-1,1-2l6-2v-1h3v-1h3v-1h4v-1C175.293,127,178.875,128.829,181,127ZM797,300c-2.481,2.115-8.366.841-12,2l-21,7v1h-2v1h-2q-0.5,1-1,2l-6,2q-0.5,1-1,2h-2l-2,3h-2l-3,4h-2l-7,8-3,2v2l-4,3q-0.5,1.5-1,3l-2,1v2l-2,1q-1,3-2,6l-2,1v2h-1v2h-1v3h-1v2h-1q-0.5,2.5-1,5h-1v3h-1v4h-1v4h-1v5h-1v7c-3.14,11.162.1,27.412,3,36q1,5,2,10h1q0.5,2,1,4h1q1,3.5,2,7l2,1q0.5,2,1,4l2,1v2h1q0.5,1.5,1,3l2,1v2l4,3v2l6,5,4,5h2l3,4h2q0.5,1,1,2l3,1v1h2q0.5,1,1,2l6,2q0.5,1,1,2l5,1v1l4,1v1h3v1h3v1h4v1h4v1l12,1c3.155,0.888,15.417,2.3,20,1l23-5c17.4-7.467,32.579-16.5,43-31l4-3v-2l3-2v-2l2-1q1-3,2-6l2-1v-2h1v-2h1v-3h1v-2h1q0.5-2.5,1-5h1v-3h1v-4h1v-4h1v-5h1v-7c3.149-11.151-.108-27.421-3-36q-0.5-3.5-1-7h-1v-2h-1q-0.5-3-1-6l-2-1v-3l-2-1q-1-3-2-6l-2-1v-2h-1q-0.5-1.5-1-3l-2-1v-2l-4-3v-2l-8-7-2-3h-2l-3-4h-2q-0.5-1-1-2h-2q-0.5-1-1-2l-3-1v-1l-6-2C837.642,302.617,821.981,299.957,797,300ZM175,775H471c8.872,0,16.683-.072,23,2h4v1h3v1h2v1l4,1,1,2h2l1,2h2l4,5,5,4v2l2,1q0.5,1.5,1,3h1l6,18v231c0,12.54,1.586,32.84-2,42h-1v2h-1v3h-1v2h-1v2c-0.667.33-1.333,0.67-2,1v2c-0.667.33-1.333,0.67-2,1v2l-7,6-2,3h-2c-0.333.67-.667,1.33-1,2h-2c-0.333.67-.667,1.33-1,2h-2v1h-2v1h-3v1h-2v1c-10.942,4.26-33.558,2-48,2H215c-15.077,0-37.33,2.18-49-2v-1h-3v-1c-1.333-.33-2.667-0.67-4-1v-1h-2c-0.333-.67-0.667-1.33-1-2h-2c-0.333-.67-0.667-1.33-1-2h-2q-3-3.495-6-7c-1-.67-2-1.33-3-2v-2c-0.667-.33-1.333-0.67-2-1l-1-3h-1l-6-18V878c0-22.358-2.965-58.449,4-74h1l1-4,2-1v-2l2-1v-2l7-6,2-3h2q0.5-1,1-2h2q0.5-1,1-2h2v-1h2v-1h3v-1h2v-1C169.1,775.791,172.735,777.009,175,775Zm832,2h1v1h6v1h3v1l4,1c1.67,2,3.33,4,5,6,0.67,0.333,1.33.667,2,1,6.69,9.968,4,32.985,4,49v206c0,14.41,2.27,37.11-2,48h-1v2h-1v3h-1v2h-1v2c-0.67.33-1.33,0.67-2,1v2c-0.67.33-1.33,0.67-2,1v2q-3.5,3-7,6c-0.67,1-1.33,2-2,3h-2c-0.33.67-.67,1.33-1,2-1,.33-2,0.67-3,1v1l-18,6H730c-17.5,0-46.482,2.45-60-2h-4v-1h-3v-1h-2v-1c-1.333-.33-2.667-0.67-4-1-0.333-.67-0.667-1.33-1-2h-2c-0.333-.67-0.667-1.33-1-2h-2c-1.333-1.67-2.667-3.33-4-5-1.667-1.33-3.333-2.67-5-4v-2c-0.667-.33-1.333-0.67-2-1q-0.5-1.5-1-3h-1v-2h-1v-2h-1v-3h-1v-3h-1v-3h-1c-2.99-8.95-1-26.97-1-38V852c0-9.1-1.778-32.828,1-39,1.1-2.436,4.152-5.156,6-7l2-3c4.539-3.044,17.658-6.133,25-3v1h2v1h3v1h3v1h3v1h3v1h4v1h3v1h3v1h3v1l7,1v1h4v1h4v1h4v1h5v1l9,1v1h6v1h5v1h6v1h7v1h8v1h11v1h14c7.412,2.044,35.612,2.09,43,0h16v-1h11v-1h9v-1h6v-1h7c6.4-1.895,14.773-3.055,21-5h5l51-15v-1h2v-1l6-1v-1h2v-1h3v-1h2v-1h3v-1l4-1v-1h3v-1h2v-1l4-1v-1h3v-1h2v-1l6-2v-1h2v-1h3v-1C1002.14,777.86,1004.81,779.085,1007,777Z" />
+                    </svg>
+
+                    <span style="color: white;">Miscelleneous Transactions</span>
+                </a>
+            </div>
+        </li>
+        <ul class="sub-nav">
+
+            <li><a href="../../Employee/Index" style="display: flex; align-items: center; gap: 13px;"><i class="fa-solid fa-users"></i>    Employee</a></li>
+            <li><a href="../../Position/Index" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-user"></i>  Position</a></li>
+            <li><a href="../../Department/Index" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-sitemap"></i>  Department</a></li>
+            <li><a href="../../Payroll/Index" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-hand-holding-dollar"></i>  Payroll Type</a></li>
+            <li><a href="../../Salary/Index" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-money-bill-wave"></i> Salary Type</a></li>
+
+
+        </ul>
+        <li>
+            <div>
+                <a href="#" style="display: flex; align-items: center; gap: 13px;" class="nav-item">
+                    <i class="fa-solid fa-chart-column" style="font-size: 20px;margin-right:5px"></i>
+                    <span style="color: white;">Inquiry</span>
+                </a>
+            </div>
+        </li>
+        <li class="approval">
+            <div>
+                <a href="#" style="display: flex; align-items: center; gap: 13px;" class="nav-item">
+                    <i class="fa-solid fa-file" style="font-size: 20px;"></i>
+                    <span style="color: white;">Reports</span>
+                </a>
+            </div>
+        </li>
+        <ul class="sub-nav-approval">
+
+            <li><a href="../../Approval/TimelogsApproval" style="display: flex; align-items: center; gap: 13px;">     <i class="fa-solid fa-clock"></i>  Time Logs Approval</a></li>
+            <li><a href="../../Approval/TaskApproval" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-list-check"></i>   Task Approval</a></li>
+            <li><a href="../../Approval/RegistrationApproval" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-user-plus"></i> Registration Approval</a></li>
+
+
+        </ul>
+ 
+        <div class="footer-end" >
+            <div style="display: flex;flex-direction: column;align-items: flex-start;width: 100%;">
+            <li style="width: 100%;">
+                <a href="../../Settings/Index" style="display: flex; align-items: center; gap: 5px;" class="nav-item">
+                    <i class="fa-solid fa-gear" style="font-size: 25px;margin-right:5px"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li style="width: 100%;">
+                <a href="../../LogIn/Logout" style="display: flex; align-items: center; gap: 5px;" class="nav-item">
+
+                        <i class="fa-solid fa-right-from-bracket" style="font-size: 23px;margin-right:5px"></i>
+                    <span>LogOut</span>
+                </a>
+            </li>
+        </div>
+        </div>
+    </div>
+   </div>
+</div>
+<script>
+    const listItems = document.querySelectorAll("#mysidebar li");
+
+    listItems.forEach((item, index) => {
+        item.addEventListener("click", function () {
+            // Remove the 'selected' class from all items
+            listItems.forEach(li => li.classList.remove("selected"));
+
+            // Add the 'selected' class to the clicked item
+            this.classList.add("selected");
+
+            // Get the index of the clicked item
+            console.log("Selected index:", index);
+
+            // Store the index in local storage (optional)
+            localStorage.setItem('selectedIndex', index);
+
+            // Example: Log the icon element inside the clicked <li>
+            var icon = this.querySelector("i");
+            console.log(icon);
+        });
+    });
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // Predefined text to match on load
+        const defaultText = 'Services';
+
+        // Find and highlight the item based on inner text
+        document.querySelectorAll('#mysidebar li').forEach((el, index) => {
+            // Compare the index with the stored value in localStorage
+            if (index === parseInt(localStorage.getItem('selectedIndex'))) {
+                el.classList.add('selected');
+            }
+        });
+    });
+</script>

@@ -1,0 +1,103 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+thead th:first-child {
+    border-top-left-radius: 10px;
+}
+div.dataTables_wrapper {
+    width: 100% !important;
+}
+thead th:last-child {
+    border-top-right-radius: 10px;
+}
+/* Rounded corners for the bottom-left and bottom-right corners */
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+    table.table-bordered.dataTable {
+        text-align:center;
+    }
+        td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    color:var(--dark);
+}
+
+tr.selected {
+    background-color: var(--dark) !important;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.dataTable tr:nth-child(even) {
+    background-color: #dddddd; /* Your desired background color */
+}
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+#myTable tr td:nth-child(6) {
+    text-align: center;
+    color:var(--dark);
+}
+th {
+    background-color: var(--light);
+    color: black;
+    border: none !important;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+    position: relative;
+    bottom: 90px;
+    justify-content: flex-end;
+    right: 12px;
+    /*margin-bottom:100px;*/
+}
+    div.dataTables_wrapper div.dataTables_filter label {
+        font-weight: normal;
+        white-space: nowrap !important;
+        text-align: left !important;
+        display: flex !important;
+        flex-direction: column !important;
+        font-size: 25px;
+        font-weight: bolder !important ; 
+        margin-left:50px !important;
+
+    }
+    div.dataTables_wrapper div.dataTables_filter input {
+        font-size: 1.2rem;
+        height: 35px;
+        outline: none;
+        border: 1px solid #e7e6e6;
+        box-shadow: inset 1px 2px 1px 1px rgba(116, 113, 113, 0.5);
+        border-radius: 5px;
+        width: 450px !important;
+        color: var(--secondary-dark);
+        margin:0 auto !important;
+      
+    }
+.dataTables_wrapper .dataTables_paginate .paginate_button
+{
+    font-size:12px;
+}
+table.table-bordered.dataTable
+{
+    position:relative;
+    bottom:30px;
+}

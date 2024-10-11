@@ -1,0 +1,81 @@
+.bg-primary
+{
+    background-color:var(--light);
+}
+.modal-header-2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--dark);
+    color: var(--light);
+    border-bottom: 1px solid #41668b;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+.modal-header
+{
+    background-color:var(--dark) !important;
+}
+.modal-header  span{
+    color: var(--light) !important;
+}
+.modal-header-2 span {
+    color: var(--light);
+}
+.modal-body-2 {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    text-align: center;
+}
+.modal-body-2 p {
+   font-size:25px;
+  margin-top: 30px;
+  font-weight:bolder;
+}
+.modal-footer-2 {
+    display: flex;
+    margin: 0 auto;
+    padding: 25px;
+    gap: 30px;
+}
+.btn-modal {
+    background-color: var(--dark) !important;
+    border: none !important;
+    padding: 10px 75px !important;
+    border-radius: 5px !important;
+    font-size: 0.8rem !important;
+    color: var(--light) !important;
+    transition: all 0.5s ease-in-out !important;
+    box-shadow: 1px 2px 2px 1px rgba(116, 113, 113, 0.5) !important;
+    font-weight: bolder !important;
+    margin: 0 auto !important;
+    height: 35px !important;
+}
+    .btn-modal:hover {
+        transform: scale(1.1) !important;
+        background-color: var(--shade) !important;
+        color: var(--light) !important;
+        box-shadow: 1px 2px 5px 1px rgba(116, 113, 113, 0.5) !important;
+    }
+.modal-content-2 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .5);
+    outline: 0;
+    height: 1000px;
+}

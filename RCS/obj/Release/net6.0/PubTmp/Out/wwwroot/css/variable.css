@@ -1,0 +1,18 @@
+:root {
+    --light: white;
+    --dark: #003F88 !important;
+    --primary: black;
+    --secondary-light: #e4e3e0;
+    --secondary-dark: #979699;
+    --secondary-brown: #887861;
+    --accent: #c89328;
+    --shade: rgba(125, 125, 125, 0.5);
+    --shadow: rgba(200, 200, 200, 0.5);
+    --sidebarwidth: 60px;
+    --sidebarwidth-active: 300px;
+    /* --topbarheight: 100px;*/
+    --data-height: 300px;
+    --data-width: 600px;
+    --top-corp-graph-width: 60px;
+    --shade: #576a76;
+}

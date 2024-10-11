@@ -1,0 +1,265 @@
+
+/*---Sidebar Style----*/
+.main-sidebar{
+        width: 60px;
+    height: 100vh;
+    background-color: var(--dark);
+    color: var(--light);
+    transition: width 0.3s;
+    position: fixed;
+}
+#mysidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: var(--dark);
+    color: white;
+    transition: width 0.3s;
+    position: fixed;
+    overflow:hidden !important;
+}
+
+.toggle-bar {
+    display: flex;
+    width: 80px;
+    justify-content: flex-end;
+    background: var(--dark);
+    padding: 10px;
+    border-radius: 0 20% 20% 0;
+}
+
+#mysidebar.active {
+    width: 300px;
+    overflow: hidden !important;
+}
+#mysidebar.active ~ .toggle-bar {
+    display: flex;
+    width: 270px;
+    justify-content: flex-end;
+    border-radius: 0 10% 10% 0;
+}
+
+#toggle-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+}
+#mysidebar.active .image-box {
+    background-image: url('/img/logo-04.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    translateX(250px);
+}
+.footer-end {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#mysidebar .toggle-btn {
+    background-color: var(--dark);
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+#mysidebar .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 100vh;
+}
+
+#mysidebar.active .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 100vh;
+}
+
+#mysidebar.active .img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#mysidebar-content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+    #mysidebar-content a:hover {
+        background-color: #575757;
+    }
+
+.main-content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+#mysidebar.active ~ .main-content {
+    margin-left: 250px;
+}
+
+.image-box {
+    width: 73%;
+    height: 100%;
+    background-image: url(/img/logo-04.png);
+    background-size: cover;
+    background-position: left;
+    transform: scale(0.8);
+
+}
+
+#mysidebar ul.sub-nav {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+    #mysidebar ul.sub-nav li {
+        height: 35px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #mysidebar ul.sub-nav li > a {
+            width: 100%;
+        }
+
+li.maintenance:hover ~ .sub-nav {
+    height: auto;
+}
+
+
+
+#mysidebar ul.sub-nav:hover {
+    height: auto;
+}
+/* --- */
+#mysidebar ul.sub-nav-approval {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+    #mysidebar ul.sub-nav-approval li {
+        height: 35px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #mysidebar ul.sub-nav-approval li > a {
+            width: 100%;
+        }
+
+li.approval:hover ~ .sub-nav-approval {
+    height: auto;
+}
+
+#mysidebar ul.sub-nav-approval:hover {
+    height: auto;
+}
+/* -- */
+#mysidebar .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    flex-direction: column;
+}
+
+#mysidebar.active .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    flex-direction: row;
+}
+
+#mysidebar span {
+    display: none;
+}
+
+#mysidebar.active span {
+    display: block;
+}
+
+#mysidebar.active .userpanel {
+    background-color: white;
+    padding: 30px;
+    border-radius: 100%;
+}
+
+#mysidebar.active .custom-icon {
+    font-size: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.userpanel {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.custom-icon {
+    font-size: 30px;
+    color: var(--dark) !important;
+}
+
+#mysidebar-content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    list-style-type: none;
+    display: block;
+}
+
+.emp-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+.img-container {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*---Sidebar Style Ends Here---*/
+/*---font-awesome style---*/
+/*.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    font-size: 20px;
+    margin-right: 5px;
+    color: var(--light);
+}*/
+/*---font-awesome style ends here---*/

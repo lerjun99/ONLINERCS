@@ -1,0 +1,168 @@
+﻿@model RCS.ApplicationEntityModels.EntityModels.AlertMessage;
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document with Footer</title>
+    <style>
+        .btn-cancel {
+            width: 100% !important;
+            position: relative !important;
+            border-radius: 99px !important;
+            background-color: #d03a4b !important;
+            border: 3px solid #d03a4b !important;
+            box-sizing: border-box !important;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 10px 55px !important;
+            color: var(--light) !important;
+            transition: all 0.5s ease-in-out !important;
+        }
+
+        .btn-NO {
+            width: 100% !important;
+            position: relative !important;
+            border-radius: 99px !important;
+            /* background-color: #d03a4b !important; */
+            border: 3px solid #d03a4b !important;
+            box-sizing: border-box !important;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 10px 55px !important;
+            color: #d03a4b !important;
+            transition: all 0.5s ease-in-out !important;
+        }
+        .btn-pay {
+            width: 100% !important;
+            color: var(--white) !important;
+            transition: all 0.5s ease-in-out !important;
+            padding: 10px 65px !important;
+            border-radius: 15px !important;
+            position: relative !important;
+            border-radius: 99px !important;
+            background-color: #003f88;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: center !important;
+            box-sizing: border-box !important;
+        }
+        .sub-content-mv
+        {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .print-page-md {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .text-regular
+        {
+            font-weight:normal !important;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   <header>
+
+    </header>
+
+    <div style="text-align:center">
+        <label>@Model.Message</label>
+    </div>
+    <div style="    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;margin-top:50px">
+
+        @* <div class="input-container-button">
+          
+        </div> *@
+    </div>
+    
+    <script>
+        var element = document.querySelectorAll(".modal-header");
+        var content = document.querySelectorAll(".modal-content");
+        var modal_span = document.querySelectorAll(".modal-header span");
+        // const modalview = document.getElementById('defaultmodal')
+        var stats = "@Model.Status"; // Ensure this is a string in JavaScript
+        // modal.style.setProperty("border-radius", "10px", "important");
+        var payButton = '<input type="submit" value="YES" id="btn-process" class="btn-pay" />';
+        var cancelButton = '<input type="submit" value="NO" id="btn-cancel" class="btn-NO" data-dismiss="modal"/>';
+        var cancelButton2 = '<input type="submit" value="CANCEL" id="btn-cancel" class="btn-NO" data-dismiss="modal"/>';
+        var status = '&lt;img id=&quot;modalImage&quot; src=&quot;/img/ERROR.webp&quot; alt=&quot;Modal Image&quot; /&gt;';
+        console.log(stats);
+        if (stats === status) {
+            $('.input-container-button').append(cancelButton2);
+    
+        }
+        else {
+            $('.input-container-button').append(cancelButton);
+            $('.input-container-button').append(payButton);
+       
+        }
+        content.forEach(content => {
+            if (stats === status) {
+                content.style.setProperty("border-radius", "15px 15px 15px 15px", "important");
+                content.style.setProperty("border-bottom", "7px #d03a4b solid", "important");
+             
+            }
+            else {
+                content.style.setProperty("border-radius", "15px 15px 15px 15px", "important");
+                content.style.setProperty("border-bottom", "7px var(--dark) solid", "important")
+             
+            }
+        }); 
+        modal_span.forEach(modal_span => {
+            modal_span.style.setProperty("text-align", "center", "important");
+            modal_span.style.setProperty("width", "100%", "important");
+        });
+        element.forEach(element => {
+            if (stats === status) {
+                element.style.setProperty("color", "white", "important");
+                element.style.setProperty("background-color", "#d03a4b", "important");
+                element.style.setProperty("border-radius", "15px 15px 0 0", "important");
+                element.style.setProperty("text-align", "center", "important");
+            } else {
+                element.style.setProperty("color", "white", "important");
+                element.style.setProperty("background-color", "var(--dark)", "important");
+                element.style.setProperty("border-radius", "15px 15px 0 0", "important");
+            }
+        });
+        $('#btn-process').on('click', function (event) {
+            event.preventDefault();
+            localStorage.setItem('trigger', "1");
+            loadModal('/Dashboard/PrintOR?transid=' + localStorage.getItem('ornum'), '#defaultmodal', 'PRINT OFFICIAL RECEIPT OR', 'xl', false)
+           
+        });
+    </script>
+</body>
+</html>
