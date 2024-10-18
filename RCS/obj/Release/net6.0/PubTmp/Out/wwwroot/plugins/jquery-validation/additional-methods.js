@@ -197,7 +197,7 @@ $.validator.addMethod( "bic", function( value, element ) {
  *   E. Communities of goods
  *   F. Cooperative Societies
  *   G. Associations
- *   H. Communities of homeowners in horizontal property regime
+ *   H. Communities of Dashboardowners in horizontal property regime
  *   J. Civil Societies
  *   K. Old format
  *   L. Old format

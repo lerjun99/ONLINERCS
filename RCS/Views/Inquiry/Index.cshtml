@@ -1,5 +1,375 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using System.Globalization
 @{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string message = "";
+    if (ViewData["Message"] != null)
+    {
+        message = ViewData["Message"].ToString();
+    }
+}
+<style>
+    .fa-print:hover {
+        color: var(--dark);
+        transform: scale(1.5);
+    }
+    table.dataTable.no-footer {
+        border-bottom:none;
+    }
+    td{
+        font-weight:bolder;
+        text-align:center;
+    }
+
+    td .a{
+        font-weight: bolder;
+        text-align: center;
+    }
+    .dataTables_wrapper .dataTables_length {
+        height: 70px;
+    }
+    .radio-group
+    {
+        display:flex;
+        width:100%;
+    }
+    .radio-group label {
+        display: inline-block;
+        margin-top:15px;
+        width:100%;
+    }
+
+    .radio-group input[type="radio"] {
+        display: inline-block;
+        margin-right: 10px; /* Adjust spacing as needed */
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+    }
+
+        .radio-group input[type="radio"] + label {
+            vertical-align: middle;
+        }
+
+        .radio-group input[type="radio"]:checked + label {
+            color: blue; /* Change color for checked option */
+        }
+        .btn-search
+        {
+            background-color: var(--dark);
+            color: white;
+            border-radius: 50px;
+            padding: 5px;
+            width: 150px;
+            cursor:pointer;
+        } 
+        .btn-export
+        {
+            background-color: var(--dark);
+            color: white;
+            border-radius: 50px;
+            padding: 15px;
+            width: 250px;
+            cursor:pointer;
+        }
+
+    a.disabled {
+        background-color: var(--dark);
+        color: white;
+        border-radius: 50px;
+        padding: 15px;
+        cursor: pointer;
+        pointer-events: none;
+        opacity: 0.5; /* Optional: Make the link semi-transparent */
+        /* text-decoration: line-through; /* Optional: Add a strikethrough */ */
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .btn-search:hover{
+        background-color: #007bff;
+        color: white;
+        border-radius: 50px;
+        padding: 5px;
+        width: 150px;
+        cursor: pointer;
+
+    }
+</style>
+<div id="dashboard-main-container">
+        <div class="title-main-container-inquiry">
+            <div class="content-container">
+                <span class="text-title">Inquiry</span>
+
+            </div>
+        </div>
+
+        <div class="top-main-container ">
+
+        </div>
+    <div class="main-container-inquiry">
+        <div class="content-filter" style="margin-left: 15px;">
+            <div class="sub-content">
+                <div class="mod-form">
+                    <span class="text-search">Search Criteria</span>
+                    <div class="input-container">
+                    
+                    </div>
+                </div>
+                <div class="mod-form-2">
+                </div>
+            </div>
+        </div>
+        <div class="content-filter">
+            <div class="inq-content-fees">
+                <div class="mod-form">
+                    <span class="text-left">LTO Issuing Site</span>
+                    <select id="issuesite" style="width: 100%;margin-top:10px">
+                        <option value="0" selected>DO 1407</option>
+                        <option value="1" selected>DO 1408</option>
+                    </select>
+                </div>
+                <div class="mod-form">
+                    <span class="text-left">OR No.</span>
+                    <div class="input-container">
+                        <input type="text" value="" id="search" class="mod-inputs" placeholder="" disabled />
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="content-filter">
+            <div class="inq-content-fees">
+                <div class="mod-form">
+                    <span class="text-left">OR Date From</span>
+                    <input type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" id="datefrom" class="mod-inputs-nw" placeholder="Date" style="width: 100%;margin-top:10px" />
+
+                </div>
+                <div class="mod-form">
+                    <span class="text-left">OR Date To</span>
+                    <input type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" id="dateto" class="mod-inputs-nw" placeholder="Date" style="width: 100%;margin-top:10px" />
+
+                </div>
+                <div class="mod-form">
+                    <span class="text-left">Status</span>
+                    <select id="issuesite" style="width: 100%;margin-top:10px" placeholder="Select OR Status">
+                        <option value="0" selected>Issued</option>
+                        <option value="1" selected>Canceled</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="content-filter">
+            <div class="inq-content-fees">
+                <div class="mod-form-radio">
+                    <span class="text-left">Customer Type</span>
+                    <div class="radio-group">
+                        <label for="individual">
+                            <input type="radio" id="individual" name="customerType" value="individual" checked>
+                            Individual
+                        </label>
+                        <label for="organization">
+                            <input type="radio" id="organization" name="customerType" value="organization">
+                            Organization
+                        </label>
+                    </div>
+                </div>
+                <div class="mod-form-name" > 
+                    <span class="text-left">Last Name</span>
+                    <input type="text" value="" id="search" class="mod-inputs" placeholder="" disabled />
+                </div>
+                <div class="mod-form-name">
+                    <span class="text-left">First Name</span>
+                    <input type="text" value="" id="search" class="mod-inputs" placeholder="" disabled />
+                </div>
+                <div class="mod-form-name">
+                    <span class="text-left">Middle Name</span>
+                    <input type="text" value="" id="search" class="mod-inputs" placeholder="" disabled />
+                </div>
+                <div class="mod-form-org" style="display:none">
+                    <span class="text-left">Organization Name</span>
+                    <input type="text" value="" id="search" class="mod-inputs" placeholder="" disabled />
+                </div>
+                 <div class="mod-form-btn-1">
+                  @*   <input type="submit" value="PAY" id="btn-search" class="btn-search" name="action" /><i class="fa-solid fa-magnifying-glass"></i> *@
+                    <a style="display: flex;align-items: center;gap: 8px;justify-content: center;" class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span style="color: white;">Search</span>
+                    </a>
+                </div>
+
+                
+            </div>
+        </div>
+        <hr />
+        <div class="content-filter">
+            <table id="myTable" class="table table-bordered table-hover w-100">
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+
+            </table>
+            <div id="table-footer">
+            </div>
+
+        </div>
+        <div class="tbl-btn-container">
+            <div class="btn-footer-container-inq">
+                <div class="btn-container" style="gap:10px">
+                    <a style="display: flex;align-items: center;gap: 8px;justify-content: center;" class="disabled">
+                        <i class="fa-solid fa-file-pdf" style="font-size: 25px;"></i>
+                        <span style="color: white;">Export PDF</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            const mvnum = "";
+            const transcode = "";
+            const date = "";
+            const customername = "";
+            const ornum = "";
+            const status = "";
+            var tableId = '#myTable';
+            if ($.fn.DataTable.isDataTable(tableId)) {
+                $(tableId).DataTable().clear().destroy();
+            }
+            initializeDataTable();
+
+        })
+        const option1 = document.getElementById('individual');
+        const option2 = document.getElementById('organization');
+        const modname = document.querySelectorAll('.mod-form-name');
+        const modorg = document.querySelectorAll('.mod-form-org');
+        const modradio = document.querySelectorAll('.mod-form-radio');
+
+        option1.addEventListener('change', function () {
+            if (this.checked) {
+                modname.forEach(element => {
+                    element.style.display = 'block';
+                });
+                modorg.forEach(element => {
+                    element.style.display = 'none';
+                });
+                modradio.forEach(content => {
+                    content.style.setProperty("width", "100%", "important");
+                    content.style.setProperty("display", "flex", "important");
+                    content.style.setProperty("flex-direction", "column", "important");
+                    content.style.setProperty("margin", "15px", "important");
+                });
+            }
+        });
+
+        option2.addEventListener('change', function () {
+            if (this.checked) {
+                modname.forEach(element => {
+                    element.style.display = 'none';
+                });
+                modradio.forEach(content => {
+                    content.style.setProperty("width", "500px", "important");
+                    content.style.setProperty("display", "flex", "important");
+                    content.style.setProperty("flex-direction", "column", "important");
+                    content.style.setProperty("margin", "15px", "important");
+                });
+                modorg.forEach(element => {
+                    element.style.display = 'block';
+                });
+            }
+        });
+        function initializeDataTable() {
+            var tableId = '#myTable';
+            var lastSelectedRow = null;
+            // Check if DataTable is already initialized
+            if ($.fn.DataTable.isDataTable(tableId)) {
+                // Destroy the existing DataTable instance
+                $(tableId).DataTable().clear().destroy();
+            }
+
+            // DataTable properties
+            var dtProperties = {
+                ajax: {
+                    url: '@Url.Action("getinquiryList", "Inquiry")',
+                    type: "POST",
+                    data: {},
+                    dataType: "json",
+                    processing: true,
+                    serverSide: true,
+                    complete: function (xhr) {
+                        var url = new URL(window.location.href);
+                        var _currentPage = url.searchParams.get("page01") == null ? 1 : url.searchParams.get("page01");
+
+                        table.page(_currentPage - 1).draw('page');
+                    },
+                    error: function (err) {
+                        alert(err.responseText);
+                    }
+                },
+                columns: [
+                    { "title": "Status", "data": "oR_STATUS_DESC" },
+                    { "title": "Customer Name", "data": "customeR_NAME" },
+                    {
+                        "title": "OR No",
+                        "data": "oR_NO",
+                        "render": function (data) {
+                            return `<a href="../../Dashboard/Index" style="align-items: center; gap: 8px;" class="nav-item" data-id="${data}" >
+                                                                    <span>${data}</span>
+                                </a>
+                                                                   `;
+                        }
+                    },
+                    { "title": "OR Date", "data": "oR_DATE" },
+                    { "title": "OR Amount", "data": "oR_AMT" },
+                   
+                    {
+                        "title": "",
+                        "data": "oR_NO",
+                        "render": function (data) {
+                            return `
+                                               <button class='tbl-action' data-id="${data}" style="background-color: transparent;outline: none;cursor: pointer; border: none;font-size: 20px;">
+                                                       <i class="fa-solid fa-print"></i>
+                                                       </button>
+                                                   `;
+                        }
+                    }
+                ], order: [[0, 'desc']], // Sort the second column (index 1) by descending order
+                columnDefs: [
+                    {
+                        targets: 0,
+                        type: 'date'// Ensure DataTables recognizes this column as date type
+                    }
+                ],
+                // Disable searching
+                searching: false
+            };
+            var table = $(tableId).DataTable(dtProperties);
+            (tableId + ' tbody').on('click', 'tr', function () {
+                var data = table.row(this).data();
+                console.log(data);
+                // Remove highlight from the previously selected row
+                if (lastSelectedRow) {
+                    $(lastSelectedRow).removeClass('selected-row');
+                }
+
+                // Highlight the currently selected row
+                $(this).addClass('selected-row');
+                lastSelectedRow = this;
+
+                if (data) {
+                    mvnum = data.txN_ID;
+                    status = data.statuS_DESCRIPTION;
+                    transcode = data.txN_CODE;
+                    date = data.txN_DATE;
+                    customername = data.customeR_NAME;
+                    // You can add additional actions here based on the selected row data
+                }
+            });
+        }
+    </script>
 }

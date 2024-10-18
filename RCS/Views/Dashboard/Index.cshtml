@@ -81,14 +81,14 @@
             <div class="title-main-container">
                   <div class="content-container">
             <span class="text-left"></span>
-                  
+
                    </div>
             </div>
 
         <div class="top-main-container ">
-          
+
         </div>
-        <div class="main-container bordered">
+    <div class="main-container bordered">
         <div class="content-filter">
             <div class="sub-content">
                 <div class="mod-form">
@@ -107,20 +107,20 @@
         <div class="content-filter">
             <table id="myTable" class="table table-bordered table-hover w-100">
                   <thead>
-                   
+
                 </thead>
                   <tbody>
-                   
+
                 </tbody>
 
                 </table>
             <div id="table-footer">
-          
+
             </div>
 
         </div>
 
-        
+
         </div>
     <div class="tbl-btn-container">
 
@@ -149,7 +149,7 @@
 
                 </table>
                 <div id="table-footer">
-                    
+
                 </div>
 
             </div>
@@ -164,305 +164,306 @@
                 </div>
         </div>
 
-       
+
+    </div>
     </div>
 
 @section Scripts {              
-    <script>
-            
-        $(document).ready(function () {
-                const mvnum ="";
-                const transcode ="";
-                const date ="";
-                const customername ="";
-                const ornum ="";
-                const status ="";
-                var tableId = '#myTable';
-                // setInterval(function () {
-                //     location.reload();
-                // }, 60000);
-                // Check if DataTable is already initialized
-                if ($.fn.DataTable.isDataTable(tableId)) {
-                    $(tableId).DataTable().clear().destroy();
-                }
-                 // localStorage.clear();
-                initializeDataTable();
-                initializeDataTable_wi();
-     
-        })
-        
-            function initializeDataTable() {
-                var tableId = '#myTable';
-                var lastSelectedRow = null;
-                // Check if DataTable is already initialized
-                if ($.fn.DataTable.isDataTable(tableId)) {
-                    // Destroy the existing DataTable instance
-                    $(tableId).DataTable().clear().destroy();
-                }
+        <script>
 
-                // Get date values
-                var data = {
-                    datefrom: $('#datefrom_ol').val(),
-                    dateto: $('#dateto_ol').val() // Assuming this refers to the date input element
-                };
-
-                // DataTable properties
-                var dtProperties = {
-                    ajax: {
-                        url: '@Url.Action("GetOP", "Dashboard")',
-                        type: "POST",
-                        data: {
-                            data: data
-                        },
-                        dataType: "json",
-                        processing: true,
-                        serverSide: true,
-                         complete: function (xhr) {
-                         var url = new URL(window.location.href);
-                         var _currentPage = url.searchParams.get("page01") == null ? 1 : url.searchParams.get("page01");
-                             console.log('table1',_currentPage);
-                            table.page(_currentPage - 1).draw('page');
-                        },
-                        error: function (err) {
-                            alert(err.responseText);
-                        }
-                    },
-                    columns: [
-                        { "title": "Transaction Date", "data": "txN_DATE" },
-                        { "title": "Transaction Code", "data": "txN_CODE" },
-                        { "title": "Transaction ID", "data": "txN_ID" },
-                        { "title": "Customer Name", "data": "customeR_NAME" },
-                        { "title": "Status", "data": "statuS_DESCRIPTION" },
-                        {
-                            "title": "Action",
-                            "data": "txN_ID",
-                            "render": function (data) {
-                                return `
-                                <button class='tbl-action' data-id="${data}" style="background-color: transparent;outline: none;cursor: pointer; border: none;font-size: 20px;">
-                                            <i class="fas fa-eye"></i>
-                                        </button>
-                                    `;
-                            }
-                        }
-                    ],order: [[0, 'desc']], // Sort the second column (index 1) by descending order
-                    columnDefs: [
-                        {
-                            targets: 0,
-                            type: 'date' // Ensure DataTables recognizes this column as date type
-                        }
-                    ]
-                };
-                $('#myTable').on('page.dt', function () {
-
-                    var info = table.page.info();
-                    var url = new URL(window.location.href);
-                    url.searchParams.set('page01', (info.page + 1));
-                    window.history.replaceState(null, null, url);
-                });
-             
-                 var table = $(tableId).DataTable(dtProperties);
-                $(tableId + '_filter input').attr('placeholder', 'Transaction ID|Customer Name|Transaction Code');
-                $(tableId + ' tbody').on('click', 'tr', function () {
-                    var data = table.row(this).data();
-                    console.log(data);
-                    // Remove highlight from the previously selected row
-                    if (lastSelectedRow) {
-                        $(lastSelectedRow).removeClass('selected-row');
+            $(document).ready(function () {
+                    const mvnum ="";
+                    const transcode ="";
+                    const date ="";
+                    const customername ="";
+                    const ornum ="";
+                    const status ="";
+                    var tableId = '#myTable';
+                    // setInterval(function () {
+                    //     location.reload();
+                    // }, 60000);
+                    // Check if DataTable is already initialized
+                    if ($.fn.DataTable.isDataTable(tableId)) {
+                        $(tableId).DataTable().clear().destroy();
                     }
-
-                    // Highlight the currently selected row
-                    $(this).addClass('selected-row');
-                    lastSelectedRow = this;
-
-                    if (data) {
-                        mvnum = data.txN_ID;
-                        status = data.statuS_DESCRIPTION;
-                        transcode = data.txN_CODE;
-                        date = data.txN_DATE;
-                        customername = data.customeR_NAME;
-                        // You can add additional actions here based on the selected row data
-                    }
-                });
-            }
-           // initializeDataTable();
-
-
-            function initializeDataTable_wi() {
-                var tableId = '#myTable2';
-                var lastSelectedRow = null;
-
-                // Check if DataTable is already initialized
-                if ($.fn.DataTable.isDataTable(tableId)) {
-                    // Destroy the existing DataTable instance
-                    $(tableId).DataTable().clear().destroy();
-                }
-
-                // Get date values
-                var data = {
-                    datefrom: $('#datefrom').val(),
-                    dateto: $('#dateto').val() // Assuming this refers to the date input element
-                };
-
-                // DataTable properties
-                var dtProperties = {
-                    ajax: {
-                        url: '@Url.Action("GetWI", "Dashboard")',
-                        type: "POST",
-                        data: {
-                            data: data
-                        },
-                        dataType: "json",
-                        processing: true,
-                        serverSide: true,
-                        complete: function (xhr) {
-                         var url = new URL(window.location.href);
-                         var _currentPage = url.searchParams.get("page02") == null ? 1 : url.searchParams.get("page02");
-                            table2.page(_currentPage - 1).draw('page');
-                        },
-                        error: function (err) {
-                            alert(err.responseText);
-                        }
-                    },
-                    columns: [
-                        { "title": "Transaction Date", "data": "txN_DATE" },
-                        { "title": "Transaction Code", "data": "txN_CODE" },
-                        { "title": "Transaction ID", "data": "txN_ID" },
-                        { "title": "Customer Name", "data": "customeR_NAME" },
-                        { "title": "Status", "data": "statuS_DESCRIPTION" },
-                        {
-                            "title": "Action",
-                            "data": "txN_ID",
-                            "render": function (data) {
-                                return `
-                                  <button class='tbl-action' data-id="${data}" style="background-color: transparent;outline: none;cursor: pointer; border: none;font-size: 20px;">
-                                 <i class="fas fa-eye"></i></button>`;
-                            }
-                        }
-                    ],
-                    order: [[0, 'desc']], // Sort the second column (index 1) by descending order
-                    columnDefs: [
-                        {
-                            targets: 0,
-                            type: 'date' // Ensure DataTables recognizes this column as date type
-                        }
-                    ]
-                };
-                // $(tableId).DataTable(dtProperties);
-                var table2 = $(tableId).DataTable(dtProperties);
-                $('#myTable2').on('page.dt', function () {
-
-                    var info = table2.page.info();
-                    var url = new URL(window.location.href);
-                    url.searchParams.set('page02', (info.page + 1));
-                    window.history.replaceState(null, null, url);
-                });
-                $(tableId + '_filter input').attr('placeholder', 'Transaction ID|Customer Name|Transaction Code');
-                $(tableId + ' tbody').on('click', 'tr', function () {
-                    var data = table2.row(this).data();
-                    console.log(data);
-                    // Remove highlight from the previously selected row
-                    if (lastSelectedRow) {
-                        $(lastSelectedRow).removeClass('selected-row');
-                    }
-
-                    // Highlight the currently selected row
-                    $(this).addClass('selected-row');
-                    lastSelectedRow = this;
-
-                    if (data) {
-                        mvnum = data.txN_ID;
-                        status = data.statuS_DESCRIPTION;
-                        transcode = data.txN_CODE;
-                        date = data.txN_DATE;
-                        customername = data.customeR_NAME;
-                        // You can add additional actions here based on the selected row data
-                    }
-                });
-            }
-            //initializeDataTable_wi();
-
-           
-
-
-            function isValidDate(dateString) {
-            
-                return moment(dateString, 'DD-MM-YYYY', true).isValid() ||
-                    moment(dateString, 'YYYY-MM-DD', true).isValid();
-            }
-
-
-
-            $('#btn-refresh').on('click', function (event) {
-                event.preventDefault(); 
-                     window.location.href = '/Dashboard/Index';
-            });
-          $('#btn-process').on('click', function (event) {
-                event.preventDefault();
-                localStorage.setItem('MV', mvnum);
-                localStorage.setItem('transcode', transcode);
-                localStorage.setItem('date', date);
-                localStorage.setItem('customername', customername);
-                localStorage.setItem('status', status);
-                window.location.href = '/Dashboard/Process?transid=' + mvnum;
-            });
- 
-            $('#datefrom, #dateto').on('change', function () {
-                var dateFrom = document.getElementById('datefrom').value;
-                var dateTo = document.getElementById('dateto').value;
-                console.log(isValidDate(dateFrom));
-                if (!isValidDate(dateFrom) || !isValidDate(dateTo)) {
-                    // console.log('Invalid date format. Please enter a valid date (dd-MM-yyyy).');
-                    event.preventDefault(); // Prevent form submission
-                }
-                else {
-                    initializeDataTable_wi();
-                }
-
-            });
-
-            $('#datefrom_ol').on('blur', function () {
-                // Get the value of the input field
-                var inputValue = $(this).val();
-                // Display the value in the output paragraph
-               // alert('You typed: ' + inputValue);
-            });
-            // $('#datetimeInput').on('input', function () {
-            //     var datetimeValue = $(this).val();
-            //     $('#output').text('Input is changing: ' + datetimeValue);
-            // });
-            $('#datefrom_ol, #dateto_ol').on('change', function () {
-                var dateFrom = document.getElementById('datefrom_ol').value;
-                var dateTo = document.getElementById('dateto_ol').value;
-                console.log(isValidDate(dateFrom));
-                if (!isValidDate(dateFrom) || !isValidDate(dateTo)) {
-
-                    event.preventDefault();
-                }
-                else {
+                     // localStorage.clear();
                     initializeDataTable();
+                    initializeDataTable_wi();
+
+            })
+
+                function initializeDataTable() {
+                    var tableId = '#myTable';
+                    var lastSelectedRow = null;
+                    // Check if DataTable is already initialized
+                    if ($.fn.DataTable.isDataTable(tableId)) {
+                        // Destroy the existing DataTable instance
+                        $(tableId).DataTable().clear().destroy();
+                    }
+
+                    // Get date values
+                    var data = {
+                        datefrom: $('#datefrom_ol').val(),
+                        dateto: $('#dateto_ol').val() // Assuming this refers to the date input element
+                    };
+
+                    // DataTable properties
+                    var dtProperties = {
+                        ajax: {
+                            url: '@Url.Action("GetOP", "Dashboard")',
+                            type: "POST",
+                            data: {
+                                data: data
+                            },
+                            dataType: "json",
+                            processing: true,
+                            serverSide: true,
+                             complete: function (xhr) {
+                             var url = new URL(window.location.href);
+                             var _currentPage = url.searchParams.get("page01") == null ? 1 : url.searchParams.get("page01");
+                                 console.log('table1',_currentPage);
+                                table.page(_currentPage - 1).draw('page');
+                            },
+                            error: function (err) {
+                                alert(err.responseText);
+                            }
+                        },
+                        columns: [
+                            { "title": "Transaction Date", "data": "txN_DATE" },
+                            { "title": "Transaction Code", "data": "txN_CODE" },
+                            { "title": "Transaction ID", "data": "txN_ID" },
+                            { "title": "Customer Name", "data": "customeR_NAME" },
+                            { "title": "Status", "data": "statuS_DESCRIPTION" },
+                            {
+                                "title": "Action",
+                                "data": "txN_ID",
+                                "render": function (data) {
+                                    return `
+                                    <button class='tbl-action' data-id="${data}" style="background-color: transparent;outline: none;cursor: pointer; border: none;font-size: 20px;">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        `;
+                                }
+                            }
+                        ],order: [[0, 'desc']], // Sort the second column (index 1) by descending order
+                        columnDefs: [
+                            {
+                                targets: 0,
+                                type: 'date' // Ensure DataTables recognizes this column as date type
+                            }
+                        ]
+                    };
+                    $('#myTable').on('page.dt', function () {
+
+                        var info = table.page.info();
+                        var url = new URL(window.location.href);
+                        url.searchParams.set('page01', (info.page + 1));
+                        window.history.replaceState(null, null, url);
+                    });
+
+                     var table = $(tableId).DataTable(dtProperties);
+                    $(tableId + '_filter input').attr('placeholder', 'Transaction ID|Customer Name|Transaction Code');
+                    $(tableId + ' tbody').on('click', 'tr', function () {
+                        var data = table.row(this).data();
+                        console.log(data);
+                        // Remove highlight from the previously selected row
+                        if (lastSelectedRow) {
+                            $(lastSelectedRow).removeClass('selected-row');
+                        }
+
+                        // Highlight the currently selected row
+                        $(this).addClass('selected-row');
+                        lastSelectedRow = this;
+
+                        if (data) {
+                            mvnum = data.txN_ID;
+                            status = data.statuS_DESCRIPTION;
+                            transcode = data.txN_CODE;
+                            date = data.txN_DATE;
+                            customername = data.customeR_NAME;
+                            // You can add additional actions here based on the selected row data
+                        }
+                    });
+                }
+               // initializeDataTable();
+
+
+                function initializeDataTable_wi() {
+                    var tableId = '#myTable2';
+                    var lastSelectedRow = null;
+
+                    // Check if DataTable is already initialized
+                    if ($.fn.DataTable.isDataTable(tableId)) {
+                        // Destroy the existing DataTable instance
+                        $(tableId).DataTable().clear().destroy();
+                    }
+
+                    // Get date values
+                    var data = {
+                        datefrom: $('#datefrom').val(),
+                        dateto: $('#dateto').val() // Assuming this refers to the date input element
+                    };
+
+                    // DataTable properties
+                    var dtProperties = {
+                        ajax: {
+                            url: '@Url.Action("GetWI", "Dashboard")',
+                            type: "POST",
+                            data: {
+                                data: data
+                            },
+                            dataType: "json",
+                            processing: true,
+                            serverSide: true,
+                            complete: function (xhr) {
+                             var url = new URL(window.location.href);
+                             var _currentPage = url.searchParams.get("page02") == null ? 1 : url.searchParams.get("page02");
+                                table2.page(_currentPage - 1).draw('page');
+                            },
+                            error: function (err) {
+                                alert(err.responseText);
+                            }
+                        },
+                        columns: [
+                            { "title": "Transaction Date", "data": "txN_DATE" },
+                            { "title": "Transaction Code", "data": "txN_CODE" },
+                            { "title": "Transaction ID", "data": "txN_ID" },
+                            { "title": "Customer Name", "data": "customeR_NAME" },
+                            { "title": "Status", "data": "statuS_DESCRIPTION" },
+                            {
+                                "title": "Action",
+                                "data": "txN_ID",
+                                "render": function (data) {
+                                    return `
+                                      <button class='tbl-action' data-id="${data}" style="background-color: transparent;outline: none;cursor: pointer; border: none;font-size: 20px;">
+                                     <i class="fas fa-eye"></i></button>`;
+                                }
+                            }
+                        ],
+                        order: [[0, 'desc']], // Sort the second column (index 1) by descending order
+                        columnDefs: [
+                            {
+                                targets: 0,
+                                type: 'date' // Ensure DataTables recognizes this column as date type
+                            }
+                        ]
+                    };
+                    // $(tableId).DataTable(dtProperties);
+                    var table2 = $(tableId).DataTable(dtProperties);
+                    $('#myTable2').on('page.dt', function () {
+
+                        var info = table2.page.info();
+                        var url = new URL(window.location.href);
+                        url.searchParams.set('page02', (info.page + 1));
+                        window.history.replaceState(null, null, url);
+                    });
+                    $(tableId + '_filter input').attr('placeholder', 'Transaction ID|Customer Name|Transaction Code');
+                    $(tableId + ' tbody').on('click', 'tr', function () {
+                        var data = table2.row(this).data();
+                        console.log(data);
+                        // Remove highlight from the previously selected row
+                        if (lastSelectedRow) {
+                            $(lastSelectedRow).removeClass('selected-row');
+                        }
+
+                        // Highlight the currently selected row
+                        $(this).addClass('selected-row');
+                        lastSelectedRow = this;
+
+                        if (data) {
+                            mvnum = data.txN_ID;
+                            status = data.statuS_DESCRIPTION;
+                            transcode = data.txN_CODE;
+                            date = data.txN_DATE;
+                            customername = data.customeR_NAME;
+                            // You can add additional actions here based on the selected row data
+                        }
+                    });
+                }
+                //initializeDataTable_wi();
+
+
+
+
+                function isValidDate(dateString) {
+
+                    return moment(dateString, 'DD-MM-YYYY', true).isValid() ||
+                        moment(dateString, 'YYYY-MM-DD', true).isValid();
                 }
 
-            });
-            // <button class='tbl-action' data - id="${data}" onclick = "loadModal('/Dashboard/OR_Print','#defaultmodal','MOTOR VEHICLE DETAILS','xl', false)" >
-            $('#myTable2').on('click', '.tbl-action', function () {
-                var id = $(this).data('id');
-                localStorage.setItem('MV', mvnum);
-                localStorage.setItem('transcode', transcode);
-                localStorage.setItem('date', date);
-                localStorage.setItem('status', status);
-                loadModal('/Dashboard/OR_Print?transid='+ encodeURIComponent(id), '#defaultmodal', 'MOTOR VEHICLE DETAILS', 'xl',false)
-              
-              
-            });
-            $('#myTable').on('click', '.tbl-action', function () {
-                var id = $(this).data('id');
-                localStorage.setItem('MV', mvnum);
-                localStorage.setItem('transcode', transcode);
-                localStorage.setItem('date', date);
-                localStorage.setItem('customername', customername);
-                localStorage.setItem('status', status);
-                loadModal('/Dashboard/OR_Print?transid=' + encodeURIComponent(id), '#defaultmodal', 'MOTOR VEHICLE DETAILS', 'xl', false)
-                
-            });
-    </script>
+
+
+                $('#btn-refresh').on('click', function (event) {
+                    event.preventDefault(); 
+                         window.location.href = '/Dashboard/Index';
+                });
+              $('#btn-process').on('click', function (event) {
+                    event.preventDefault();
+                    localStorage.setItem('MV', mvnum);
+                    localStorage.setItem('transcode', transcode);
+                    localStorage.setItem('date', date);
+                    localStorage.setItem('customername', customername);
+                    localStorage.setItem('status', status);
+                    window.location.href = '/Dashboard/Process?transid=' + mvnum;
+                });
+
+                $('#datefrom, #dateto').on('change', function () {
+                    var dateFrom = document.getElementById('datefrom').value;
+                    var dateTo = document.getElementById('dateto').value;
+                    console.log(isValidDate(dateFrom));
+                    if (!isValidDate(dateFrom) || !isValidDate(dateTo)) {
+                        // console.log('Invalid date format. Please enter a valid date (dd-MM-yyyy).');
+                        event.preventDefault(); // Prevent form submission
+                    }
+                    else {
+                        initializeDataTable_wi();
+                    }
+
+                });
+
+                $('#datefrom_ol').on('blur', function () {
+                    // Get the value of the input field
+                    var inputValue = $(this).val();
+                    // Display the value in the output paragraph
+                   // alert('You typed: ' + inputValue);
+                });
+                // $('#datetimeInput').on('input', function () {
+                //     var datetimeValue = $(this).val();
+                //     $('#output').text('Input is changing: ' + datetimeValue);
+                // });
+                $('#datefrom_ol, #dateto_ol').on('change', function () {
+                    var dateFrom = document.getElementById('datefrom_ol').value;
+                    var dateTo = document.getElementById('dateto_ol').value;
+                    console.log(isValidDate(dateFrom));
+                    if (!isValidDate(dateFrom) || !isValidDate(dateTo)) {
+
+                        event.preventDefault();
+                    }
+                    else {
+                        initializeDataTable();
+                    }
+
+                });
+                // <button class='tbl-action' data - id="${data}" onclick = "loadModal('/Dashboard/OR_Print','#defaultmodal','MOTOR VEHICLE DETAILS','xl', false)" >
+                $('#myTable2').on('click', '.tbl-action', function () {
+                    var id = $(this).data('id');
+                    localStorage.setItem('MV', mvnum);
+                    localStorage.setItem('transcode', transcode);
+                    localStorage.setItem('date', date);
+                    localStorage.setItem('status', status);
+                    loadModal('/Dashboard/OR_Print?transid='+ encodeURIComponent(id), '#defaultmodal', 'MOTOR VEHICLE DETAILS', 'xl',false)
+
+
+                });
+                $('#myTable').on('click', '.tbl-action', function () {
+                    var id = $(this).data('id');
+                    localStorage.setItem('MV', mvnum);
+                    localStorage.setItem('transcode', transcode);
+                    localStorage.setItem('date', date);
+                    localStorage.setItem('customername', customername);
+                    localStorage.setItem('status', status);
+                    loadModal('/Dashboard/OR_Print?transid=' + encodeURIComponent(id), '#defaultmodal', 'MOTOR VEHICLE DETAILS', 'xl', false)
+
+                });
+        </script>
 }

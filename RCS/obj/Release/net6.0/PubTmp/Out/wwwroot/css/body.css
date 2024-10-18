@@ -21,6 +21,7 @@ hr {
 }
 html, body {
     position: relative;
+    background-color: var(--secondary-light) !important;
     height: 100%; /* Ensure the body takes the full viewport height */
     margin: 0; /* Remove default margin */
 }

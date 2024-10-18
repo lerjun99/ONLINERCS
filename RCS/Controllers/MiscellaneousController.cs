@@ -17,8 +17,11 @@ namespace RCS.Controllers
         {
             return View();
         }
+        public IActionResult CancelOR()
+        {
+            return PartialView("CancelOR");
+        }
 
-    
-        
+
     }
 }

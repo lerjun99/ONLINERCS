@@ -124,7 +124,9 @@ namespace RCS.Controllers
                 };
                 var res = result.TXN_CHARGES.Where(a => a.FEE_DESC == "Comp Fee").FirstOrDefault();
                 HttpContext.Session.SetString("ChargeAmount", res.CHARGED_AMT.ToString());
+                HttpContext.Session.SetString("FeeDesc", res.FEE_DESC.ToString());
                 ViewBag.ChargeAmount = HttpContext.Session.GetString("ChargeAmount");
+                ViewBag.FeeDesc = HttpContext.Session.GetString("FeeDesc");
                 return PartialView("Process", model);
             }
             else
