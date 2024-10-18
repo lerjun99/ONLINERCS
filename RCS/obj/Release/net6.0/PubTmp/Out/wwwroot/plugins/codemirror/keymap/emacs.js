@@ -477,7 +477,7 @@
     "Ctrl-A": "goLineStart",
     "Ctrl-E": "goLineEnd",
     "End": "goLineEnd",
-    "Home": "goLineStart",
+    "Dashboard": "goLineStart",
     "Alt-V": "scrollDownCommand",
     "Ctrl-V": "scrollUpCommand",
     "PageUp": "scrollDownCommand",

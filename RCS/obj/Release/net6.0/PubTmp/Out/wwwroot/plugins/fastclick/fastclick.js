@@ -245,7 +245,7 @@
 
 			break;
 		case 'label':
-		case 'iframe': // iOS8 homescreen apps can prevent events bubbling into frames
+		case 'iframe': // iOS8 Dashboardscreen apps can prevent events bubbling into frames
 		case 'video':
 			return true;
 		}
