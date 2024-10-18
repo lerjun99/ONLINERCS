@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RCS\\RCS\\RCS.csproj": {}
+    "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\RCS.csproj": {}
   },
   "projects": {
-    "D:\\RCS\\RCS\\RCS.csproj": {
+    "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\RCS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RCS\\RCS\\RCS.csproj",
+        "projectUniqueName": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\RCS.csproj",
         "projectName": "RCS",
-        "projectPath": "D:\\RCS\\RCS\\RCS.csproj",
+        "projectPath": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\RCS.csproj",
         "packagesPath": "C:\\Users\\labarasona\\.nuget\\packages\\",
-        "outputPath": "D:\\RCS\\RCS\\obj\\",
+        "outputPath": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\labarasona\\AppData\\Roaming\\NuGet\\NuGet.Config",

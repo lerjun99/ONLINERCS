@@ -145,7 +145,13 @@
 li.maintenance:hover ~ .sub-nav {
     height: auto;
 }
-
+.sub-nav{
+    margin-left:20px;
+    color:white !important;
+}
+.sub-nav.active {
+   height:auto;
+}
 
 
 #mysidebar ul.sub-nav:hover {

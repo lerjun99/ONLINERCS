@@ -1,152 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\RCS\\",
+  "WorkspaceRootPath": "C:\\Users\\labarasona\\Desktop\\RCS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\dashboard\\process.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\process.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\inquiry\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\inquiry\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\mod-input.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\mod-input.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\dashboard\\process.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\process.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\dashboard\\printor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\printor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\dashboard\\or_print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\or_print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\controllers\\inquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\controllers\\inquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\applicationentitymodels\\entitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\applicationentitymodels\\entitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\body.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\body.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\7f98fdaac9d705a68d70434023c6fd56f977204d926dbc0c5754abd48c07be73\\DeveloperExceptionPageMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f2fc2641b2a85524abdb5832ed9996d0a7f2c2a6687456b85037843d168d8dbd\\SessionMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\Downloads\\ApiHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\print-layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\print-layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\dashboard\\alertmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\alertmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\alt\\adminlte.core.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\alt\\adminlte.core.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\datefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\datefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\controllers\\miscellaneouscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\controllers\\miscellaneouscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\rcs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\rcs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\services\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\services\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\tools\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\tools\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\RCS\\RCS\\ApiHelper\\ApiHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RCS\\ApiHelper\\ApiHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\b7e667c32d2ea6b6ebefde7da475276284f32dec4c1ceb78fce4d3d2b314a743\\AuthorizationMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -158,38 +30,170 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\21859c132d07f728e08c4c05f2840353e0149b97abfab2126ce002cb34542669\\ResourceInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\miscellaneous\\cancelor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\miscellaneous\\cancelor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\miscellaneous\\cashbalancing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\miscellaneous\\cashbalancing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\inquiry\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\inquiry\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\controllers\\miscellaneouscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\controllers\\miscellaneouscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\mod-input.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\mod-input.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\dashboard\\printor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\printor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\dashboard\\or_print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\or_print.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\controllers\\inquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\controllers\\inquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\applicationentitymodels\\entitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\applicationentitymodels\\entitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\body.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\body.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\Downloads\\ApiHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\print-layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\print-layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\dashboard\\alertmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\alertmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\alt\\adminlte.core.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\alt\\adminlte.core.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\datefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\datefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\rcs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\rcs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\services\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\services\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\services\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\tools\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\tools\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\ef805b419998793542bf88667dd7cddaab0db7f4ea1d1911b4bac665ea86b136\\PartialViewResultExecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\22e8190c14f349578da34cd6c5046a9474ed1af0fddcdbab087cd564495fc20f\\ViewExecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\c09d8586b5209c4c2e2bccdd9ecbecb5838547098299787088a2a8f90ae3e503\\ActionMethodExecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\7f98fdaac9d705a68d70434023c6fd56f977204d926dbc0c5754abd48c07be73\\DeveloperExceptionPageMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\modal_2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\modal_2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\modal_2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\dashboard\\_process.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\views\\dashboard\\_process.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\dashboard\\_process.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\views\\miscellaneous\\cashbalancing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\views\\miscellaneous\\cashbalancing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\fees_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\fees_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\fees_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -202,31 +206,31 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\6ac69dcacf9e792ea08f20d55465322e3823832207e5731d57a19a908516a351\\EndpointRoutingMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\printdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\printdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\printdetailsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\alt\\adminlte.components.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\alt\\adminlte.components.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\alt\\adminlte.components.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\mv_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\mv_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\mv_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\baseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\baseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\baseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -242,27 +246,27 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\1b5c56f4e49c4b323c400695f4cce2f6aff75e80a6d86c26ed255d1579a94d20\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ControllerActionInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\sidebar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\variable.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\variable.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\variable.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\b1974f2106e618ea682344dc2610d60f7694ae1489c5dbfaab5e8a6dd7321064\\src\\Mvc\\Mvc.Razor\\src\\RazorView.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|d:\\rcs\\rcs\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|c:\\users\\labarasona\\desktop\\rcs\\rcs\\apihelper\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB80B3-EE03-4D80-9753-A4C279FA9358}|RCS\\RCS.csproj|solutionrelative:rcs\\apihelper\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -272,630 +276,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Dashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Dashboard\\Index.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AQIAAMEBAAAAAAAAAAAAAM8BAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T04:48:52.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OR_Print.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Dashboard\\OR_Print.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\OR_Print.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Dashboard\\OR_Print.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Dashboard\\OR_Print.cshtml",
-              "ViewState": "AQIAAOEAAAAAAAAAAAAQwCAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T04:47:49.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Inquiry\\Index.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Inquiry\\Index.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Inquiry\\Index.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Inquiry\\Index.cshtml",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAAAEABAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-11T00:40:28.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dashboard.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\dashboard.css",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\dashboard.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\dashboard.css",
-              "RelativeToolTip": "RCS\\wwwroot\\css\\dashboard.css",
-              "ViewState": "AQIAADgBAAAAAAAAAAAnwE0BAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-10T02:38:47.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAAAIMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T01:45:04.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_SideBar.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Shared\\_SideBar.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Shared\\_SideBar.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Shared\\_SideBar.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Shared\\_SideBar.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T02:03:06.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "RCS\\Controllers\\DashboardController.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "RCS\\Controllers\\DashboardController.cs",
-              "ViewState": "AQIAANgCAAAAAAAAAAAAAOgCAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T01:31:02.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InquiryController.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Controllers\\InquiryController.cs",
-              "RelativeDocumentMoniker": "RCS\\Controllers\\InquiryController.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Controllers\\InquiryController.cs",
-              "RelativeToolTip": "RCS\\Controllers\\InquiryController.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAUwJgAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T00:34:59.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Process.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Dashboard\\Process.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\Process.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Dashboard\\Process.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Dashboard\\Process.cshtml",
-              "ViewState": "AQIAAL4FAAAAAAAAAAAAAHQGAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T14:32:42.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "body.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\body.css",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\body.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\body.css",
-              "RelativeToolTip": "RCS\\wwwroot\\css\\body.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-07T08:14:58.426Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PrintOR.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Dashboard\\PrintOR.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\PrintOR.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Dashboard\\PrintOR.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Dashboard\\PrintOR.cshtml",
-              "ViewState": "AQIAANYDAAAAAAAAAADwv+YDAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T06:16:11.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "mod-input.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\mod-input.css",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\mod-input.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\mod-input.css",
-              "RelativeToolTip": "RCS\\wwwroot\\css\\mod-input.css",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAnwHkAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-07T09:18:58.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EntityModels.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\ApplicationEntityModels\\EntityModels.cs",
-              "RelativeDocumentMoniker": "RCS\\ApplicationEntityModels\\EntityModels.cs",
-              "ToolTip": "D:\\RCS\\RCS\\ApplicationEntityModels\\EntityModels.cs",
-              "RelativeToolTip": "RCS\\ApplicationEntityModels\\EntityModels.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAA4wGcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T07:33:33.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "bootstrap-colorpicker.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
-              "RelativeDocumentMoniker": "RCS\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
-              "ToolTip": "D:\\RCS\\RCS\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
-              "RelativeToolTip": "RCS\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAIwHQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-17T12:42:41.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AlertMessage.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Dashboard\\AlertMessage.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\AlertMessage.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Dashboard\\AlertMessage.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Dashboard\\AlertMessage.cshtml",
-              "ViewState": "AQIAAHAAAAAAAAAAAADwv4AAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T05:02:32.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SessionMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f2fc2641b2a85524abdb5832ed9996d0a7f2c2a6687456b85037843d168d8dbd\\SessionMiddleware.cs",
-              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f2fc2641b2a85524abdb5832ed9996d0a7f2c2a6687456b85037843d168d8dbd\\SessionMiddleware.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAMwI4AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:11:09.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T04:56:20.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "print-layout.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\print-layout.css",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\print-layout.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\print-layout.css",
-              "RelativeToolTip": "RCS\\wwwroot\\css\\print-layout.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-09T05:42:17.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApiHelper.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\Downloads\\ApiHelper.cs",
-              "ToolTip": "C:\\Users\\labarasona\\Downloads\\ApiHelper.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAwBIAAAB1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T07:29:22.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "RCS\\Models\\ErrorViewModel.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "RCS\\Models\\ErrorViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T04:56:03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "adminlte.core.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\alt\\adminlte.core.css",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\alt\\adminlte.core.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\alt\\adminlte.core.css",
-              "RelativeToolTip": "RCS\\wwwroot\\css\\alt\\adminlte.core.css",
-              "ViewState": "AQIAAK0GAAAAAAAAAIBZwLkGAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-08T05:26:44.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "RCS\\Models\\ApiResponse.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\ApiResponse.cs",
-              "RelativeToolTip": "RCS\\Models\\ApiResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T06:12:19.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "datefilter.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\datefilter.cs",
-              "RelativeDocumentMoniker": "RCS\\Models\\datefilter.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\datefilter.cs",
-              "RelativeToolTip": "RCS\\Models\\datefilter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T07:37:40.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MiscellaneousController.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Controllers\\MiscellaneousController.cs",
-              "RelativeDocumentMoniker": "RCS\\Controllers\\MiscellaneousController.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Controllers\\MiscellaneousController.cs",
-              "RelativeToolTip": "RCS\\Controllers\\MiscellaneousController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T05:29:55.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RCS.csproj",
-              "DocumentMoniker": "D:\\RCS\\RCS\\RCS.csproj",
-              "RelativeDocumentMoniker": "RCS\\RCS.csproj",
-              "ToolTip": "D:\\RCS\\RCS\\RCS.csproj",
-              "RelativeToolTip": "RCS\\RCS.csproj",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAowCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-07T01:47:17.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Program.cs",
-              "RelativeDocumentMoniker": "RCS\\Program.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Program.cs",
-              "RelativeToolTip": "RCS\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T01:49:42.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "RCS\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-11T00:55:15.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "RCS\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-11T00:55:14.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "BaseService.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Services\\BaseService.cs",
-              "RelativeDocumentMoniker": "RCS\\Services\\BaseService.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Services\\BaseService.cs",
-              "RelativeToolTip": "RCS\\Services\\BaseService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwA4AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T00:43:18.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IBaseService.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Services\\IBaseService.cs",
-              "RelativeDocumentMoniker": "RCS\\Services\\IBaseService.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Services\\IBaseService.cs",
-              "RelativeToolTip": "RCS\\Services\\IBaseService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T00:45:31.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Services\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "RCS\\Services\\BaseRepository.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Services\\BaseRepository.cs",
-              "RelativeToolTip": "RCS\\Services\\BaseRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T00:52:42.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IBaseRepository.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Services\\IBaseRepository.cs",
-              "RelativeDocumentMoniker": "RCS\\Services\\IBaseRepository.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Services\\IBaseRepository.cs",
-              "RelativeToolTip": "RCS\\Services\\IBaseRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T00:54:12.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Services\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "RCS\\Services\\AppDbContext.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Services\\AppDbContext.cs",
-              "RelativeToolTip": "RCS\\Services\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T00:54:16.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Token.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Tools\\Token.cs",
-              "RelativeDocumentMoniker": "RCS\\Tools\\Token.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Tools\\Token.cs",
-              "RelativeToolTip": "RCS\\Tools\\Token.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAABBwBYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T00:17:12.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\RCS\\RCS\\appsettings.json",
-              "RelativeDocumentMoniker": "RCS\\appsettings.json",
-              "ToolTip": "D:\\RCS\\RCS\\appsettings.json",
-              "RelativeToolTip": "RCS\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-07T02:01:17.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "AuthorizationMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\b7e667c32d2ea6b6ebefde7da475276284f32dec4c1ceb78fce4d3d2b314a743\\AuthorizationMiddleware.cs",
-              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\b7e667c32d2ea6b6ebefde7da475276284f32dec4c1ceb78fce4d3d2b314a743\\AuthorizationMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T10:48:01.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ResourceInvoker.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\21859c132d07f728e08c4c05f2840353e0149b97abfab2126ce002cb34542669\\ResourceInvoker.cs",
-              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\21859c132d07f728e08c4c05f2840353e0149b97abfab2126ce002cb34542669\\ResourceInvoker.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T03:49:18.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ApiHelper.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\ApiHelper\\ApiHelper.cs",
-              "RelativeDocumentMoniker": "RCS\\ApiHelper\\ApiHelper.cs",
-              "ToolTip": "D:\\RCS\\RCS\\ApiHelper\\ApiHelper.cs",
-              "RelativeToolTip": "RCS\\ApiHelper\\ApiHelper.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T05:18:16.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ActionMethodExecutor.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\c09d8586b5209c4c2e2bccdd9ecbecb5838547098299787088a2a8f90ae3e503\\ActionMethodExecutor.cs",
-              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\c09d8586b5209c4c2e2bccdd9ecbecb5838547098299787088a2a8f90ae3e503\\ActionMethodExecutor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T02:50:06.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\js\\site.js",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "RCS\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAMwF4AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T06:35:31.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "EndpointMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\4764fd3683c2c17020eb0f22bafa07844a72721c1d5e50d0720faa50a6dd6083\\EndpointMiddleware.cs",
-              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\4764fd3683c2c17020eb0f22bafa07844a72721c1d5e50d0720faa50a6dd6083\\EndpointMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T10:48:00.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ViewExecutor.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\22e8190c14f349578da34cd6c5046a9474ed1af0fddcdbab087cd564495fc20f\\ViewExecutor.cs",
-              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\22e8190c14f349578da34cd6c5046a9474ed1af0fddcdbab087cd564495fc20f\\ViewExecutor.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T06:13:20.034Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "PartialViewResultExecutor.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\ef805b419998793542bf88667dd7cddaab0db7f4ea1d1911b4bac665ea86b136\\PartialViewResultExecutor.cs",
-              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\ef805b419998793542bf88667dd7cddaab0db7f4ea1d1911b4bac665ea86b136\\PartialViewResultExecutor.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T06:13:22.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "DeveloperExceptionPageMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\7f98fdaac9d705a68d70434023c6fd56f977204d926dbc0c5754abd48c07be73\\DeveloperExceptionPageMiddleware.cs",
-              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\7f98fdaac9d705a68d70434023c6fd56f977204d926dbc0c5754abd48c07be73\\DeveloperExceptionPageMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T10:48:02.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 8,
               "Title": "ControllerActionInvoker.cs",
               "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs",
               "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\f4afc3a88e25fb070f72b4a8058cd7e207766a7e6982c00e0931b159fe6558b6\\ControllerActionInvoker.cs",
+              "ViewState": "AQIAAHIBAAAAAAAAAAAQwIABAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T03:49:15.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "modal_2.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\modal_2.css",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\modal_2.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\modal_2.css",
-              "RelativeToolTip": "RCS\\wwwroot\\css\\modal_2.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-09T04:24:36.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "table.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\table.css",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\table.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\table.css",
-              "RelativeToolTip": "RCS\\wwwroot\\css\\table.css",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAQwGUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-07T09:56:18.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Fees_Details.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\Fees_Details.cs",
-              "RelativeDocumentMoniker": "RCS\\Models\\Fees_Details.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\Fees_Details.cs",
-              "RelativeToolTip": "RCS\\Models\\Fees_Details.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "DocumentIndex": 7,
+              "Title": "ResourceInvoker.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\21859c132d07f728e08c4c05f2840353e0149b97abfab2126ce002cb34542669\\ResourceInvoker.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\21859c132d07f728e08c4c05f2840353e0149b97abfab2126ce002cb34542669\\ResourceInvoker.cs",
+              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\21859c132d07f728e08c4c05f2840353e0149b97abfab2126ce002cb34542669\\ResourceInvoker.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\21859c132d07f728e08c4c05f2840353e0149b97abfab2126ce002cb34542669\\ResourceInvoker.cs",
+              "ViewState": "AQIAALkAAAAAAAAAAAAQwMsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T06:30:19.414Z",
+              "WhenOpened": "2024-09-10T03:49:18.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "_Process.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Dashboard\\_Process.cshtml",
-              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\_Process.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Dashboard\\_Process.cshtml",
-              "RelativeToolTip": "RCS\\Views\\Dashboard\\_Process.cshtml",
-              "ViewState": "AQIAANgAAAAAAAAAAAAEwOsAAAAcAAAA",
+              "DocumentIndex": 6,
+              "Title": "EndpointMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\4764fd3683c2c17020eb0f22bafa07844a72721c1d5e50d0720faa50a6dd6083\\EndpointMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4764fd3683c2c17020eb0f22bafa07844a72721c1d5e50d0720faa50a6dd6083\\EndpointMiddleware.cs",
+              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\4764fd3683c2c17020eb0f22bafa07844a72721c1d5e50d0720faa50a6dd6083\\EndpointMiddleware.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4764fd3683c2c17020eb0f22bafa07844a72721c1d5e50d0720faa50a6dd6083\\EndpointMiddleware.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAQwGcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T10:48:00.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthorizationMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\b7e667c32d2ea6b6ebefde7da475276284f32dec4c1ceb78fce4d3d2b314a743\\AuthorizationMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b7e667c32d2ea6b6ebefde7da475276284f32dec4c1ceb78fce4d3d2b314a743\\AuthorizationMiddleware.cs",
+              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\b7e667c32d2ea6b6ebefde7da475276284f32dec4c1ceb78fce4d3d2b314a743\\AuthorizationMiddleware.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b7e667c32d2ea6b6ebefde7da475276284f32dec4c1ceb78fce4d3d2b314a743\\AuthorizationMiddleware.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAQwCwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T10:48:01.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SessionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f2fc2641b2a85524abdb5832ed9996d0a7f2c2a6687456b85037843d168d8dbd\\SessionMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\f2fc2641b2a85524abdb5832ed9996d0a7f2c2a6687456b85037843d168d8dbd\\SessionMiddleware.cs",
+              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\f2fc2641b2a85524abdb5832ed9996d0a7f2c2a6687456b85037843d168d8dbd\\SessionMiddleware.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\f2fc2641b2a85524abdb5832ed9996d0a7f2c2a6687456b85037843d168d8dbd\\SessionMiddleware.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAQwI4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T16:11:09.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeveloperExceptionPageMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\7f98fdaac9d705a68d70434023c6fd56f977204d926dbc0c5754abd48c07be73\\DeveloperExceptionPageMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7f98fdaac9d705a68d70434023c6fd56f977204d926dbc0c5754abd48c07be73\\DeveloperExceptionPageMiddleware.cs",
+              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\7f98fdaac9d705a68d70434023c6fd56f977204d926dbc0c5754abd48c07be73\\DeveloperExceptionPageMiddleware.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7f98fdaac9d705a68d70434023c6fd56f977204d926dbc0c5754abd48c07be73\\DeveloperExceptionPageMiddleware.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwEkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T10:48:02.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_SideBar.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Shared\\_SideBar.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAD0AAACpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T08:45:53.683Z",
+              "WhenOpened": "2024-08-07T02:03:06.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 2,
+              "Title": "sidebar.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\sidebar.css",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\sidebar.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\sidebar.css",
+              "RelativeToolTip": "RCS\\wwwroot\\css\\sidebar.css",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAjwKgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-07T07:00:38.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Process.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\Process.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\Process.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\Process.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Dashboard\\Process.cshtml",
+              "ViewState": "AQIAAOACAAAAAAAAAAAAAOkGAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T14:32:42.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "RCS\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "RCS\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAASwCMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T01:31:02.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "CashBalancing.cshtml",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Views\\Miscellaneous\\CashBalancing.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Miscellaneous\\CashBalancing.cshtml",
               "RelativeDocumentMoniker": "RCS\\Views\\Miscellaneous\\CashBalancing.cshtml",
-              "ToolTip": "D:\\RCS\\RCS\\Views\\Miscellaneous\\CashBalancing.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Miscellaneous\\CashBalancing.cshtml",
               "RelativeToolTip": "RCS\\Views\\Miscellaneous\\CashBalancing.cshtml",
               "ViewState": "AQIAAOcAAAAAAAAAAADwvw8BAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -904,10 +427,541 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MiscellaneousController.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Controllers\\MiscellaneousController.cs",
+              "RelativeDocumentMoniker": "RCS\\Controllers\\MiscellaneousController.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Controllers\\MiscellaneousController.cs",
+              "RelativeToolTip": "RCS\\Controllers\\MiscellaneousController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T05:29:55.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "body.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\body.css",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\body.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\body.css",
+              "RelativeToolTip": "RCS\\wwwroot\\css\\body.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-07T08:14:58.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InquiryController.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Controllers\\InquiryController.cs",
+              "RelativeDocumentMoniker": "RCS\\Controllers\\InquiryController.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Controllers\\InquiryController.cs",
+              "RelativeToolTip": "RCS\\Controllers\\InquiryController.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAUwJgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:34:59.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAHAAAAAAAAAAAIBJwIMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T01:45:04.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "dashboard.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\dashboard.css",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\dashboard.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\dashboard.css",
+              "RelativeToolTip": "RCS\\wwwroot\\css\\dashboard.css",
+              "ViewState": "AQIAADgBAAAAAAAAAAAnwE0BAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-10T02:38:47.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Inquiry\\Index.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Inquiry\\Index.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Inquiry\\Index.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Inquiry\\Index.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAG0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T00:40:28.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CancelOR.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Miscellaneous\\CancelOR.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Miscellaneous\\CancelOR.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Miscellaneous\\CancelOR.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Miscellaneous\\CancelOR.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T02:06:20.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OR_Print.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\OR_Print.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\OR_Print.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\OR_Print.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Dashboard\\OR_Print.cshtml",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAQwCAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T04:47:49.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AQIAAL4BAAAAAAAAAIBJwM8BAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T04:48:52.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PrintOR.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\PrintOR.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\PrintOR.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\PrintOR.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Dashboard\\PrintOR.cshtml",
+              "ViewState": "AQIAANYDAAAAAAAAAADwv+YDAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T06:16:11.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "mod-input.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\mod-input.css",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\mod-input.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\mod-input.css",
+              "RelativeToolTip": "RCS\\wwwroot\\css\\mod-input.css",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAnwHkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-07T09:18:58.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EntityModels.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\ApplicationEntityModels\\EntityModels.cs",
+              "RelativeDocumentMoniker": "RCS\\ApplicationEntityModels\\EntityModels.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\ApplicationEntityModels\\EntityModels.cs",
+              "RelativeToolTip": "RCS\\ApplicationEntityModels\\EntityModels.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAA0wGcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T07:33:33.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "bootstrap-colorpicker.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
+              "RelativeDocumentMoniker": "RCS\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
+              "RelativeToolTip": "RCS\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAIwHQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-17T12:42:41.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AlertMessage.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\AlertMessage.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\AlertMessage.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\AlertMessage.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Dashboard\\AlertMessage.cshtml",
+              "ViewState": "AQIAAHAAAAAAAAAAAADwv4AAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T05:02:32.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T04:56:20.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "print-layout.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\print-layout.css",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\print-layout.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\print-layout.css",
+              "RelativeToolTip": "RCS\\wwwroot\\css\\print-layout.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-09T05:42:17.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApiHelper.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Downloads\\ApiHelper.cs",
+              "RelativeDocumentMoniker": "..\\..\\Downloads\\ApiHelper.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Downloads\\ApiHelper.cs",
+              "RelativeToolTip": "..\\..\\Downloads\\ApiHelper.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAwBIAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T07:29:22.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "RCS\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "RCS\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T04:56:03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "adminlte.core.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\alt\\adminlte.core.css",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\alt\\adminlte.core.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\alt\\adminlte.core.css",
+              "RelativeToolTip": "RCS\\wwwroot\\css\\alt\\adminlte.core.css",
+              "ViewState": "AQIAAKoGAAAAAAAAACBjwLkGAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-08T05:26:44.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "RCS\\Models\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "RCS\\Models\\ApiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:12:19.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "datefilter.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\datefilter.cs",
+              "RelativeDocumentMoniker": "RCS\\Models\\datefilter.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\datefilter.cs",
+              "RelativeToolTip": "RCS\\Models\\datefilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T07:37:40.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RCS.csproj",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\RCS.csproj",
+              "RelativeDocumentMoniker": "RCS\\RCS.csproj",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\RCS.csproj",
+              "RelativeToolTip": "RCS\\RCS.csproj",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAowCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-07T01:47:17.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Program.cs",
+              "RelativeDocumentMoniker": "RCS\\Program.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Program.cs",
+              "RelativeToolTip": "RCS\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T01:49:42.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "RCS\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T00:55:15.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "RCS\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T00:55:14.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\BaseService.cs",
+              "RelativeDocumentMoniker": "RCS\\Services\\BaseService.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\BaseService.cs",
+              "RelativeToolTip": "RCS\\Services\\BaseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:43:18.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\IBaseService.cs",
+              "RelativeDocumentMoniker": "RCS\\Services\\IBaseService.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\IBaseService.cs",
+              "RelativeToolTip": "RCS\\Services\\IBaseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:45:31.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "RCS\\Services\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\BaseRepository.cs",
+              "RelativeToolTip": "RCS\\Services\\BaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:52:42.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "RCS\\Services\\IBaseRepository.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\IBaseRepository.cs",
+              "RelativeToolTip": "RCS\\Services\\IBaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:54:12.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "RCS\\Services\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Services\\AppDbContext.cs",
+              "RelativeToolTip": "RCS\\Services\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:54:16.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Token.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Tools\\Token.cs",
+              "RelativeDocumentMoniker": "RCS\\Tools\\Token.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Tools\\Token.cs",
+              "RelativeToolTip": "RCS\\Tools\\Token.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAABBwBYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T00:17:12.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\appsettings.json",
+              "RelativeDocumentMoniker": "RCS\\appsettings.json",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\appsettings.json",
+              "RelativeToolTip": "RCS\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-07T02:01:17.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ApiHelper.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\ApiHelper\\ApiHelper.cs",
+              "RelativeDocumentMoniker": "RCS\\ApiHelper\\ApiHelper.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\ApiHelper\\ApiHelper.cs",
+              "RelativeToolTip": "RCS\\ApiHelper\\ApiHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T05:18:16.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ActionMethodExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\c09d8586b5209c4c2e2bccdd9ecbecb5838547098299787088a2a8f90ae3e503\\ActionMethodExecutor.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c09d8586b5209c4c2e2bccdd9ecbecb5838547098299787088a2a8f90ae3e503\\ActionMethodExecutor.cs",
+              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\c09d8586b5209c4c2e2bccdd9ecbecb5838547098299787088a2a8f90ae3e503\\ActionMethodExecutor.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c09d8586b5209c4c2e2bccdd9ecbecb5838547098299787088a2a8f90ae3e503\\ActionMethodExecutor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T02:50:06.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "RCS\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAMwF4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-07T06:35:31.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ViewExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\22e8190c14f349578da34cd6c5046a9474ed1af0fddcdbab087cd564495fc20f\\ViewExecutor.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\22e8190c14f349578da34cd6c5046a9474ed1af0fddcdbab087cd564495fc20f\\ViewExecutor.cs",
+              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\22e8190c14f349578da34cd6c5046a9474ed1af0fddcdbab087cd564495fc20f\\ViewExecutor.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\22e8190c14f349578da34cd6c5046a9474ed1af0fddcdbab087cd564495fc20f\\ViewExecutor.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T06:13:20.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "PartialViewResultExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\ef805b419998793542bf88667dd7cddaab0db7f4ea1d1911b4bac665ea86b136\\PartialViewResultExecutor.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ef805b419998793542bf88667dd7cddaab0db7f4ea1d1911b4bac665ea86b136\\PartialViewResultExecutor.cs",
+              "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\ef805b419998793542bf88667dd7cddaab0db7f4ea1d1911b4bac665ea86b136\\PartialViewResultExecutor.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ef805b419998793542bf88667dd7cddaab0db7f4ea1d1911b4bac665ea86b136\\PartialViewResultExecutor.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T06:13:22.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "modal_2.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\modal_2.css",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\modal_2.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\modal_2.css",
+              "RelativeToolTip": "RCS\\wwwroot\\css\\modal_2.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-09T04:24:36.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "table.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\table.css",
+              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\table.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\table.css",
+              "RelativeToolTip": "RCS\\wwwroot\\css\\table.css",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAQwGUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-07T09:56:18.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 50,
+              "Title": "Fees_Details.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\Fees_Details.cs",
+              "RelativeDocumentMoniker": "RCS\\Models\\Fees_Details.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\Fees_Details.cs",
+              "RelativeToolTip": "RCS\\Models\\Fees_Details.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T06:30:19.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "_Process.cshtml",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\_Process.cshtml",
+              "RelativeDocumentMoniker": "RCS\\Views\\Dashboard\\_Process.cshtml",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Views\\Dashboard\\_Process.cshtml",
+              "RelativeToolTip": "RCS\\Views\\Dashboard\\_Process.cshtml",
+              "ViewState": "AQIAANgAAAAAAAAAAAAEwOsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T08:45:53.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
               "Title": "cjwt_conf.json",
               "DocumentMoniker": "C:\\Users\\labarasona\\.nuget\\packages\\lib.jwtextender\\1.0.0\\contentFiles\\any\\net6.0\\cjwt_conf.json",
+              "RelativeDocumentMoniker": "..\\..\\.nuget\\packages\\lib.jwtextender\\1.0.0\\contentFiles\\any\\net6.0\\cjwt_conf.json",
               "ToolTip": "C:\\Users\\labarasona\\.nuget\\packages\\lib.jwtextender\\1.0.0\\contentFiles\\any\\net6.0\\cjwt_conf.json [Read Only]",
+              "RelativeToolTip": "..\\..\\.nuget\\packages\\lib.jwtextender\\1.0.0\\contentFiles\\any\\net6.0\\cjwt_conf.json [Read Only]",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-08-16T09:28:45.905Z",
@@ -915,29 +969,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "Monitor.cs",
               "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\470d3084ccff01cbfffdb653cdede89467eb744ee0ba266252d0a21e12cbf24b\\Monitor.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\470d3084ccff01cbfffdb653cdede89467eb744ee0ba266252d0a21e12cbf24b\\Monitor.cs",
               "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\470d3084ccff01cbfffdb653cdede89467eb744ee0ba266252d0a21e12cbf24b\\Monitor.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\470d3084ccff01cbfffdb653cdede89467eb744ee0ba266252d0a21e12cbf24b\\Monitor.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T05:41:03.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "EndpointRoutingMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\6ac69dcacf9e792ea08f20d55465322e3823832207e5731d57a19a908516a351\\EndpointRoutingMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6ac69dcacf9e792ea08f20d55465322e3823832207e5731d57a19a908516a351\\EndpointRoutingMiddleware.cs",
               "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\Temp\\.vsdbgsrc\\6ac69dcacf9e792ea08f20d55465322e3823832207e5731d57a19a908516a351\\EndpointRoutingMiddleware.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6ac69dcacf9e792ea08f20d55465322e3823832207e5731d57a19a908516a351\\EndpointRoutingMiddleware.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T03:52:04.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "Connection.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\Connection.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\Connection.cs",
               "RelativeDocumentMoniker": "RCS\\Models\\Connection.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\Connection.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\Connection.cs",
               "RelativeToolTip": "RCS\\Models\\Connection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -946,11 +1004,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "adminlte.components.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\alt\\adminlte.components.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\alt\\adminlte.components.css",
               "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\alt\\adminlte.components.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\alt\\adminlte.components.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\alt\\adminlte.components.css",
               "RelativeToolTip": "RCS\\wwwroot\\css\\alt\\adminlte.components.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -959,11 +1017,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "PrintDetailsModel.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\PrintDetailsModel.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\PrintDetailsModel.cs",
               "RelativeDocumentMoniker": "RCS\\Models\\PrintDetailsModel.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\PrintDetailsModel.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\PrintDetailsModel.cs",
               "RelativeToolTip": "RCS\\Models\\PrintDetailsModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -972,11 +1030,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "MV_Details.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\MV_Details.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\MV_Details.cs",
               "RelativeDocumentMoniker": "RCS\\Models\\MV_Details.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\MV_Details.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\MV_Details.cs",
               "RelativeToolTip": "RCS\\Models\\MV_Details.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -985,11 +1043,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "Fees.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\Fees.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\Fees.cs",
               "RelativeDocumentMoniker": "RCS\\Models\\Fees.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\Fees.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\Fees.cs",
               "RelativeToolTip": "RCS\\Models\\Fees.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwBYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -998,11 +1056,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "BaseResult.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\BaseResult.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\BaseResult.cs",
               "RelativeDocumentMoniker": "RCS\\Models\\BaseResult.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\BaseResult.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\BaseResult.cs",
               "RelativeToolTip": "RCS\\Models\\BaseResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1011,11 +1069,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "footer.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\footer.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\footer.css",
               "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\footer.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\footer.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\footer.css",
               "RelativeToolTip": "RCS\\wwwroot\\css\\footer.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -1024,10 +1082,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "ExecutionContext.cs",
               "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\52873c8671f737d92ba762f979a25cd48e34ec29056b66a192b51b3b519e7734\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\ExecutionContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\SourceServer\\52873c8671f737d92ba762f979a25cd48e34ec29056b66a192b51b3b519e7734\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\ExecutionContext.cs",
               "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\52873c8671f737d92ba762f979a25cd48e34ec29056b66a192b51b3b519e7734\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\ExecutionContext.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\SourceServer\\52873c8671f737d92ba762f979a25cd48e34ec29056b66a192b51b3b519e7734\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\ExecutionContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T00:49:57.628Z",
@@ -1035,10 +1095,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "Monitor.CoreCLR.cs",
               "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\6b3e973e783af55bc594e8e42b0043db00933a9275edf28ef7e2056901f69419\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\SourceServer\\6b3e973e783af55bc594e8e42b0043db00933a9275edf28ef7e2056901f69419\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs",
               "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\6b3e973e783af55bc594e8e42b0043db00933a9275edf28ef7e2056901f69419\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\SourceServer\\6b3e973e783af55bc594e8e42b0043db00933a9275edf28ef7e2056901f69419\\src\\coreclr\\System.Private.CoreLib\\src\\System\\Threading\\Monitor.CoreCLR.cs",
               "ViewState": "AQIAAIwAAAAAAAAAAAAMwJ4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T01:00:37.086Z",
@@ -1046,10 +1108,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "ResourceInvoker.cs",
               "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\fb72f58b80a9d6794c964873ba34abb180e357168d1b2d6ae8281cdb1693d0ef\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ResourceInvoker.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\SourceServer\\fb72f58b80a9d6794c964873ba34abb180e357168d1b2d6ae8281cdb1693d0ef\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ResourceInvoker.cs",
               "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\fb72f58b80a9d6794c964873ba34abb180e357168d1b2d6ae8281cdb1693d0ef\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ResourceInvoker.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\SourceServer\\fb72f58b80a9d6794c964873ba34abb180e357168d1b2d6ae8281cdb1693d0ef\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ResourceInvoker.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAAMwF4AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T10:46:49.813Z",
@@ -1057,10 +1121,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "ControllerActionInvoker.cs",
               "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\1b5c56f4e49c4b323c400695f4cce2f6aff75e80a6d86c26ed255d1579a94d20\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ControllerActionInvoker.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\SourceServer\\1b5c56f4e49c4b323c400695f4cce2f6aff75e80a6d86c26ed255d1579a94d20\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ControllerActionInvoker.cs",
               "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\1b5c56f4e49c4b323c400695f4cce2f6aff75e80a6d86c26ed255d1579a94d20\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ControllerActionInvoker.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\SourceServer\\1b5c56f4e49c4b323c400695f4cce2f6aff75e80a6d86c26ed255d1579a94d20\\src\\Mvc\\Mvc.Core\\src\\Infrastructure\\ControllerActionInvoker.cs",
               "ViewState": "AQIAAOsBAAAAAAAAAAAMwP0BAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T10:46:45.236Z",
@@ -1068,24 +1134,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "sidebar.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\sidebar.css",
-              "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\sidebar.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\sidebar.css",
-              "RelativeToolTip": "RCS\\wwwroot\\css\\sidebar.css",
-              "ViewState": "AQIAAAkAAAAAAAAAAOB/wB4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-07T07:00:38.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 65,
               "Title": "variable.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\variable.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\variable.css",
               "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\variable.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\variable.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\variable.css",
               "RelativeToolTip": "RCS\\wwwroot\\css\\variable.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -1096,9 +1149,9 @@
               "$type": "Document",
               "DocumentIndex": 66,
               "Title": "buttons.bootstrap4.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css",
               "RelativeDocumentMoniker": "RCS\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css",
-              "ToolTip": "D:\\RCS\\RCS\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css",
               "RelativeToolTip": "RCS\\plugins\\datatables-buttons\\css\\buttons.bootstrap4.css",
               "ViewState": "AQIAAAAAAAAAAAAAAEB1wCoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -1110,7 +1163,9 @@
               "DocumentIndex": 67,
               "Title": "RazorView.cs",
               "DocumentMoniker": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\b1974f2106e618ea682344dc2610d60f7694ae1489c5dbfaab5e8a6dd7321064\\src\\Mvc\\Mvc.Razor\\src\\RazorView.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\SourceServer\\b1974f2106e618ea682344dc2610d60f7694ae1489c5dbfaab5e8a6dd7321064\\src\\Mvc\\Mvc.Razor\\src\\RazorView.cs",
               "ToolTip": "C:\\Users\\labarasona\\AppData\\Local\\SourceServer\\b1974f2106e618ea682344dc2610d60f7694ae1489c5dbfaab5e8a6dd7321064\\src\\Mvc\\Mvc.Razor\\src\\RazorView.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\SourceServer\\b1974f2106e618ea682344dc2610d60f7694ae1489c5dbfaab5e8a6dd7321064\\src\\Mvc\\Mvc.Razor\\src\\RazorView.cs",
               "ViewState": "AQIAAKMAAAAAAAAAAADgv7AAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T11:07:22.928Z",
@@ -1120,9 +1175,9 @@
               "$type": "Document",
               "DocumentIndex": 68,
               "Title": "Transaction.cs",
-              "DocumentMoniker": "D:\\RCS\\RCS\\Models\\Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\Transaction.cs",
               "RelativeDocumentMoniker": "RCS\\Models\\Transaction.cs",
-              "ToolTip": "D:\\RCS\\RCS\\Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\Models\\Transaction.cs",
               "RelativeToolTip": "RCS\\Models\\Transaction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1133,9 +1188,9 @@
               "$type": "Document",
               "DocumentIndex": 69,
               "Title": "site.css",
-              "DocumentMoniker": "D:\\RCS\\RCS\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "RCS\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\RCS\\RCS\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\site.css",
               "RelativeToolTip": "RCS\\wwwroot\\css\\site.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",

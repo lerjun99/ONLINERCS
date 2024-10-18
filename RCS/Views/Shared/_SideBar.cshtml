@@ -5,30 +5,35 @@
         background-color: #17a2b8;
         color: var(--light);
     }
+
+    li.maintenance:hover ~ #subnav {
+        height: auto;
+        color: white;
+    }
 </style>
 
 <div class="sidebar" id="mysidebar">
-        <div>
-          <a href="#" style="display: flex; align-items: center; gap: 8px;" class="nav-item" id="toggle-sidebar" >
-        <i class="fa-solid fa-bars"></i>
-    </a>
-        </div>
+    <div>
+        <a href="#" style="display: flex; align-items: center; gap: 8px;" class="nav-item" id="toggle-sidebar">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
     <div class="img-container">
-       @*  <a href="../../Dashboard/Index" style="display: flex; align-items: center; gap: 8px;" class="nav-item">
- *@
-            <div style="display: flex;
+        @*  <a href="../../Dashboard/Index" style="display: flex; align-items: center; gap: 8px;" class="nav-item">
+        *@
+        <div style="display: flex;
     flex-direction: column;
     align-items: center;">
-                <div class="userpanel">
-                        <i class="fa-solid fa-user custom-icon" style="margin: 0 auto;"></i>
-                </div>
-                <div class ="emp-info">
-            <span style="color: white;font-weight:bolder">Employee</span>
-            <span style="color: white;">Cashier</span>
-                <span style="color: white;">DO0104</span>
-                </div>
+            <div class="userpanel">
+                <i class="fa-solid fa-user custom-icon" style="margin: 0 auto;"></i>
             </div>
-      @*   </a> *@
+            <div class="emp-info">
+                <span style="color: white;font-weight:bolder">Employee</span>
+                <span style="color: white;">Cashier</span>
+                <span style="color: white;">DO0104</span>
+            </div>
+        </div>
+        @*   </a> *@
     </div>
 
     <ul class="sidebar-content">
@@ -52,16 +57,14 @@
                 </a>
             </div>
         </li>
-        <ul class="sub-nav">
+        <ul class="sub-nav" id="subnav">
 
-            <li><a href="../../Employee/Index" style="display: flex; align-items: center; gap: 13px;"><i class="fa-solid fa-users"></i>    Employee</a></li>
-            <li><a href="../../Position/Index" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-user"></i>  Position</a></li>
-            <li><a href="../../Department/Index" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-sitemap"></i>  Department</a></li>
-            <li><a href="../../Payroll/Index" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-hand-holding-dollar"></i>  Payroll Type</a></li>
-            <li><a href="../../Salary/Index" style="display: flex; align-items: center; gap: 15px;"><i class="fa-solid fa-money-bill-wave"></i> Salary Type</a></li>
+            <li><a href="../../Miscellaneous/CashBalancing" style="display: flex; align-items: center; gap: 13px;color:white;"><i class="fa-solid fa-scale-balanced"></i>  Cash Balancing</a></li>
+            <li><a href="../../Miscellaneous/CancelOR" style="display: flex; align-items: center; gap: 15px;color:white;"><i class="fa-solid fa-ban"></i>  Cancel OR</a></li>
 
 
         </ul>
+       
         <li>
             <div>
                 <a href="../../Inquiry/Index" style="display: flex; align-items: center; gap: 13px;" class="nav-item">
@@ -86,27 +89,25 @@
 
 
         </ul>
- 
-        <div class="footer-end" >
-            <div style="display: flex;flex-direction: column;align-items: flex-start;width: 100%;">
-            <li style="width: 100%;">
-                <a href="../../Settings/Index" style="display: flex; align-items: center; gap: 5px;" class="nav-item">
-                    <i class="fa-solid fa-gear" style="font-size: 25px;margin-right:5px"></i>
-                    <span>Settings</span>
-                </a>
-            </li>
-            <li style="width: 100%;">
-                <a href="../../LogIn/Logout" style="display: flex; align-items: center; gap: 5px;" class="nav-item">
 
-                        <i class="fa-solid fa-right-from-bracket" style="font-size: 23px;margin-right:5px"></i>
-                    <span>LogOut</span>
-                </a>
-            </li>
-        </div>
-        </div>
-    </div>
-   </div>
+        <div class="footer-end">
+            <div style="display: flex;flex-direction: column;align-items: flex-start;width: 100%;">
+        <li style="width: 100%;">
+            <a href="../../Settings/Index" style="display: flex; align-items: center; gap: 5px;" class="nav-item">
+                <i class="fa-solid fa-gear" style="font-size: 25px;margin-right:5px"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <li style="width: 100%;">
+            <a href="../../LogIn/Logout" style="display: flex; align-items: center; gap: 5px;" class="nav-item">
+
+                <i class="fa-solid fa-right-from-bracket" style="font-size: 23px;margin-right:5px"></i>
+                <span>LogOut</span>
+            </a>
+        </li>
+        </ul>
 </div>
+   
 <script>
     const listItems = document.querySelectorAll("#mysidebar li");
 
