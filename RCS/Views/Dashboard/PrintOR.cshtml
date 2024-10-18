@@ -1252,6 +1252,9 @@
                     // Focus on the new window and print
                     printWindow.focus();
                     printWindow.print();
+                    printWindow.onafterprint = function () {
+                    printWindow.close();
+                }; // Close the print window after printing
                 
                 let message, validation, status;
 
@@ -1306,6 +1309,7 @@
                 document.getElementById('validation').textContent = validation;
 
                 // Show modal
+                $(this).modal("hide");
                 $("#alertmodal2").modal('show');
             });
         });

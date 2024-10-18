@@ -101,6 +101,16 @@ namespace RCS.ApplicationEntityModels
             public string? BANK_MNEMONIC { get; set; }
 
         }
+        public class PaidORModel
+        {
+            public string? CUSTOMER_NAME { get; set; }
+            public string? OR_NO { get; set; }
+            public string? OR_DATE { get; set; }
+            public string? OR_AMT { get; set; }
+            public string? OR_STATUS { get; set; }
+            public string? OR_STATUS_DESC { get; set; }
+
+        }
         public class PaymentResult
         {
             public string? TXN_ID { get; set; }

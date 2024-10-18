@@ -30,7 +30,7 @@ function hideloadingoverlay() {
 document.addEventListener('DOMContentLoaded', updateSidebar);
 
 function printPage() {
-    var printWindow = window.open('/Home/OR_Print', '_blank');
+    var printWindow = window.open('/Dashboard/OR_Print', '_blank');
     // Wait for the new window to load and then trigger the print dialog
     $('#modal-success').modal('show');
     $('#defaultmodal').modal('hide');
@@ -43,7 +43,7 @@ function printPage() {
 
 function print_or()
 {
-    fetch(`/Home/OR_Print`) // Adjust URL to your endpoint
+    fetch(`/Dashboard/OR_Print`) // Adjust URL to your endpoint
         .then(response => response.text())
         .then(html => {
             document.querySelector('#modal-xl .modal-body-2').innerHTML = html;
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function checklist() {
     $.ajax({
-        url: "/Home/checquelist",
+        url: "/Dashboard/checquelist",
         data: {},
         type: "POST",
         datatype: "json"
@@ -142,7 +142,7 @@ function checklist() {
 }
 function checklistcount(count) {
     $.ajax({
-        url: "/Home/checquelist",
+        url: "/Dashboard/checquelist",
         data: {},
         type: "POST",
         datatype: "json"

@@ -180,3 +180,4 @@ D:\RCS\RCS\obj\Debug\net6.0\refint\RCS.dll
 D:\RCS\RCS\obj\Debug\net6.0\RCS.pdb
 D:\RCS\RCS\obj\Debug\net6.0\RCS.genruntimeconfig.cache
 D:\RCS\RCS\obj\Debug\net6.0\ref\RCS.dll
+D:\RCS\RCS\obj\Debug\net6.0\RCS.sourcelink.json

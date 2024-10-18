@@ -74,6 +74,7 @@
         align-items: center !important;
         justify-content: center !important;
         box-sizing: border-box !important;
+        border:none !important;
     }
 
     .sub-content-mv {
@@ -315,6 +316,7 @@
         border-radius: 10px;
         /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); */
         margin: 25px;
+        background-color:white !important;
     }
 </style>
 <div id="feespayment-main-container">
@@ -407,14 +409,14 @@
                     </div>
                     <div class="mod-form" id="chequetype1">
                             <span class="text-left" style="text-align: center !important;"><span style=" color:red;color:red;margin-right: 15px;">*</span>Cheque Type</span>
-                        <div class="input-container">
+                        <div class="type-input-container">
                                     <select id="check1" class="checque-list" style="width: 100%;margin-top:10px" hidden >
                                 </select>
                         </div>
                     </div>
                     <div class="mod-form">
                             <span class="text-left" style="text-align: center !important;"><span style=" color:red;color:red;margin-right: 15px;">*</span>Reference Number</span>
-                        <div class="input-container">
+                        <div class="ref-input-container">
                                     <input type="text" value="" id="refno1" class="ref-inputs" placeholder="" hidden maxlength="15" />
                         </div>
                     </div>
@@ -572,8 +574,7 @@
 
                         </table>
                     </div>
-                    <div style="
-    display: flex;
+                    <div style="display: flex;
     margin-left: 200px;
 ">
                         <div class="mod-formd">
@@ -865,7 +866,7 @@
         var textcounter = $(".content-filter-2 .sub-content-fees-3").length;
 
         function removeitem(count) {
-
+            let cash_val, cheque_val,cash,cheque;
          //   console.log($("#textCont" + count))
             if (count == 1) {
                 $("#mode-cntr").remove();
@@ -874,23 +875,72 @@
                 $("#amount-cntr").remove();
                 $("#input-container").remove();
                 $("#icon-cntr").remove();
+                let cash = 0;
+                $('.amount-inputs').each(function () {
+                    let cash_val = removeCommas($(this).val());
+                    console.log(cash_val);
+                    cash += parseFloat(cash_val) || 0;
+                });
+                // alert(cash);
+                let formattedSum = formatWithCommas(cash.toFixed(2));
+                let cheque = 0;
+                $('.chequeamount').each(function () {
+                    let cheque_val = removeCommas($(this).val());
+                    console.log(cheque_val);
+                    cheque += parseFloat(cheque_val) || 0;
+                });
+                // alert(cheque);
+                sum = cash + cheque;
+
+                const value2 = parseFloat(removeCommas($('#totaldue').val())) || 0;
+                const difference = sum - value2;
+                if (difference > 0) {
+                    // Set difference to zero and put the excess in the excess field
+                    $("#balance").val("0.00");
+                    // $("#overpayment").val(difference.toFixed(2));
+                } else {
+                    // If there's no excess, show the difference and clear the excess field
+                    $("#balance").val(difference.toFixed(2));
+                    // $("#overpayment").val("0.00");
+                }
+                $('#cash').val(formattedSum);
+                $('#cheque').val(formatWithCommas(cheque.toFixed(2)));
+                $('#totalpayment').val(formatWithCommas(sum.toFixed(2)));
+                $('#balance').val(formatWithCommas(difference.toFixed(2)));
             }
             else
             {
                 $("#textCont" + count).remove();
-                let sum = 0;
-
-                const value = $('#amount' + count).val();
+                let cash = 0;
                 $('.amount-inputs').each(function () {
-                    let value = removeCommas($(this).val());
-                    cash += parseFloat(value) || 0;
+                    let cash_val = removeCommas($(this).val());
+                    console.log(cash_val);
+                    cash += parseFloat(cash_val) || 0;
                 });
-
-                const value1 = parseFloat(removeCommas($('#amount' + count).val())) || 0;
+                // alert(cash);
+                let formattedSum = formatWithCommas(cash.toFixed(2));
+                let cheque = 0;
+                $('.chequeamount').each(function () {
+                    let cheque_val = removeCommas($(this).val());
+                    console.log(cheque_val);
+                    cheque += parseFloat(cheque_val) || 0;
+                });
+                // alert(cheque);
+                sum = cash + cheque;
                 const value2 = parseFloat(removeCommas($('#totaldue').val())) || 0;
                 const difference = sum - value2;
-                let formattedSum = formatWithCommas(cash.toFixed(2));
+                if (difference > 0) {
+                    // Set difference to zero and put the excess in the excess field
+                    $("#balance").val("0.00");
+                    // $("#overpayment").val(difference.toFixed(2));
+                } else {
+                    // If there's no excess, show the difference and clear the excess field
+                    $("#balance").val(difference.toFixed(2));
+                    // $("#overpayment").val("0.00");
+                }
                 $('#cash').val(formattedSum);
+                $('#cheque').val(formatWithCommas(cheque.toFixed(2)));
+                $('#totalpayment').val(formatWithCommas(sum.toFixed(2)));
                 $('#balance').val(formatWithCommas(difference.toFixed(2)));
             }
            
@@ -1024,14 +1074,14 @@
                             </div>
                                     <div class="mod-form" id="chequetype${textcounter + 1}">
                         
-                                <div class="input-container">
+                                <div class="type-input-container">
                                                        <select id="check${textcounter + 1}" class="checque-list"  style="width: 100%;margin-top:10px" hidden >
                                 </select>
                                 </div>
                             </div>
                             <div class="mod-form">
                            
-                                <div class="input-container">
+                                <div class="ref-input-container">
                                                                  <input type="text" value="" id="refno${textcounter + 1}" class="ref-inputs" placeholder="" hidden  maxlength="15"/>
                                 </div>
                             </div>
@@ -1055,9 +1105,9 @@
             checklistcount(textcounter);
                 datevalidation();
             }
-        function addItFeeComputation() {
+        function addItFeeComputation(amountValue, amountInputId, textcounters) {
             const value1 = parseFloat(removeCommas('@ViewBag.ChargeAmount')) || 0;
-            const value2 = parseFloat(removeCommas($('#totaldue').val())) || 0;
+            const value2 = parseFloat(removeCommas(amountValue)) || 0;
             const difference = value1 - value2;
             const positiveDifference = Math.max(0, difference);
 
@@ -1076,7 +1126,7 @@
                                     <div style="width: 50%; display: flex; flex-direction: column; margin: 15px;">
 
                                         <div id="it-cntr">
-                                                                    <input type="checkbox" class="select-checkbox" style="margin-top: 20px;margin-right: 20px;" id="itfee2" checked>
+                                                                    <input type="checkbox" class="select-checkbox" style="margin-top: 20px;margin-right: 20px;" id="itfee${textcounters}" checked>
                                         </div>
                                     </div>
                                           <div class="mod-forms">
@@ -1088,19 +1138,19 @@
                                     <div class="mod-form">
 
                                         <div id="amount-cntr">
-                                                    <input type="number" value="" id="amount2" class="amount-inputs" placeholder="0.00" oninput="compute(2)"  style="color:var(--dark);text-align:right" onblur="ensureTwoDecimals(this)" step="0.01" min="0"/>
+                                                    <input type="number" value="" id="amount${textcounters}" class="amount-inputs" placeholder="0.00" oninput="compute(2)"  style="color:var(--dark);text-align:right" onblur="ensureTwoDecimals(this)" step="0.01" min="0"/>
                                         </div>
                                     </div>
                                             <div class="mod-form" id="chequetype2">
 
-                                        <div class="input-container">
+                                        <div class="type-input-container">
                                              <select id="check2" class="checque-list"  style="width: 100%;margin-top:10px" hidden >
                                         </select>
                                         </div>
                                     </div>
                                     <div class="mod-form">
 
-                                        <div class="input-container">
+                                        <div class="ref-input-container">
                                                                          <input type="text" value="" id="refno2" class="ref-inputs" placeholder="" hidden  maxlength="15"/>
                                         </div>
                                     </div>
@@ -1124,8 +1174,8 @@
             checklist();
             datevalidation();
             var chrg = '@ViewBag.ChargeAmount';
-            $("#amount2").val(parseFloat(chrg).toFixed(2));
-            $("#amount1").val(formatWithCommas(Math.abs(parseFloat(difference)).toFixed(2)));
+            $("#amount" + textcounters).val(parseFloat(chrg).toFixed(2));
+            $(`#${amountInputId}`).val(formatWithCommas(Math.abs(parseFloat(difference)).toFixed(2)));
         }
 
 
@@ -1184,21 +1234,43 @@
             event.preventDefault();
             var action = $(document.activeElement).val();
             // console.log(action);
-            var checkedValues = [];
+            const divs = document.querySelectorAll('div.sub-content-fees-3'); // Replace 'your-div-class' with the actual class of your divs
 
-            // Loop through each checked checkbox
-           
-            // Output the values (you can do something else with these values)
-            //console.log(parseFloat(removeCommas(checkedValues.join(", "))));
-            
+            const checkedValues = [];
+            const uncheckedValues = [];
+            let selectedMode ="";
+            var isduplicate = false;
+
+            let modeselect;
+            let amountInputElement;
+            let amountInputId;
+            let checkbox;
+            let amountValue;
+            let itId;
+            let chk_modeselect;
+            let chk_amountInputElement;
+            let chk_amountInputId;
+            let chk_checkbox;
+            let chk_checkbox_id;
+            let chk_amountValue;
+            let total_unchk_cash;
+            let totalAmount = 0;
+            let chk_totalAmount = 0;
+            let amountInput;
+            let itValue;
+            let itClass;
+            let chk_typeCntr;
+            let chk_typeCntr_class;
             if (action === "PAY") {
                 var checkboxes = document.querySelectorAll(".select-checkbox");
-                const amount1 = parseFloat(removeCommas($('#totaldue').val()));
+                const totaldue_ = parseFloat(removeCommas($('#totaldue').val()));
                 const balance = parseFloat(removeCommas($('#balance').val()));
-                const amount2 = parseFloat(removeCommas($('#totalpayment').val()));
+                const totalpayment_ = parseFloat(removeCommas($('#totalpayment').val()));
                 const cheque = parseFloat(removeCommas($('#cheque').val()));
                 const amountToCompare = '@ViewBag.ChargeAmount';
-               // console.log(amount1 + " " + amount2);
+                const Feedesc = '@ViewBag.FeeDesc';
+                // console.log(Feedesc);
+               // console.log(totaldue_ + " " + totalpayment_);
                // console.log(amountToCompare);
                 var textcounter = $(".content-filter-2 .sub-content-fees-3").length;
                 var isChecked = false;
@@ -1213,44 +1285,17 @@
                         allSelectedValues = allSelectedValues.concat(selectedValues);
                     });
 
-                    // Display the selected values
                     if (allSelectedValues.length > 0) {
-                        console.log('Selected Payment Methods: ' + allSelectedValues.join(', '));
                     } else {
-                        console.log('No payment methods selected.');
                     }
-                $(".select-checkbox:checked").each(function () {
-                    let find_item;
-
-                    // Assuming allSelectedValues is an array and you want to check if it contains '1,1'
-                    if (allSelectedValues.join(',') === '1,1') {
-                        find_item = '.chequeamount';
-                    } else {
-                        find_item = '.amount-inputs';
-                    }
-
-                    console.log("Looking for:", find_item);
-
-                    // Find the closest parent with the class `.sub-content-fees-3` and get the value from the target input
-                    var value = $(this).closest('.sub-content-fees-3').find(find_item).val();
-
-                    // Check if the value exists before pushing
-                    if (value !== undefined && value !== "") {
-                        checkedValues.push(value);
-                    } else {
-                        console.log("No value found for:", find_item);
-                    }
-                    // alert("Values of checked items: " + checkedValues.join(", "));
-                });
-
-                // Get the selected index
+           
                 var selectedIndex = selectElement.selectedIndex;
-               // console.log("Selected Index:", selectedIndex);
-                // Check if at least one checkbox is checked
                 checkboxes.forEach(function (checkbox) {
                     if (checkbox.checked) {
                         isChecked = true;
+                       
                     }
+                    // console.log(isChecked);
                 });
 
                 var stats = "";
@@ -1262,401 +1307,329 @@
                 }
              
                 var selectElements = document.querySelector('.modeofpayment');
-                checkboxes.forEach(function (checkbox) {
-                    var textcontainer = $(".content-filter-2");
-                    var textcounter = $(".content-filter-2 .sub-content-fees-3").length;
-                    if (checkbox.checked) {
-                    
-                        const userInput = parseFloat($('#totalpayment').val());
-                        var imagePath = '/img/ERROR.webp';// Change this if necessary
+                var checkboxes = document.querySelectorAll(".select-checkbox");
+                var checkedCount = 0;
+                var uncheckedCount = 0;
 
-                        var result = validateRefInputValues();
-                        if (!isNaN(userInput)) {
-                            if (userInput > amountToCompare) {
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].checked) {
+                        checkedCount++;
+                    } else {
+                        uncheckedCount++;
+                    }
+                }
+
+                
+
+                divs.forEach(div => {
+                    const checkbox = div.querySelector('input[type="checkbox"]');
+                    if (checkbox) {
+                        const divValue = div.textContent.trim(); 
+
+                        if (checkbox.checked) {
+                            checkedValues.push(divValue);
+                        } else {
+                            uncheckedValues.push(divValue);
+                        }
+                    }
+                });
+                const subContentFeesElements = document.querySelectorAll('.sub-content-fees-3');
+                let duplicateCount = 0;
+                subContentFeesElements.forEach((element, index) => {
+                    const parentId = element.id;
+                    const amountCntr = element.querySelector('#amount-cntr');
+                    const itCntr = element.querySelector('#it-cntr');
+                    const typeCntr = element.querySelector('.type-input-container');
+                    const refCntr = element.querySelector('.ref-input-container');
+            
+                    if (typeCntr && refCntr) {
+                        // Get the input values
+                        const typeValue = typeCntr.querySelector('select').value; // Assuming type is a select element
+                        const refValue = refCntr.querySelector('input').value;
+
+                        subContentFeesElements.forEach((element2, index2) => {
+                            let parentId2 = element2.id;
+                            let amountCntr2 = element2.querySelector('#amount-cntr');
+                            let itCntr2 = element2.querySelector('#it-cntr');
+                            let typeCntr2 = element2.querySelector('.type-input-container').querySelector('select').value;
+                            let refCntr2 = element2.querySelector('.ref-input-container').querySelector('input').value;
+
+
+                            if (parentId != parentId2) {
+
+                                // console.log('parentId', parentId, parentId2);
+                                // console.log('typeCntr', typeValue, typeCntr2);
+                                // console.log('refCntr', refValue, refCntr2);
+
+                                if (typeValue == typeCntr2 && refValue == refCntr2 && typeValue != '' && typeCntr2 != '')
                                
-                                if (stats === 0) {
-                                    if (checkbox.checked) {
-                                        if (cash < amount2) {
-                                         modalmessage(4);
-                                        }
-                                        else {
-                                           
-                                            modalmessage(1);
-                                        }
-                                    }
-                                    else {
-                                        if (amount1 <= amount2) {
-                                            modalmessage(4);
-                                        }
-                                        else {
-                                            modalmessage(1);
-                                        }
-                                    }
-                                }
-                                else {
+                                    duplicateCount++;
+                                   
+                            }
+
+                        });
+                        // console.log(typeValue + " , " + refValue);
+                        // // Compare with previous elements
+                        // for (let i = 0; i < index; i++) {
+                        //     const previousTypeCntr = subContentFeesElements[i].querySelector('.type-input-container');
+                        //     const previousRefCntr = subContentFeesElements[i].querySelector('.ref-input-container');
+                        
+                        //     // Validate if previous elements are not null
+                        //     if (previousTypeCntr && previousRefCntr) {
+                   
+                        //         const previousTypeValue = previousTypeCntr.querySelector('select').value;
+                        //         const previousRefValue = previousRefCntr.querySelector('input').value;
+                        //         console.log(typeValue + " , " + refValue);
+                        //         console.log(previousTypeValue + " , " + previousRefValue);
+                        //         if ((typeValue === previousTypeValue && refValue === previousRefValue) ||
+                        //             (typeValue === previousRefValue && refValue === previousTypeValue)) 
+                        //             {
+                        //                 isduplicate = true;
+                                    
+                        //                 break;
+                        //             }
+                                   
+                        //     }
+                        // }
+
+
+                    } 
+                    else {
+                        duplicateCount = 0;
+                        // console.log("Type or Ref container not found");
+                    }
+                    amountInput = amountCntr.querySelector('input');
+                    itValue = itCntr.querySelector('input');
+                    amountInputId = amountInput.id;
+                    itId = itValue.id;
+                    amountInputClass = amountInput.className;
+                    itClass = itId.className;
+                    checkbox = element.querySelector('.select-checkbox');
+                    chk_typeCntr = typeCntr.querySelector('select');
+                    chk_typeCntr_class = chk_typeCntr.className;
+                    // console.log(duplicateCount);
+                    if (duplicateCount > 0)
+                    {
+                        isduplicate = true;
+                    }
+                    else
+                    {
+                       
+                        isduplicate = false;
+
+                    }
+                    duplicateCount = 0;
+                    if (checkbox.checked) {
+
+          
+                        
+                         chk_checkbox = element.querySelector(`.${itClass}`);
+                         chk_modeselect = element.querySelector('.modeofpayment');
+                         chk_amountInputElement = element.querySelector(`.${amountInputClass}`);
+                         chk_amountInputId = chk_amountInputElement.id;
+                         chk_checkbox_id = checkbox.id;
+                         chk_amountValue = parseFloat(removeCommas($(`#${chk_amountInputId}`).val()));
+                         chk_selectedMode = chk_modeselect.value;
+                        // chk_amountValue += parseFloat($(`#${chk_amountInputId}`).val()) || 0;
+                         chk_totalAmount += parseFloat(chk_amountValue) || 0;
+                        // if (isduplicate != 0) {
+                        //     modalmessage('duplicate', 0);
+                        // } else if (selectedMode == 0) {
+
+                        //     addItFeeComputation(amountValue, amountInputId, textcounter + 1);
+                        // } else {
+                        //     if (amountToCompare > totalpayment_) {
+                        //         modalmessage('insufficient', 0);
+
+                        //     } else {
+                        //         modalmessage('success');
+                        //     }
+                        //     // modalmessage('duplicate', selectedMode);
+                        // }
+                     
+                        // checkbox.checked = false;
+                       
+                    }
+                    else {
+                         modeselect = element.querySelector('.modeofpayment');
+
+                        selectedMode = modeselect.value;
+                        amountInputElement = element.querySelector(`.${amountInputClass}`);
+                        amountInputId = amountInputElement.id;
+                        amountValue = parseFloat(removeCommas($(`#${amountInputId}`).val()));
+                        // total_unchk_cash += parseFloat(amountValue);
+
+                    
+                        totalAmount += parseFloat(amountValue) || 0;
+                       
+                        // alert('Checked Amount: ' + amountValue + " the selected mode is " + selectedMode);
+                    }
+                    
+                   
+                   
+                    const uncheckedDivIds = [];
+                    const allDivIds = [];
+
+                    subContentFeesElements.forEach(element => {
+                        const checkbox = element.querySelector('.select-checkbox');
+
+                        if (!checkbox.checked) {
+                            const parentId = element.id;
+
+                            uncheckedDivIds.push(parentId);
+                        }
+
+                        const divsWithIds = element.querySelectorAll('div[id]');
+
+                        divsWithIds.forEach(div => {
+                            allDivIds.push(div.id);
+                        });
+                    });
+                 
+
+
+                });
+      
+                // console.log("Checked checkboxes:", checkedCount);
+                if (checkedCount == 0) {
+                    if(textcounter > 1)
+                    {
+                        modalmessage('valid it fee', 0);
+                     
+                    }
+                    else {
+
+                        addItFeeComputation(formatWithCommas(totalAmount.toFixed(2)), 'amount1', textcounter + 1);
+                        modalmessage('success', 0);
+                    }
+                   
+                }
+
+                var amount_prompt = chk_selectedMode == 0 ? "Cash" : "Cheque";
+                var unchk_amount_prompt = selectedMode == 0 ? "Cash" : "Cheque";
+                // alert('Checked Amount: ' + chk_totalAmount + " the selected mode is " + selectedMode);
+                // alert(isduplicate);
+                if(isduplicate == true)
+                {
+                    modalmessage('duplicate', 0);
+                }
+                else if (checkedCount != 0) {
+                    const userInput = parseFloat($('#totalpayment').val());
+                    var result = validateRefInputValues();
+                    var deducted = parseFloat(amountToCompare) + parseFloat(totalAmount);
+                    var deducted_totaldue = parseFloat(totaldue_) - parseFloat(amountToCompare);
+                    // alert(deducted + ", " + totaldue_);
+                    if (!isNaN(userInput)) {
+                        var itemselected = allSelectedValues.join(', ');
+                        // console.log(itemselected);
+                        // alert(itemselected)
+                     
+                        if (chk_selectedMode == 1) {
+                            if (chk_totalAmount > amountToCompare) {
                               
-                                    if (cheque > amount2) {
-                                        if (result === true) {
-                                            alert("here");
-                                            modalmessage(6);
-                                        }
-                                        else {
-                                            if (parseFloat(removeCommas(checkedValues.join(", "))) > amountToCompare) {
-                                                modalmessage(5);
-                                            }
-                                            else
-                                            {
-                                                alert("here");
-                                                modalmessage(1);
-                                            }
-                                        }
-                                    }
-                                    else {
-                                        if (amount2 < amountToCompare) {
-                                            if (result === true) {
-                                                alert("here");
-                                                modalmessage(6);
-                                            }
-                                            else {
-                                                if (parseFloat(removeCommas(checkedValues.join(", "))) > amountToCompare) {
-                                                    modalmessage(5);
-                                                }
-                                                else {
-                                                    alert("here");
-                                                    modalmessage(1);
-                                                }
-                                            }
-                                          
-                                        }
-                                        else {
-                                            if (result === true) {
-                                                if (textcounter == 1) {
-
-                                                    if (selectedIndex === 1) {
-                                                        if (parseFloat(removeCommas(checkedValues.join(", "))) > amountToCompare) {
-                                                            modalmessage(5);
-                                                        }
-                                                        else {
-                                                            // alert("here");
-                                                             if (amount1 > amount2) {
-                                                              
-                                                                modalmessage(4);
-                                                             }
-                                                             else
-                                                             {
-
-                                                                modalmessage(1);
-                                                             }
-                                                        }
-                                                    }
-
-                                                }
-                                                else {
-
-                                                    modalmessage(6);
-                                                }
-                                            }
-                                            else {
-                                      
-                                                modalmessage(1);
-                                            }
-                                        
-                                        }
-
-                                    }
-                                }
-
-
+                                modalmessage('amount < pf', amount_prompt);
+                            }
+                            else if(chk_totalAmount < amountToCompare )
+                            {
+                                modalmessage('insufficient');
                             }
                             else {
                               
-                                if (stats === 0) {
-                                    alert("dito cash");
-                                }
-                                else 
-                                {
-                                    // alert("dito cheuqe");
-                                    // alert(allSelectedValues.join(', '));
-                                    if (allSelectedValues.join(', ') == '0,0') {
-                                       
-                                        modalmessage(1);
-                                    }
-                                    else if (allSelectedValues.join(', ') == '1,1') {
-                                        modalmessage(2);
-                                    }
-                                    else
-                                    {
-                             
-                                            if (parseFloat(removeCommas(checkedValues.join(", "))) > amountToCompare) {
-                                                modalmessage(5);
-                                            }
-                                            else {
-                                               // console.log(amount1 + ","+amount2);
-                                                if (amount1 > amount2) {
-                                                    
-                                                    modalmessage(4);
-                                                }
-                                                else {
-                                                if (result === true) {
-                                                    if (textcounter == 1) {
-
-                                                        if (selectedIndex === 1) {
-                                                            if (parseFloat(removeCommas(checkedValues.join(", "))) > amountToCompare) {
-                                                                modalmessage(5);
-                                                            }
-                                                            else
-                                                            {
-                                                                modalmessage(1);
-                                                            }
-                                                        }
-                                                       
-                                                    }
-                                                    else {
-                                                      
-                                                        modalmessage(6);
-                                                    }
-                                                   
-                                                }
-                                                else {
-                                                    // let checkedInputIds = [];
-
-                                                    // $(".select-checkbox:checked").each(function () {
-                                                    //     // Find the closest parent div that contains the checkbox and look for the input inside the div with id "amount-cntr"
-                                                    //     let inputId = $(this).closest('.sub-content-fees-3').find('#amount-cntr input').attr('id');
-
-                                                    //     if (inputId) {
-                                                    //         checkedInputIds.push(inputId); // Add the input id to the array
-                                                    //     }
-                                                    // });
-
-                                                    // console.log(checkedInputIds);
-                                                    // const value2 = parseFloat(removeCommas($('#totaldue').val())) || 0;
-                                                    // const difference = amountToCompare - value2;
-                                                    // console.log(difference);
-                                                    // const positiveDifference = Math.max(0, difference);
-                                                    // if (checkedInputIds != 'amount1') {
-                                                       
-                                                    //     checkedInputIds.forEach(function (inputId) {
-                                                    //         $("#amount1").val(formatWithCommas(Math.abs(parseFloat(difference)).toFixed(2)));
-                                                    //         $("#" + inputId).val(amountToCompare); // Set the value of the input to amountToCompare
-                                                    //     });``
-
-                                                    // }
-                                                    // else
-                                                    // {
-                                                    //     $("#amount2").val(formatWithCommas(Math.abs(parseFloat(difference)).toFixed(2)));
-                                                    //     checkedInputIds.forEach(function (inputId) {
-                                                      
-                                                    //         $("#" + inputId).val(amountToCompare); // Set the value of the input to amountToCompare
-                                                    //     });
-                                                    // }
-                                                   
-                                                   
-                                                    // modalmessage(1);
-                                                    if (parseFloat(removeCommas(checkedValues.join(", "))) > amountToCompare) {
-                                                     
-
-                                                        modalmessage(5);
-                                                    }
-                                                    else if (parseFloat(removeCommas(checkedValues.join(", "))) < amountToCompare) { 
-                                                        modalmessage(4);
-                                                    }
-                                                    else
-                                                    {
-                                                        modalmessage(1);
-                                                    }
-                                                }
-                                                   
-                                                }
-                                            }
-                                         
-                                    }
-                                }
-                                // modalmessage(5);
+                                itemsselected(itemselected, totaldue_, totalpayment_, amount_prompt);
+                               
                             }
                         }
                         else {
-                            modalmessage(3);
-                        }
-                    }
-                    else {
-                  
-                        if (!isNaN(amount1) && !isNaN(amount2)) {
-                        
-                                if (!isChecked) {
-                             
-                                    if (amount1 <= amount2) {
-                                   
-                                        if (textcounter == 1) {
+                            if (chk_totalAmount < amountToCompare) {
+                           
+                                modalmessage('insufficient', 0);
+                            }
+                            else if (chk_totalAmount > amountToCompare) {
 
-                                            if (selectedIndex === 1) {
-                                                modalmessage(2);
-                                            }
-                                            else {
-
-                                                modalmessage(1);
-                                            }
-                                                var selectedIndexs = selectElements.selectedIndex == 0 ? addItFeeComputation() : '';
-                                        }
-                                        else {
-                                
-                                        if (selectedIndex == 1) {
-                                            if (cheque >= amountToCompare) {
-                                                if (result === true) {
-                                                    alert("here");
-                                                    modalmessage(6);
-                                                }
-                                                else {
-                                                     if (allSelectedValues.join(', ') == '0, 0') {
-                                                    
-                                                    modalmessage(1);
-                                                }
-                                                else if (allSelectedValues.join(', ') == '1, 1') {
-                                                    modalmessage(2);
-                                                } else {
-                                                 
-                                                    modalmessage(1);
-                                                }
-                                                }
-                                              
-                                            }
-                                            else {
-                                                modalmessage(2);;
-                                            }
-                                        }
-                                        else {
-                                            if (allSelectedValues.join(', ') == '0,0') {
-                                         
-                                                modalmessage(1);
-                                            }
-                                            else if (allSelectedValues.join(', ') == '1,1') {
-                                                modalmessage(2);
-                                            }
-                                            else if (allSelectedValues.join(', ') == '0, 1' || allSelectedValues.join(', ') == '1, 0') {
-                                                if (!isChecked) {
-                                                    modalmessage(2);
-                                                }
-                                                else {
-                                                 
-                                                    modalmessage(1);
-                                                }
-
-
-                                            }
-                                            else {
-                                                if (amount1 <= amount2) {
-                                                     if (allSelectedValues.join(', ') == '0, 0') {
-                                                        modalmessage(2);
-                                                     }else
-                                                     {
-                                                              modalmessage(1);
-                                                     }
-                                               
-                                                }
-                                                else {
-                                                    modalmessage(4);
-
-                                                }
-
-                                            }
-                                        }
-                                        }
-                                       
-                                      
-                                    }
-                                    else {
-                    
-                          
-                                    // var selectedIndexs = selectElement.selectedIndex == 0 ? addItFeeComputation() : '';
-                            
-                                
-                                    // console.log(selectElement);
-                                        // alert(textcounter);
-                            
-                                        if (amount1 <= amount2) {
-                                            if (textcounter == 1) {
-                                            
-                                                modalmessage(1);
-
-                                                var selectedIndexs = selectElements.selectedIndex == 0 ? addItFeeComputation() : '';
-                                            }
-                                            else
-                                            { 
-                                                if (!isChecked) {
-                                                modalmessage(2);
-                                                }
-                                                else
-                                                {
-                                             
-                                                 modalmessage(1);
-                                                }
-                                               
-                                            }
-                                        }
-                                        else {
-                                        modalmessage(4);
-                                        }
-                                
-                                    }
-                              
-
+                                itemsselected(itemselected, chk_totalAmount, totalpayment_, amount_prompt, amountToCompare, totaldue_);
+                                addItFeeComputation(chk_totalAmount, chk_amountInputId, textcounter + 1);
+                                checkbox = document.getElementById(chk_checkbox_id);
+                                checkbox.checked = false;
+                            }
+                            else if (deducted > totaldue_)
+                            {
+                                modalmessage('amount < of', unchk_amount_prompt);
+                            }
+                            else  {
+                                if (totaldue_ > totalpayment_)
+                                {
+                                    modalmessage('insufficient');
+                                }
+                                else
+                                {
+                                    itemsselected(itemselected, chk_totalAmount, totalpayment_, amount_prompt, amountToCompare, totaldue_);
+                                }
 
                             }
-                        } else 
-                        {
-                            modalmessage(3);
                         }
+                       
+                        // itemsselected(itemselected, cash, totalpayment_);
+
                     }
-                    
-                });
-                // this.submit();
+                    else {
+                        modalmessage('valid numbers', selectedMode);
+                    }
+                }
+                else {
+                    modalmessage('valid it fee', selectedMode);
+                }
+            
             }
             else if(action === 'CANCEL') { 
-                // localStorage.removeItem('MV');
                 window.location.href = '/Dashboard/Index';
             }
         });
-        function modalmessage(value) {
+        function modalmessage(value, mode) {
             let message, validation, status;
-
-            // alert(value);
             switch (value) {
-                case 1:
+                case 'success':
                     message = 'Are you ready to complete your transaction and proceed with the payment?';
                     validation = 'Payment Confirmation';
                     status = '<img id="modalImage" src="/img/SUCCESS.webp" alt="Modal Image" />';
                     break;
-                case 2:
+                case 'valid it fee':
                     message = 'IT Fee is required!';
                     validation = 'Warning';
                     status = '<img id="modalImage" src="/img/ERROR.webp" alt="Modal Image" />';
                     break;
-                case 3:
+                case 'valid numbers':
                     message = 'Please enter valid numbers in both fields.';
                     validation = 'Warning';
                     status = '<img id="modalImage" src="/img/ERROR.webp" alt="Modal Image" />';
                     break;
-                case 4:
+                case 'insufficient':
                     message = 'Payment is Insufficient';
                     validation = 'Warning';
                     status = '<img id="modalImage" src="/img/ERROR.webp" alt="Modal Image" />';
                     break;
-                case 5:
-                    message = 'The Amount should not be greater than the amount of processing fee/operations fee';
+                case 'amount < pf':
+                    message = 'The '+ mode +' Amount entered should not be greater than the amount of Processing Fee';
                     validation = 'Warning';
                     status = '<img id="modalImage" src="/img/ERROR.webp" alt="Modal Image" />';
                     break;
-                case 6:
-                    message = 'Duplicate CHEQUE TYPE and Reference No. Check entered value and input again';
+                case 'duplicate':
+                    message = 'Duplicate Cheque and Ref No. Check the entered value and input again';
                     validation = 'Warning';
                     status = '<img id="modalImage" src="/img/ERROR.webp" alt="Modal Image" />';
                     break;
+                    
+                case 'amount < of':
+                    message = 'The '+ mode +' Amount entered should not be greater than the amount of Operations Fee';
+                    validation = 'Warning';
+                    status = '<img id="modalImage" src="/img/ERROR.webp" alt="Modal Image" />';
+                    break;
+
                 default:
                     message = 'Are you ready to complete your transaction and proceed with the payment?';
                     validation = 'Payment Confirmation';
                     status = '<img id="modalImage" src="/img/SUCCESS.webp" alt="Modal Image" />';
             }
-
+       
             // Elements selection
             const elements = document.querySelectorAll(".modal-header");
             const contents = document.querySelectorAll(".modal-content");
@@ -1707,6 +1680,66 @@
             // Show modal
             $("#alertmodal").modal('show');
         }
+        function itemsselected(value, cash, totalpayment_, amount_prompt, amountToCompare, totaldue_) {
+                // console.log(value);
+                switch (value) {
+                    case '0':
+                        if (cash < totalpayment_) {
+                            modalmessage('insufficient');
+                        } else {
+                            modalmessage('success');
+                        }
+                        break;
+                    case '1, 1':
+                        if (cash > totalpayment_) {
+                            modalmessage('insufficient');
+                        } 
+                        else if (cash < totalpayment_) {
+                        // alert(amount_prompt);
+                        modalmessage('amount < of', amount_prompt);
+                        } 
+                        else {
+                            modalmessage('success');
+                        }
+                        break;
+                    case '1, 0':
+                    case '0, 1':
+                       
+                        if (cash > totalpayment_) {
+                            modalmessage('insufficient');
+                        }
+                        else {
+                            modalmessage('success');
+                        }
+                        break;
+                    case '1, 0, 1':
+                    case '0, 1, 1':
+                    case '1, 1, 0':
+                    case '0, 1, 0':
+                    case '0, 0, 1':
+                    case '1, 0, 0':
+                    // alert(cash + " , " + totalpayment_ +" " + totaldue_ +"-" +amountToCompare)
+                    if (amountToCompare < cash) {
+                        modalmessage('amount < pf', 'Cash and Cheque');
+                    }
+                    else if (amountToCompare > cash)
+                    {
+                         modalmessage('insufficient');
+                    }
+                    else if (totaldue_ > totalpayment_) {
+
+                        modalmessage('insufficient');
+                    } else {
+                   
+                        modalmessage('success');
+                    }
+                        break;
+                    default:
+                  
+                        modalmessage('success');
+                }
+        }
+
         function datevalidation()
         {
             const today = new Date().toISOString().split('T')[0];
@@ -1742,11 +1775,11 @@
 
             // Log the result
             if (allSame && values.length > 0) {
-                console.log("All reference input values are the same:", values[0]);
-                modalmessage(2);
+                // console.log("All reference input values are the same:", values[0]);
+               
                 return true; // Values are the same
             } else {
-                console.log("Reference input values are different or empty:", values);
+                // console.log("Reference input values are different or empty:", values);
                 return false; // Values are not the same
             }
         }

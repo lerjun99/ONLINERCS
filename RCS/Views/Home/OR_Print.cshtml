@@ -1,0 +1,293 @@
+﻿@model RCS.Models.MV_Details
+@using System.Globalization 
+
+@{
+    decimal totalDue;
+    decimal chrgamt;
+    decimal.TryParse(Model.Total, out totalDue); // Convert string to decimal
+    var formattedTotalDue = totalDue.ToString("N2", CultureInfo.InvariantCulture);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document with Footer</title>
+    <style>
+        .btn-cancel {
+            width: 100% !important;
+            position: relative !important;
+            border-radius: 99px !important;
+            background-color: #d03a4b !important;
+            border: 3px solid #d03a4b !important;
+            box-sizing: border-box !important;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 10px 55px !important;
+            color: var(--light) !important;
+            transition: all 0.5s ease-in-out !important;
+        }
+
+        .btn-pay {
+            /*      background-color: var(--dark) !important;
+                border: none !important;
+
+
+                font-size: 0.8rem !important;
+
+
+                box-shadow: 1px 2px 2px 1px rgba(116, 113, 113, 0.5) !important;
+                font-weight: bolder !important;
+                height: 35px !important; */
+            width: 100% !important;
+            color: var(--white) !important;
+            transition: all 0.5s ease-in-out !important;
+            padding: 10px 65px !important;
+            border-radius: 15px !important;
+            position: relative !important;
+            border-radius: 99px !important;
+            background-color: #003f88;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: center !important;
+            box-sizing: border-box !important;
+        }
+        .sub-content-mv
+        {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .print-page-md {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .text-regular
+        {
+            font-weight:normal !important;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    @if (Model == null)
+    {
+        <div class="alert" style="
+    text-align: center;
+    ">
+            No data found!
+        </div>
+    }
+else
+ {   <header>
+
+    </header>
+
+    <div class="print-page-md" id="printableArea">
+       @*  <h1>MOTOR VEHICLE DETAILS</h1>
+        <p>PREVIEW.</p> *@
+       
+        <div class="main-container-3">
+            <div class="content-filter" style="margin: 10px 10px 0px 40px;">
+                <div class="sub-content-mv">
+                    <div class="content-filter" style="width: 100%;">
+                        <div class="sub-content-mv" style="width: 100%;">
+                            <div class="mod-form-3" style="display: flex;flex-direction: row;gap: 10px;width: 100%;">
+                              
+                                <div class="input-container" style=" width: 50%;">
+                                    <label class="text-left">Customer</label>
+                                   
+                                </div>
+                                <div class="input-container" style="width: 100%;">
+                                    <label class="text-regular">@Model.CUSTOMER_NAME</label>
+                                </div>
+                            </div>
+                                <div class="mod-form-3" style="display: flex;flex-direction: row;gap: 10px;width: 100%;">
+
+                                    <div class="input-container" style=" width: 50%;">
+                                    <label class="text-left">Plate Number</label>
+
+                                </div>
+                                <div class="input-container" style="width: 100%;">
+                                    <label class="text-regular">@Model.PLATE_NO</label>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="sub-content-mv" style="width: 100%;">
+                            <div class="mod-form-3" style="display: flex;flex-direction: row;gap: 10px;width: 100%;">
+
+                                    <div class="input-container" style=" width: 50%;">
+                                    <label class="text-left">MV File Number</label>
+
+                                </div>
+                                <div class="input-container" style="width: 100%;">
+                                    <label class="text-regular">@Model.MV_FILE_NO</label>
+                                </div>
+                            </div>
+                                <div class="mod-form-3" style="display: flex;flex-direction: row;gap: 10px;width: 100%;">
+
+                                    <div class="input-container" style=" width: 50%;">
+                                    <label class="text-left">Engine Number</label>
+
+                                </div>
+                                    <div class="input-container" style="width: 100%;">  
+                                    <label class="text-regular">@Model.ENGINE_NO</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sub-content-mv" style="width: 100%;">
+                                <div class="mod-form-3" style="display: flex;flex-direction: row;gap: 10px;width: 100%;">
+
+                                    <div class="input-container" style=" width: 50%;">
+                                    <label class="text-left">Chasis Number</label>
+
+                                </div>
+                                    <div class="input-container" style="width: 100%;">
+                                    <label class="text-regular">@Model.CHASIS_NO</label>
+                                </div>
+                            </div>
+                                <div class="mod-form-3" style="display: flex;flex-direction: row;gap: 10px;width: 100%;">
+
+                                    <div class="input-container" style=" width: 50%;">
+                                    <label class="text-left">Make</label>
+
+                                </div>
+                                    <div class="input-container" style="width: 100%;">
+                                    <label class="text-regular">@Model.MAKE</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sub-content-mv" style="width: 100%;">
+                                <div class="mod-form-3" style="display: flex;flex-direction: row;gap: 10px;width: 100%;">
+
+                                    <div class="input-container" style=" width: 50%;">
+                                    <label class="text-left">Series</label>
+
+                                </div>
+                                    <div class="input-container" style="width: 100%;">
+                                    <label class="text-regular">@Model.SERIES</label>
+                                </div>
+                            </div>
+                                <div class="mod-form-3" style="display: flex;flex-direction: row;gap: 10px;width: 100%;">
+
+                                    <div class="input-container" style=" width: 50%;">
+
+                                </div>
+                                <div class="input-container" style="width: 100%;">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-filter" style=" margin-top: 25px;
+                    width: 85%;
+            ">
+            @* <table id="myTable"> *@
+            <table id="FessTable" class="table table-bordered table-hover w-100">
+                <thead>
+                    <th>
+                        FEE DESCRIPTION
+                    </th>
+                    <th style="text-align:right">
+                        FEE AMOUNT
+                    </th>
+                </thead>
+                <tbody>
+                   @foreach(var item in Model.Fees)
+                        {
+                            decimal.TryParse(item.CHARGED_AMT, out chrgamt); // Convert string to decimal
+                            var formattedchrgamt = chrgamt.ToString("N2", CultureInfo.InvariantCulture);
+                            <tr>
+                                <td style="text-align:left">@item.FEE_DESC</td>
+                                <td class="amount" style="text-align:right">@formattedchrgamt</td>
+                            </tr>
+                        }
+                    </tbody>
+
+            </table>
+            <div id="table-footer">
+            </div>
+
+        </div>
+        <div style="display:flex;width:100%;margin-bottom:20px;">
+            <div style="
+    width: 100%;
+    margin-left: 85px;
+">
+                <label class="text-left">Total Amount</label>
+            </div>
+            <div style="
+    width: 100%;
+    text-align: right;
+    margin-right: 90px;
+">
+                    <label class="text-left" id="totalamount">@formattedTotalDue</label>
+            </div>
+               @*  <script>
+                    function calculatetotal() {
+                        var total = 0;
+                        var amount = document.querySelectorAll('#FessTable .amount');
+                        amount.forEach(function (amount) {
+                            total += parseFloat(amount.textContent);
+                        });
+                        document.getElementById('totalamount').textContent = '$' + total.toFixed(2);
+                    }
+                    // window.onload=calculatetotal;
+                </script> *@
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="btn-footer-container" style="
+    margin-right: 60px;
+">
+                <div class="btn-container" style="
+    gap: 10px;
+    ">
+                    <input type="submit" value="PROCESS" id="btn-process" class="btn-pay" />
+                <input type="submit" value="CANCEL" id="btn-cancel" class="btn-cancel"  />
+            </div>
+
+        </div>
+    </div>
+    }
+    <script>
+        $('#btn-cancel').on('click', function (event) {
+            $('#defaultmodal').modal('hide');
+        });
+        $('#btn-process').on('click', function (event) {
+            event.preventDefault();
+            console.log($("#totalamount").text());
+            localStorage.setItem('totaldue', $("#totalamount").text());
+            window.location.href = '/Home/Process?transid=' + localStorage.getItem('MV');
+        });
+    </script>
+</body>
+</html>
