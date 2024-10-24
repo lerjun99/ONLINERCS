@@ -17,6 +17,7 @@ using System.Text.Json;
 using System.Web.Razor.Parser.SyntaxTree;
 using static RCS.ApplicationEntityModels.EntityModels;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 namespace RCS.Controllers
 {
     public class DashboardController : Controller
@@ -31,25 +32,31 @@ namespace RCS.Controllers
     
         public IActionResult Index()
         {
+            string datefrom_res = "";
+            string datefrom_wi_res = "";
             var datefrom = getDetails().GetAwaiter().GetResult().Where(a => a.SETTLEMENT_TYPE == "OP").OrderBy(a => a.TXN_DATE).FirstOrDefault();
             var datefrom_wi = getDetails().GetAwaiter().GetResult().Where(a => a.SETTLEMENT_TYPE == "WI").OrderBy(a => a.TXN_DATE).FirstOrDefault();
+           
+                datefrom_res = datefrom == null?  DateTime.Now.ToString("yyyy-MM-dd") : datefrom.TXN_DATE;
+                datefrom_wi_res = datefrom_wi == null ?DateTime.Now.ToString("yyyy-MM-dd") : datefrom_wi.TXN_DATE;
+            
             var model = new datefilter
             {
-                datefrom = datefrom.TXN_DATE,
-                datefrom_wi= datefrom_wi.TXN_DATE
+                datefrom = datefrom_res,
+                datefrom_wi = datefrom_wi_res
 
             };
             return View(model);
         }
         public IActionResult AlertMessage(string message,string status)
         {
-                var model = new AlertMessage
-                {
-                    Message = message,
-                    Status = status
-                };
-                return PartialView("AlertMessage",model);
-            
+            var model = new AlertMessage
+            {
+                Message = message,
+                Status = status
+            };
+            return PartialView("AlertMessage", model);
+
         }
         public IActionResult PrintOR(string ornum)
         {
@@ -265,7 +272,7 @@ namespace RCS.Controllers
                     {
                         var newItem = new OrDetailsVM
                         {
-                            TXN_ID = item.TXN_ID,
+                            TXN_ID = item.TXN_ID+" - "+ item.SEQ_INDICATOR,
                             OR_NO = item.OR_NO,
                             OR_DATE = item.OR_DATE,
                             OFFICE_CODE = item.OFFICE_CODE,
@@ -301,7 +308,7 @@ namespace RCS.Controllers
                         {
                             newItem.TransactionTxnCodes.Add(new TransactionTxnCode
                             {
-                                TXN_CODE = txnCode.TXN_CODE
+                                TXN_CODE = txnCode.TXN_CODE 
                             });
                         }
 
@@ -801,6 +808,42 @@ namespace RCS.Controllers
                          
                     }
 
+
+                }
+            }
+            catch (Exception ex) 
+            {
+                 status = ex.GetBaseException().Message;
+            }
+            return Json(new { stats = status });
+        }
+        public class printedstatus
+        {
+            public string? ornum { get; set; }
+        }
+        [HttpPost]
+        public async Task<IActionResult> SetOrPrintedSttus(printedstatus data)
+        {
+            string status = "";
+            try
+            {
+                var datas = new List<RequestParameter>
+        {
+            new RequestParameter { ParameterName = "USER_ID", ParameterValue = "DO0104", ParameterType = "ST" },
+            new RequestParameter { ParameterName = "OR_NO", ParameterValue = data.ornum, ParameterType = "ST" }
+        };
+                List<TokenResult> tokenResults = GetTokenAsync().GetAwaiter().GetResult();
+                HttpClient client = new HttpClient();
+                var url = _Ipsettings.ipaddress + "/api/OR/SetORPrintedStatus";
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tokenResults[0].Token);
+
+                StringContent content = new StringContent(JsonConvert.SerializeObject(datas), Encoding.UTF8, "application/json");
+                using (var response = await client.PostAsync(url, content))
+                {
+                    status = await response.Content.ReadAsStringAsync();
+                    var baseResult = JsonConvert.DeserializeObject<BaseResult>(status);
+                    var apiResponse = JsonConvert.DeserializeObject<ApiResponse>(status);
+                    status = apiResponse.BaseResult.Status;
 
                 }
             }

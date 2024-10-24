@@ -7,14 +7,221 @@
         message = ViewData["Message"].ToString();
     }
 }
+<style>
+    .btn-NO {
+        width: 100% !important;
+        position: relative !important;
+        border-radius: 99px !important;
+        /* background-color: #d03a4b !important; */
+        border: 3px solid #d03a4b !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px 55px !important;
+        color: #d03a4b !important;
+        transition: all 0.5s ease-in-out !important;
+    }
+
+    .btn-pay {
+        /*      background-color: var(--dark) !important;
+                        border: none !important;
+
+
+                        font-size: 0.8rem !important;
+
+
+                        box-shadow: 1px 2px 2px 1px rgba(116, 113, 113, 0.5) !important;
+                        font-weight: bolder !important;
+                        height: 35px !important; */
+        width: 100% !important;
+        color: var(--white) !important;
+        transition: all 0.5s ease-in-out !important;
+        padding: 10px 65px !important;
+        border-radius: 15px !important;
+        position: relative !important;
+        border-radius: 99px !important;
+        background-color: #003f88;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+</style>
 <div id="dashboard-main-container">
-    <div class="title-main-container-inquiry">
-        <div class="content-container">
-            <span class="text-title">Cancel OR</span>
+        <div class="title-main-container-inquiry">
+            <div class="content-container">
+                <span class="text-title">OR Cancellation</span>
+
+            </div>
+        </div>
+
+        <div class="top-main-container ">
 
         </div>
-    </div>
+    <div class="main-container-inquiry">
+        <div class="content-filter" style="margin-left: 15px;">
+            <div class="sub-content">
+                <div class="mod-form">
+                   
+                    <div class="input-container">
+                    
+                    </div>
+                </div>
+                <div class="mod-form-2">
+                </div>
+            </div>
+        </div>
+            <form id="submitform">
+        <div class="content-filter">
+            <div class="inq-content-fees">
+                <div class="mod-form">
+                    <span class="text-left">Reason for Cancellation</span>
+                    <select id="reasons" style="width: 100%;margin-top:10px" required >
+                    </select>
+                    @* <input type="text" value="DO0104" id="issueid" class="mod-inputs" placeholder="" style="text-align:left !important" disabled/> *@
+                </div>
+                <div class="mod-form">
+                    <span class="text-left">OR No.</span>
+                    <div class="input-container">
+                        <input type="text" value="" id="ornum" class="mod-inputs" placeholder="" style="text-align:left !important" required/>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="content-filter">
+            <div class="inq-content-fees">
+                <div class="mod-form">
+                    <span class="text-left">Remarks</span>
+                    <input type="text" value="" id="remarks" class="mod-inputs" placeholder="" style="text-align:left !important"  />
 
-    <div class="top-main-container ">
+                </div>
+               
+            </div>
+        </div>
+        <hr />
+        <div class="content-filter">
+            <div class="inq-content-fees">
+                <div class="mod-form">
+                    <span class="text-left">Authentication</span>
+                    
+
+                </div>
+
+            </div>
+        </div>
+        <div class="content-filter">
+            <div class="inq-content-fees">
+            
+                <div class="mod-form-name" > 
+                    <span class="text-left">Cashier Passowrd</span>
+                    <input type="password" value="" id="cashpass" class="mod-inputs" placeholder="" style="text-align:left !important" />
+                </div>
+                <div class="mod-form-name">
+                    <span class="text-left">Supervisor ID</span>
+                    <input type="text" value="DO0104" id="supid" class="mod-inputs" placeholder="" style="text-align:left !important" disabled />
+                </div>
+                <div class="mod-form-name">
+                    <span class="text-left">Supervisor Password</span>
+                    <input type="password" value="" id="suppass" class="mod-inputs" placeholder="" style="text-align:left !important" />
+                </div>
+             
+
+                
+            </div>
+        </div>
+
+        <div class="tbl-btn-container">
+            <div class="btn-footer-container">
+                <div class="btn-container" style="gap:10px">
+            <input type="submit" value="CLEAR" id="btn-refresh" class="btn-NO" style=" border: 3px solid #003f88 !important;color:#003f88 !important" />
+  
+                    <input type="submit" value="CONTINUE" id="btn-process" class="btn-pay"  />
+                    <i class="fa-solid fa-play" style="
+                        position: absolute;
+                        right: 170px;
+                        color: white;
+                    "></i>
+         
+                </div>
+
+            </div>
+        </div>
+        </form>
     </div>
 </div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+
+     
+                $.ajax({
+                    url: "/Miscellaneous/Reasonlist",
+                    data: {},
+                    type: "POST",
+                    datatype: "json"
+                })
+                    .done(function (data) {
+                     
+                        $("#reasons").append('<option value="0" disabled selected>-Select Reason for Cancellation-</option>');
+                        for (var i = 0; i < data.length; i++) {
+                        $("#reasons").append('<option value="' + data[i].reasoN_CODE + '">' + data[i].reasoN_DESC + "</option>");
+                        }
+                    });
+
+        });
+        const btnRefresh = document.getElementById('btn-refresh');
+        btnRefresh.addEventListener('click', () => {
+            $("#ornum").val(''); // Clear the input field
+            $("#remarks").val(''); // Clear the input field
+            $("#cashpass").val(''); // Clear the input field
+            $("#supid").val(''); // Clear the input field
+            $("#suppass").val(''); // Clear the input field
+            $("#reasons").val('0'); // Clear the input field
+        });
+        $("#submitform").on("submit", function (event) {
+            event.preventDefault();
+            if ($("#ornum").val() === '') {
+                alert("OR # Cannot be Empty")
+            }
+            else if ($("#reasons").val() == '0') {
+                alert("Reason for cancellation cannot be empty")
+            }
+            else {
+                window.location.href = '/Inquiry/FeesPayment?ornum=' + $("#ornum").val();
+            }
+            localStorage.setItem('indicator', 'cancelor');
+            localStorage.setItem('reason', $("#reasons").val());
+            localStorage.setItem('ornum', $("#ornum").val());
+            localStorage.setItem('remarks', $("#remarks").val());
+            localStorage.setItem('status', 'Issued');
+
+
+
+        });
+        function proceed() {
+            if ($("#ornum").val() === '') {
+                alert("OR # Cannot be Empty")
+            }
+            else if ($("#reasons").val() == '0')
+            {
+                alert("Reason for cancellation cannot be empty")
+            }
+            else
+            {
+                window.location.href = '/Inquiry/FeesPayment?ornum=' + $("#ornum").val();
+            }
+            localStorage.setItem('indicator', 'cancelor');
+            localStorage.setItem('reason', $("#reasons").val());
+            localStorage.setItem('ornum', $("#ornum").val());
+            localStorage.setItem('remarks', $("#remarks").val());
+            localStorage.setItem('status', 'Issued');
+
+    
+        }
+    </script>
+}

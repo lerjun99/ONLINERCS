@@ -14,15 +14,29 @@
     var formattedTotalDue = totalDue.ToString("N2", CultureInfo.InvariantCulture);
 }
 <style>
-    #validation
-    {
-        font-weight: bolder;
-        font-size: 30px;
+    table.dataTable.no-footer {
+        border: 2px solid #d3c8c8 !important;
+        border-radius: 15px !important;
+    }
+    #message1 {
+        font-size: 20px;
+        text-align: center;
     }
 
-    #message {
+    #validation1 {
+        font-weight: bolder;
         font-size: 25px;
-        text-align:center;
+        text-align: center;
+    }
+    #message {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #validation {
+        font-weight: bolder;
+        font-size: 25px;
+        text-align: center;
     }
     .btn-cancel {
         width: 100% !important;
@@ -681,8 +695,8 @@
                         flex-direction: column;
                         align-items: center;
                     ">
-                    <span id="validation">ERROR</span>
-                    <span id="message"></span>
+                    <span id="validation1">ERROR</span>
+                    <span id="message1"></span>
                 </div>
                
             </div>  
@@ -721,7 +735,7 @@
         });
        
         function process_payment() {
-           //   loadModal('/Dashboard/PrintOR?transid=' + localStorage.getItem('ornum'), '#defaultmodal', 'PRINT OFFICIAL RECEIPT OR', 'xl', false)
+       // loadModal('/Dashboard/PrintOR?transid=' + localStorage.getItem('ornum'), '#defaultmodal', 'PRINT OFFICIAL RECEIPT OR', 'xl', false)
 
             var cus_id = "@Model.CUSTOMER_ID";
             var data = {};
@@ -755,7 +769,7 @@
                     $("#alertmodal").modal('hide');
                     $('#submitform input, #submitform textarea, #submitform select').attr('disabled', 'disabled');
                     $('#btn-cancel').removeAttr('disabled');
-                    loadModal('/Dashboard/PrintOR?ornum=' + localStorage.getItem('ornum'), '#defaultmodal', 'PRINT OFFICIAL RECEIPT OR', 'xl', false)
+                    loadModal('/Dashboard/PrintOR?ornum=' + localStorage.getItem('ornum'), '#defaultmodal', 'OR PREVIEW', 'xl', false)
 
                 });
            
@@ -1269,6 +1283,7 @@
                 const cheque = parseFloat(removeCommas($('#cheque').val()));
                 const amountToCompare = '@ViewBag.ChargeAmount';
                 const Feedesc = '@ViewBag.FeeDesc';
+
                 // console.log(Feedesc);
                // console.log(totaldue_ + " " + totalpayment_);
                // console.log(amountToCompare);
@@ -1419,6 +1434,7 @@
 
                     }
                     duplicateCount = 0;
+                  
                     if (checkbox.checked) {
 
           
@@ -1492,7 +1508,10 @@
       
                 // console.log("Checked checkboxes:", checkedCount);
                 if (checkedCount == 0) {
-                    if(textcounter > 1)
+                    if (isNaN(totalpayment_)) {
+                        modalmessage('NaN');
+                    }
+                    else if(textcounter > 1)
                     {
                         modalmessage('valid it fee', 0);
                      
@@ -1623,6 +1642,11 @@
                     validation = 'Warning';
                     status = '<img id="modalImage" src="/img/ERROR.webp" alt="Modal Image" />';
                     break;
+                case 'NaN':
+                    message = 'Invalid Inputs';
+                    validation = 'Warning';
+                    status = '<img id="modalImage" src="/img/ERROR.webp" alt="Modal Image" />';
+                    break;
 
                 default:
                     message = 'Are you ready to complete your transaction and proceed with the payment?';
@@ -1674,8 +1698,8 @@
             // Display the message in the alert modal
             // alert(message + "<br>" + validation + "<br>" + status + value);
 
-            document.getElementById('message').textContent = message;
-            document.getElementById('validation').textContent = validation;
+            document.getElementById('message1').textContent = message;
+            document.getElementById('validation1').textContent = validation;
 
             // Show modal
             $("#alertmodal").modal('show');

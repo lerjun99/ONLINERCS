@@ -179,9 +179,9 @@
                     const ornum ="";
                     const status ="";
                     var tableId = '#myTable';
-                    // setInterval(function () {
-                    //     location.reload();
-                    // }, 60000);
+                    setInterval(function () {
+                        location.reload();
+                    }, 60000);
                     // Check if DataTable is already initialized
                     if ($.fn.DataTable.isDataTable(tableId)) {
                         $(tableId).DataTable().clear().destroy();

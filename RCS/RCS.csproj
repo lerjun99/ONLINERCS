@@ -24,6 +24,10 @@
 
 	</ItemGroup>
 	<ItemGroup>
+	  <Content Update="Views\Inquiry\FeesPayment.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
 	  <Content Update="wwwroot\css\footer.css">
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

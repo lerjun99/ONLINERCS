@@ -1,0 +1,884 @@
+﻿@model RCS.ApplicationEntityModels.EntityModels.MyViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string message = "";
+    if (ViewData["Message"] != null)
+    {
+        message = ViewData["Message"].ToString();
+    }
+
+}
+<style>
+    a:hover
+    {
+        text-decoration:none;
+    }
+
+    .cancelor:hover
+    {
+        opacity:0.5;
+        transform: scale(1.1);
+    }
+    .cancelor
+    {
+        cursor: pointer;
+        /* display: flex; */
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+        background-color: red;
+        border-radius: 150px;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        display: flex !important;
+        align-content: center;
+    }
+    #message1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #validation1 {
+        font-weight: bolder;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #message {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #validation {
+        font-weight: bolder;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .btn-cancel {
+        width: 100% !important;
+        position: relative !important;
+        border-radius: 99px !important;
+        background-color: #d03a4b !important;
+        border: 3px solid #d03a4b !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px 55px !important;
+        color: var(--light) !important;
+        transition: all 0.5s ease-in-out !important;
+    }
+
+    .btn-NO {
+        width: 100% !important;
+        position: relative !important;
+        border-radius: 99px !important;
+        border: 3px solid #d03a4b !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px 55px !important;
+        color: #d03a4b !important;
+        transition: all 0.5s ease-in-out !important;
+    }
+
+    .img-header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-pay {
+        width: 100% !important;
+        color: var(--white) !important;
+        transition: all 0.5s ease-in-out !important;
+        padding: 10px 65px !important;
+        border-radius: 15px !important;
+        position: relative !important;
+        border-radius: 99px !important;
+        background-color: #003f88;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+        border: none !important;
+    }
+
+    .sub-content-mv {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .print-page-md {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .text-regular {
+        font-weight: normal !important;
+    }
+
+
+    input[type="text"]:enabled, input[type="number"]:enabled {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    /* Styling for disabled elements */
+    input[type="text"]:disabled, input[type="number"]:disabled {
+        background-color: #d3d3d3;
+        color: #6c757d;
+        cursor: not-allowed;
+    }
+
+    .dynamic-element.changed {
+        margin-top: 20px;
+        color: red;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .dynamic-element {
+        margin-top: 20px;
+        color: red;
+        cursor: pointer;
+        margin: 20px 0px 0px 150px;
+    }
+
+    #fees_details th, td {
+        text-align: center !important;
+    }
+
+    .collapsible {
+        color: var(--dark);
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .mod-formd {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mod-forms {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .mod-input {
+        font-size: 1.2rem;
+        height: 35px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #e7e6e6;
+        box-shadow: inset 1px 2px 1px 1px rgba(116, 113, 113, 0.5);
+        border-radius: 5px;
+        width: 100%;
+        color: var(--secondary-dark);
+        margin-top: 10px;
+    }
+
+    .amount-inputs {
+        font-size: 1.2rem;
+        height: 35px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #e7e6e6;
+        box-shadow: inset 1px 2px 1px 1px rgba(116, 113, 113, 0.5);
+        border-radius: 5px;
+        width: 100%;
+        color: var(--secondary-dark);
+        margin-top: 10px;
+    }
+
+    .chequeamount {
+        font-size: 1.2rem;
+        height: 35px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #e7e6e6;
+        box-shadow: inset 1px 2px 1px 1px rgba(116, 113, 113, 0.5);
+        border-radius: 5px;
+        width: 100%;
+        color: var(--secondary-dark);
+        margin-top: 10px;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    table {
+        border-radius: 10px;
+    }
+
+    .btn-cancel {
+        width: 100% !important;
+        position: relative !important;
+        border-radius: 99px !important;
+        background-color: #d03a4b !important;
+        border: 3px solid #d03a4b !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px 55px !important;
+        color: var(--light) !important;
+        transition: all 0.5s ease-in-out !important;
+    }
+
+    .btn-pay {
+        /*      background-color: var(--dark) !important;
+            border: none !important;
+
+
+            font-size: 0.8rem !important;
+
+
+            box-shadow: 1px 2px 2px 1px rgba(116, 113, 113, 0.5) !important;
+            font-weight: bolder !important;
+            height: 35px !important; */
+        width: 100% !important;
+        color: var(--white) !important;
+        transition: all 0.5s ease-in-out !important;
+        padding: 10px 65px !important;
+        border-radius: 15px !important;
+        position: relative !important;
+        border-radius: 99px !important;
+        background-color: #003f88;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .mod-form span {
+        font-size: 13px;
+        font-weight: 900;
+        color: var(--gray-dark);
+        height: 50px;
+        font-size: 17px !important;
+    }
+
+    .mod-forms span {
+        font-size: 13px;
+        font-weight: 900;
+        color: var(--gray-dark);
+        height: 50px;
+        font-size: 17px !important;
+    }
+
+    .mod-form-5 span {
+        font-size: 13px;
+        font-weight: 900;
+        color: var(--secondary-dark);
+    }
+
+    .mod-form-5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 15px 25px 15px;
+    }
+
+    .mod-form-3 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .mod-form-side span {
+        font-size: 15px;
+        font-weight: 900;
+        color: var(--gray-dark);
+    }
+
+    .title {
+        color: var(--dark);
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .sub-title {
+        color: var(--dark);
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .sub-title-2 {
+        color: var(--accent);
+        font-size: 15px;
+        font-weight: bolder;
+        margin: 10px;
+    }
+
+    .title-content {
+        margin: 25px;
+    }
+
+    .card-content {
+        margin: 25px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); */
+        margin: 25px;
+        background-color: white !important;
+    }
+</style>
+@if (Model.Model1 == null)
+        {
+
+    <div class="alert" style="text-align: center;width: 100%;height: 100%;display: flex;align-items: center;align-content: center;justify-content: center;font-size: 50px;color: red;margin-left: 250px;">
+                No data found!
+            </div>
+        }
+        else
+        {
+    var totalDue = (dynamic)null;
+    decimal chrgamt;
+
+    @foreach (var payment in Model.Model1.ORPaymentModes)
+    {
+        totalDue = @payment.PAYMENT_AMOUNT.ToString("N2");
+    }
+<div id="feespayment-main-container">
+    <div class="fees-main-container">
+            <div>
+                <h4> </h4>
+        </div>
+        <div class="title-content">
+                <a href="@Url.Action("Index","Inquiry")">
+                    <i class="fa-solid fa-arrow-left" style="
+    font-size: 25px;
+    margin-left: 10px;
+    "></i>
+                </a> <span class="title" style="margin-left: 10px !important;">Fees Payment and Details</span>
+        </div>
+        <div class="card-content">
+            <form id="submitform">
+                <div style="overflow:hidden">
+                    <div class="m-3">
+                        <span class="sub-title">Payment</span>
+                    </div>
+                    <div class="content-filter">
+                        <div class="sub-content-fees">
+                            <div class="mod-form">
+                                <span class="text-left">Charges</span>
+                                <div class="input-container">
+
+                                        <input type="text" value="@totalDue" id="charge" class="mod-inputs" placeholder="0.00" disabled />
+                                </div>
+                            </div>
+                            <div class="mod-form">
+                                <span class="text-left">Credits</span>
+                                <div class="input-container">
+                                    <input type="text" value="" id="search" class="mod-inputs" placeholder="0.00" disabled />
+                                </div>
+                            </div>
+                            <div class="mod-form-5">
+                                <span class="text-left" style="font-size: 20px;color:var(--dark);padding-bottom: 5px;height:65px">Total Due</span>
+                                <div class="input-container">
+                                        <input type="text" value="@totalDue" id="totaldue" class="mod-inputs-5" placeholder="0.00" disabled />
+                                </div>
+                            </div>
+                            <div class="mod-form">
+                                <span class="text-left">Total Payment</span>
+                                <div class="input-container">
+                                        @foreach (var payment in Model.Model1.ORPaymentModes)
+                                        {
+                                            <input type="text" value="@payment.PAYMENT_AMOUNT.ToString("N2")" id="totalpayment" class="mod-inputs" placeholder="0.00" disabled />
+                                        }
+                                </div>
+                            </div>
+                            <div class="mod-form">
+                                <span class="text-left">Change/Balance</span>
+                                <div class="input-container">
+                                    <input type="text" value="" id="balance" class="mod-inputs" placeholder="0.00" disabled />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-filter-2">
+                            @foreach (var payment in Model.Model1.ORPaymentModes)
+                            {
+                                <div class="sub-content-fees-3" id="textCont1">
+                                    <div class="mod-form">
+                                        <span class="text-left" style="
+                                        text-align: center !important;
+                                        ">Mode<span style=" color:red;color:red;margin-left: 15px;">*</span></span>
+                                        <div id="mode-cntr">
+                                            <select id="mode1" style="width: 100%;margin-top:10px" onchange="handleChange(1)" class="modeofpayment">
+                                                <option value="@payment.PAYMENT_MODE" selected>@payment.PAYMENT_MODE_DESC</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div style="
+                                    width: 50%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin: 15px;
+                                    ">
+                                        <span class="text-left" style="
+                                  font-size: 13px;
+                                  font-weight: 900;
+                                  color: var(--gray-dark);
+                                  margin-left: 10px;
+                                  height: 50px;
+                                        ">IT Fee</span>
+                                        <div id="it-cntr">
+                                            <input type="checkbox" class="select-checkbox" style="margin-top: 20px;margin-right: 20px;" id="itfee1">
+                                        </div>
+                                    </div>
+                                    <div class="mod-forms">
+                                        <span class="text-left" style="text-align: center !important;">Currency</span>
+                                        <div id="currency-cntr">
+                                            <input type="text" value="PHP" id="currency1" class="mod-input" placeholder="" disabled />
+                                        </div>
+                                    </div>
+                                    <div class="mod-form">
+                                        <span class="text-left" style="text-align: center !important;font-size: 20px !important;color: var(--dark);"><span style=" color:red;color:red;margin-right: 15px;">*</span>Amount</span>
+                                        <div id="amount-cntr">
+                                            <input type="text" value="@payment.PAYMENT_AMOUNT.ToString("N2")" id="amount1" class="amount-inputs" placeholder="0.00" oninput="compute(1)" style="color:var(--dark);text-align:right" onblur="ensureTwoDecimals(this)" step="0.01" min="0" />
+                                        </div>
+                                    </div>
+                                    <div class="mod-form" id="chequetype1">
+                                        <span class="text-left" style="text-align: center !important;"><span style=" color:red;color:red;margin-right: 15px;">*</span>Cheque Type</span>
+                                        <div class="type-input-container">
+                                            <select id="check1" class="checque-list" style="width: 100%;margin-top:10px" hidden>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mod-form">
+                                        <span class="text-left" style="text-align: center !important;"><span style=" color:red;color:red;margin-right: 15px;">*</span>Reference Number</span>
+                                        <div class="ref-input-container">
+                                            <input type="text" value="" id="refno1" class="ref-inputs" placeholder="" hidden maxlength="15" />
+                                        </div>
+                                    </div>
+                                    <div class="mod-form">
+                                        <span class="text-left" style="text-align: center !important;margin-right: 30px;"><span style=" color:red;color:red;margin-right: 15px;">*</span>Cheque Date</span>
+                                        <div id="icon-cntr">
+                                            <input type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" id="dateto1" class="mod-inputs" placeholder="Date" hidden style="
+                                    width: 100%;
+                                    font-size: 20px; " />
+                                            <i class="fas fa-minus-circle dynamic-element" id="removeButton1" onclick="removeitem(1)"></i>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            }
+
+                    </div>
+                    <div class="content-filter">
+                        <div style="margin-left: 30px;gap: 20px;color: var(--dark);width:20%;" id="addInputButton" onclick="addItem(1)">
+
+                            <i class="fas fa-plus-circle"></i><span class="text-left" style="font-size: 15px;font-weight: 900; margin-left:10px; cursor:pointer">Add Mode of Payment</span>
+
+                        </div>
+                        <div style="margin-left: 30px;margin-top:50px">
+
+                            <span class="text-left" style="font-size: 15px;font-weight: 900;color: var(--secondary-dark);">Total</span>
+
+                        </div>
+                        <div class="sub-content-fees">
+                            <div class="mod-form">
+                                <span class="text-left">Cash</span>
+                                <div class="input-container">
+                                    <input type="text" value="" id="cash" class="mod-inputs" placeholder="0.00" disabled />
+                                </div>
+                            </div>
+                            <div class="mod-form">
+                                <span class="text-left">Cheque</span>
+                                <div class="input-container">
+                                    <input type="text" value="" id="cheque" class="mod-inputs" placeholder="0.00" disabled />
+                                </div>
+                            </div>
+                            <div class="mod-form">
+                                <span class="text-left">Deposit/Overpayment</span>
+                                <div class="input-container">
+                                    <input type="text" value="" id="overpayment" class="mod-inputs" placeholder="0.00" disabled />
+                                </div>
+                            </div>
+                            <div class="mod-form">
+
+                                <div class="input-container">
+                                </div>
+                            </div>
+                            <div class="mod-form">
+
+                                <div class="input-container">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="sub-content-fees" style=" margin-bottom: 50px;">
+                            <div class="mod-form">
+                                <div class="input-container">
+                                </div>
+                            </div>
+                            <div class="mod-form">
+
+                                <div class="input-container">
+                                </div>
+                            </div>
+                            <div class="mod-form">
+
+                                <div class="input-container">
+                                </div>
+                            </div>
+                            <div class="mod-form">
+
+                                <div class="input-container">
+                                </div>
+                            </div>
+                            <div class="mod-form-3">
+
+                                <div class="input-container">
+                                        <a class="cancelor" id="cancelor" class="disabled" onclick="prinresult()">
+                                            <i class="fa-solid fa-circle-minus" style="color:white"></i>
+                                            <span style="color: white;">CANCEL OR</span>
+                                        </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card-content">
+            <div style="
+                    display: flex;
+                    width: 100%;
+                ">
+                <div class="m-3" style="
+                        width: 100%;
+                    ">
+                    <span class="sub-title">Fees Details</span>
+
+                </div>
+                <div style="
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 15px 15px 0px 0px;
+                ">
+                    <button class="collapsible"><i class="fa-solid fa-chevron-up" style="font-size:25px"></i></button>
+                </div>
+            </div>
+            <div id="collapsibleContent" class="collapsible-content">
+                <div class="mod-form">
+                    <span class="text-left">List of Charges</span>
+                </div>
+                <div class="content-filter">
+                    <div class="sub-content-fees">
+
+                        <table id="fees_details" class="table table-bordered table-hover w-100">
+                            <thead>
+                            <th>
+                                Fee Code
+                            </th>
+                            <th>
+                                Fee Description
+                            </th>
+                            <th>
+                                Amount
+                            </th>
+                            </thead>
+                            <tbody>
+                                    @foreach (var item in Model.Model1.PaidTransactionFees)
+                                {
+                                    decimal.TryParse(item.FEE_AMOUNT.ToString("N2"), out chrgamt); // Convert string to decimal
+                                    var formattedchrgamt = chrgamt.ToString("N2", CultureInfo.InvariantCulture);
+                                    <tr>
+                                        <td style="text-align:left;color:black">@item.FEE_CODE</td>
+                                        <td class="amount" style="text-align:right;color:black">@item.FEE_DESC</td>
+                                        <td class="amount" style="text-align:right">@formattedchrgamt</td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div style="display: flex;
+    margin-left: 200px;
+">
+                        <div class="mod-formd">
+                        </div>
+                        <div class="mod-formd">
+                            
+                        </div>
+                            <div class="mod-formd" style="font-size: 20px;text-align: right!important;margin-right: 100px;">
+                                <label class="text-left" style="font-size: 20px;">Total</label>
+
+                        </div>
+                        <div class="mod-formd">
+
+                                <div class="input-container" style=" margin-left: 100px !important;">
+                                    <label class="text-left" style="font-weight:bolder;color:var(--dark);font-size:20px">@totalDue</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="fees-side-container" id="stickyColumn" style="
+    margin: 85px 0px 0px 0px;0pxcontain
+    -intrinsic-block-size: auto 100px;85px 0px 0px
+    contain-intrinsic-block-size: auto 100px;
+">
+        <div class="card-content">
+            <div style="overflow-x:auto">
+                <div>
+                    <div class="m-3">
+                        <span class="sub-title">Transaction Details</span>
+                            <div class="m-3" style="
+                        border: 2px solid var(--accent);
+                        border-radius: 15px;width:130px;text-align:center;
+                        margin: 10px;
+                        ">
+                                <span class="sub-title-2" id="status"></span>
+                            </div>
+                    </div>
+                   
+                </div>
+                <div class="sub-content-sidebar">
+                    <div class="mod-form-side">
+                        <span class="text-left">Transaction ID</span>
+                        <div class="input-container">
+
+
+                                <input type="text" value="@Model.Model1.TXN_ID" id="transid" class="mod-inputs-side" placeholder="Transaction ID" disabled />
+                        </div>
+                    </div>
+                    <div class="mod-form-side">
+                        <span class="text-left">Transaction Code</span>
+                        <div class="input-container">
+                                @foreach (var txnCode in Model.Model1.TransactionTxnCodes)
+                            {
+                                <input type="text" value="@txnCode.TXN_CODE" id="transcode" class="mod-inputs-side" placeholder="Transaction Code" disabled />
+                            }
+                        </div>
+                    </div>
+                    <div class="mod-form-side">
+                        <span class="text-left">Date</span>
+                        <div class="input-container">
+                                <input type="text" value="@Model.Model1.OR_DATE" id="date" class="mod-inputs-side" placeholder="Date" disabled />
+                        </div>
+                    </div>
+                    <div class="mod-form-side">
+                        <span class="text-left">Customer Name</span>
+                        <div class="input-container">
+                                <input type="text" value="@Model.Model1.CUSTOMER_NAME" id="customername" class="mod-inputs-side" placeholder="Customer Name" disabled />
+                        </div>
+                    </div>
+                    <div class="mod-form-side">
+                        <span class="text-left">OR Number</span>
+                        <div class="input-container">
+                            <input type="text" value="" id="ornum" class="mod-inputs-side" placeholder="OR Number" disabled />
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+  
+}
+@section Scripts {
+    @if (Model.Model1 != null)
+    {
+    @foreach (var payment in Model.Model1.ORPaymentModes)
+    {
+        var result = (dynamic)null;
+
+        <script>
+            result = "@payment.PAYMENT_MODE_DESC".toLowerCase().trim();
+            if (result === 'cash') {
+                $("#cash").val("@payment.PAYMENT_AMOUNT.ToString("N2")");
+
+            }
+            else if (result === 'cheque') {
+                $("#cheque").val(@payment.PAYMENT_AMOUNT);
+            }
+            else
+            {
+                $("#cash").val("@payment.PAYMENT_AMOUNT.ToString("N2")");
+            }
+
+        </script>
+
+    }
+    }
+<script>
+        $(document).ready(function () {
+            var indicator = localStorage.getItem('indicator')
+            const myDiv = document.getElementById("cancelor");
+            if (indicator == 'inquiry') {
+
+                myDiv.style.display = 'none';
+            }
+            else {
+                myDiv.style.display = 'block';
+            }
+            $("#ornum").val(localStorage.getItem('ornum'));
+            document.getElementById('status').textContent = localStorage.getItem('status');
+            $('#submitform input, #submitform textarea, #submitform select').attr('disabled', 'disabled');
+        });
+
+    var stickyWidth = 0;
+    document.addEventListener('DOMContentLoaded', function () {
+        var column = document.getElementById('stickyColumn');
+        var parentWidth = column.offsetWidth;
+        stickyWidth = parentWidth;
+    });
+
+    var scrollCount = 0;
+
+    $(window).scroll(function () {
+        var element = document.getElementById('stickyColumn');
+        // var divWidth = document.getElementById("feespayment-main-container").offsetWidth;  // Includes padding, borders, scrollbar
+        // or
+        var divWidth = document.getElementById("feespayment-main-container").clientWidth;   // Includes padding, excludes borders, scrollbar
+        const isActive = localStorage.getItem('sidebar-active') === 'true';
+        const sidebar = document.getElementById('mysidebar');
+        const dashboaradsidebar = document.getElementById('dashboard-main-container') == null ? document.getElementById('feespayment-main-container') : document.getElementById('dashboard-main-container');
+
+        //console.log(divWidth);
+        if ($(this).scrollTop() > 180) { // Adjust scroll position as needed
+            scrollCount += 1;
+
+            if (scrollCount == 1) {
+                element.style.position = 'fixed';
+                element.style.width = '30%';
+                element.style.grid = "data10";
+                var colStyles = window.getComputedStyle(element);
+                var rightValue = colStyles.getPropertyValue('right');
+                //console.log(rightValue);
+                var rightValueInt = parseInt(rightValue, 10);
+                element.style.left = rightValueInt + 85 + 'px';
+                element.style.top = '20px';
+
+                element.style.margin = '0px 0px 0px 0px';
+
+            }
+
+
+        } else {
+            element.style.removeProperty('position');
+            element.style.removeProperty('width');
+            element.style.removeProperty('right');
+            element.style.removeProperty('left');
+            element.style.removeProperty('top');
+            element.style.margin = '85px 0px 0px 0px';
+            scrollCount = 0;
+            sidebar.classList.remove('active');
+            dashboaradsidebar.classList.remove('active');
+        }
+    });
+        document.addEventListener("DOMContentLoaded", function () {
+            var content = document.getElementById("collapsibleContent");
+            var button = document.querySelector(".collapsible");
+            var icon = button.querySelector("i");
+            button.addEventListener("click", function () {
+                if (icon.classList.contains("fa-chevron-up")) {
+                    icon.classList.remove("fa-chevron-up");
+                    icon.classList.add("fa-chevron-down");
+
+                    content.style.display = "none";
+
+                } else {
+                    content.style.display = "block";
+                    icon.classList.remove("fa-chevron-down");
+                    icon.classList.add("fa-chevron-up");
+                }
+            });
+
+        });
+
+        const btnRefresh = document.getElementById('cancelor');
+        btnRefresh.addEventListener('click', () => {
+            var data = {};
+            data.OR_NO = localStorage.getItem('ornum');
+            data.REASON_CODE = localStorage.getItem('reason');
+            data.REMARKS = localStorage.getItem('remarks');
+            $.ajax({
+                url: "/Miscellaneous/ORCANCEL",
+                data: {
+                    data: data
+                },
+                type: "POST",
+                datatype: "json"
+            })
+                .done(function (data) {
+
+                    let message;
+                    let validation;
+                    let status;
+                    const cancelButton2 = '<input type="submit" value="YES" id="btn-cancel" class="btn-pay" onclick="success()"/>';
+                    message = 'OR SUCCESSFULLY CANCELED!';
+                    validation = 'The Official Receipt (OR) - ' + localStorage.getItem('ornum') + ' has been successfully cancelled';
+
+                    // Set a 2-second delay before executing the rest of the code
+                    setTimeout(function () {
+                        $('.input-container-button').empty();
+                        $('.input-container-button').append(cancelButton2);
+
+                        loadModal('/Dashboard/AlertMessage?message=' + message + '&status=' + validation, '#alertmodal1', 'PRINT OFFICIAL RECEIPT OR', 'l', false);
+                    }, 2000);
+                  
+
+                });
+
+        });
+
+        function success() {
+            window.location.href = '/Inquiry/Index';
+        }
+</script>
+}

@@ -13,8 +13,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="print.css" media="print">
     <style>
+  
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+        body,html
+        {
+            background-color:white !important
+        }
+        #validation {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .input-container-5 {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #message {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .btn-NO {
+            width: 100% !important;
+            position: relative !important;
+            border-radius: 99px !important;
+            border: 3px solid #d03a4b !important;
+            box-sizing: border-box !important;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 10px 55px !important;
+            color: #d03a4b !important;
+            transition: all 0.5s ease-in-out !important;
+        }
+
         * {
             font-family: 'Roboto', sans-serif;
         }
@@ -31,7 +70,8 @@
             display: flex;
             width: 100%;
             gap: 50px;
-            margin-left: 20px;f
+            margin-left: 20px;
+            f
         }
 
         .img-attr {
@@ -89,23 +129,23 @@
             width: 320px;
             flex-grow: 1;
             margin-left: 15px;
-            margin-top:10px;
+            margin-top: 15px;
         }
 
         .logo-1 {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left:35px;
-            margin-top:10px;
+            margin-left: 35px;
+            margin-top: 20px;
         }
-        .logo-2
-        {
+
+        .logo-2 {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-right: 30px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         .content-text {
@@ -178,6 +218,7 @@
             margin-bottom: 10px;
         }
 
+      
         .contents-6 {
             flex: 1;
             display: flex;
@@ -243,7 +284,7 @@
             font-size: 10px;
             width: 80px;
             text-align: center;
-            margin-left: 7px;
+            margin-left: 0px;
             position: absolute;
             right: 0;
             top: 0;
@@ -294,7 +335,7 @@
             width: 100%;
             font-size: 12px;
             text-align: left;
-            background-color:transparent !important;
+            background-color: transparent !important;
         }
 
         .mod-inputed-02 {
@@ -303,6 +344,14 @@
             width: 70px;
             font-size: 10px;
             text-align: center;
+        }
+
+        .ref_no_class {
+            background: none;
+            border: none;
+            width: 100%;
+            font-size: 10px;
+            text-align: left;
         }
 
         .mod-inputed-03 {
@@ -320,7 +369,7 @@
             font-size: 10px;
             position: relative;
             right: 55px;
-            background-color:transparent !important;
+            background-color: transparent !important;
         }
 
         .or-cus-details {
@@ -361,13 +410,13 @@
             width: 410px !important;
             height: 410px !important;
             margin-left: 50px !important;
-            margin-top: 230px !important;
+            margin-top: 243px !important;
             background-image: url(/img/LTO_LOGO.bmp) !important;
             background-repeat: no-repeat !important;
             background-size: contain !important;
             background-position: center !important;
             opacity: 0.1 !important;
-            z-index: 1; 
+            z-index: 1;
         }
 
 
@@ -378,24 +427,24 @@
         }
 
         .tbl3 {
-            width: 70%;
+            width: 80%;
             height: 100%;
             border-right: 4px solid black;
         }
 
         .tbl4 {
-            width: 30%;
+            width: 20%;
             height: 100%;
         }
 
         .qr {
             margin: 0 auto;
-            background-image: url('/img/QR.jpg');
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            background-size: cover; /* Covers the entire div */
-            background-position: center; /* Centers the image */
-            width: 150px; /* Set the desired width */
-            height: 95px; /* Set the desired height */
+            background-image: url(/img/QR.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 98px;
+            height: 70px;
             margin: 2px;
         }
 
@@ -410,7 +459,7 @@
 
         .payment-details {
             display: flex;
-            margin: 3px 5px 0px 5px;
+            margin: 0px 5px 0px 5px;
         }
 
         .payment-details-2 {
@@ -435,8 +484,8 @@
         }
 
         .content-div {
-            width: 100%; /* Set content width relative to the container */
-            height: auto; /* Maintain aspect ratio */
+            width: 514px;
+            height: 756px;
             max-width: 100%; /* Prevent content from exceeding parent width */
             max-height: 100%; /* Prevent content from exceeding parent height */
             box-sizing: border-box; /* Include padding/border in width/height */
@@ -444,819 +493,892 @@
     </style>
 </head>
 <body>
-    <div class="parent-div">
-        <div class="content-div">
-    <div class="or-main-container">
-        <div class="or-header">
-            <div class="or-header-content">
-                <div class="logo-1">
-                    <img src="/img/dotr_logo.bmp" alt="DOTR Logo" class="img-attr">
-                </div>
-                <div class="header-text">
-                    <span class="header-span1">REPUBLIC OF THE PHILIPPINES</span>
-                    <span class="header-span2">DEPARTMENT OF TRANSPORTATION</span>
-                    <span class="header-span3">LAND TRANSPORTATION OFFICE</span>
-                    <span class="header-span2">0, SURIGAO CITY (CAPITAL)</span>
-                </div>
-                <div class="logo-2">
-                    <img src="/img/LTO_LOGO.bmp" alt="LTO Logo" class="img-attr">
-                </div>
-            </div>
-            <div class="or-sub-content">
-                <div class="contents">
-                    <div class="contents-3">
-                        <span class="text-span">Field Office:</span>
-                        <div class="input-container">
-                            <input type="text" value="@Model.OFFICE_NAME" id="overpayment" class="mod-inputed" placeholder="" />
+    @if (Model == null)
+    {
+        <div class="alert" style="
+    text-align: center;
+        ">
+            No data found!
+        </div>
+    }
+    else
+    {
+        <div class="parent-div">
+            <div class="content-div">
+                <div class="or-main-container">
+                    <div class="or-header">
+                        <div class="or-header-content">
+                            <div class="logo-1">
+                                <img src="/img/dotr_logo.bmp" alt="DOTR Logo" class="img-attr">
+                            </div>
+                            <div class="header-text">
+                                <span class="header-span1">REPUBLIC OF THE PHILIPPINES</span>
+                                <span class="header-span2">DEPARTMENT OF TRANSPORTATION</span>
+                                <span class="header-span3">LAND TRANSPORTATION OFFICE</span>
+                                <span class="header-span2">0, SURIGAO CITY (CAPITAL)</span>
+                            </div>
+                            <div class="logo-2">
+                                <img src="/img/LTO_LOGO.bmp" alt="LTO Logo" class="img-attr">
+                            </div>
                         </div>
-                    </div>
+                        <div class="or-sub-content">
+                            <div class="contents">
+                                <div class="contents-3">
+                                    <span class="text-span">Field Office:</span>
+                                    <div class="input-container">
+                                        <input type="text" value="@Model.OFFICE_NAME" id="overpayment" class="mod-inputed" placeholder="" />
+                                    </div>
+                                </div>
 
-                    <div class="contents-2">
-                        <span class="text-span-5" style="
+                                <div class="contents-2">
+                                    <span class="text-span-5" style="
                     position: absolute;
                     right: 0;
                     top: 0;
                     left: 0;
-                ">Field Office Code:</span>
-                        <div class="input-container">
-                            <input type="text" value="@Model.OFFICE_CODE" class="mod-input-2" placeholder="" />
+                    ">Field Office Code:</span>
+                                    <div class="input-container">
+                                        <input type="text" value="@Model.OFFICE_CODE" class="mod-input-2" placeholder="" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="or-sub-content">
-                <div class="contents">
-                    <div class="contents-3">
-                        <span class="text-span-3">OFFICIAL RECEIPT</span>
-                        <div class="input-container">
-                            <input type="text" value="@Model.OR_NO" id="overpayment" class="mod-input-10" placeholder="or_no" />
-                        </div>
-                    </div>
+                        <div class="or-sub-content">
+                            <div class="contents">
+                                <div class="contents-3">
+                                    <span class="text-span-3">OFFICIAL RECEIPT</span>
+                                    <div class="input-container">
+                                        <input type="text" value="@Model.OR_NO" id="overpayment" class="mod-input-10" placeholder="or_no" disabled />
+                                    </div>
+                                </div>
 
-                    <div class="contents-2">
-                        <span class="text-span-5">DATE:</span>
-                        <div class="input-container">
-                            <input type="text" value="@Model.OR_DATE" class="mod-input-2" placeholder="OR Date" />
+                                <div class="contents-2">
+                                    <span class="text-span-5">DATE:</span>
+                                    <div class="input-container">
+                                        <input type="text" value="@Model.OR_DATE" class="mod-input-2" placeholder="OR Date" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or-cus-details">
+                        <div class="or-sub-content-2">
+                            <div class="contents-5">
+                                <div class="contents-3">
+                                    <span class="text-span-6">RECEIVED FROM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="italic-text">Last Name, First Name, MI</span>)</span>
+                                    <div class="input-container">
+                                    </div>
+                                </div>
+
+                                <div class="contents-6">
+                                    <span class="text-span">TIN:</span>
+                                    <div class="input-container">
+                                        <input type="text" style="font-weight: bolder;" value="@Model.TIN" class="mod-input-3" placeholder="tin_no" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="or-sub-content-2">
+                            <div class="contents">
+                                <div class="contents-3">
+                                    <span class="text-span-6" style="font-weight: bolder;">@Model.CUSTOMER_NAME</span>
+                                    <div class="input-container">
+                                    </div>
+                                </div>
+
+                                <div class="contents-2">
+
+                                    <div class="input-container">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="or-sub-content-2">
+                            <div class="contents">
+                                <div class="contents-3">
+                                    <span class="text-span-6" style=" width: 500px;">ADDRESS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="italic-text">No., Street, City, Municipality, Province, Zip Code</span>)</span>
+                                    <div class="input-container">
+                                    </div>
+                                </div>
+
+                                <div class="contents-2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="or-sub-content-2">
+                            <div class="contents">
+                                <div class="contents-3">
+                                    <span class="text-span-6" style="font-weight: bolder; width: 600px;">@Model.CUSTOMER_ADDRESS</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or-fees-details">
+                        <div class="overlay-display"></div>
+                        <div class="or-sub-content-tbl" style="z-index:999">
+                            <div class="tbl1-0">
+                                <span>PAYMENT DETAILS</span>
+                            </div>
+                            <div class="tbl2-1">
+                                <span>BREAKDOWN OF PAYMENT</span>
+                            </div>
+                        </div>
+                        <div class="or-sub-content-tbl">
+
+                            <div class="tbl1">
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 75px;">Transaction: </span>
+                                    <div class="input-container">
+                                        @foreach (var txnCode in Model.TransactionTxnCodes)
+                                        {
+                                            <input type="text" value="@txnCode.TXN_CODE" id="overpayment" class="mod-inputed-01" />
+                                        }
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 75px;"></span>
+                                    <div class="input-container" style="
+    width: 100%;
+    margin-left: 25px;
+            ">
+
+                                        <input type="text" value="@Model.TXN_ID" id="overpayment" class="mod-inputed-01" />
+
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 27px;">Posted:</span>
+                                    <div class="input-container">
+                                        <input type="text" value="@formattedDate" id="dateInput" class="mod-inputed-02" />
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 150px;">@Model.MVRSPaymentDetails.MV_DESCRIPTION</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for=""></label>
+
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 150px;"></span>
+                                    <div class="input-container">
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 150px;margin-left:5px">File No.: @Model.MVRSPaymentDetails.MV_FILE_NO</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for=""></label>
+
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-7" style="width: 100%;">Plate No.: @Model.MVRSPaymentDetails.PLATE_NO</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for=""></label>
+
+                                    </div>
+                                </div>
+
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 150px;height:100px;">Gross Weight: @Model.MVRSPaymentDetails.GROSS_WT</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for=""></label>
+
+                                    </div>
+                                </div>
+
+                                <div class="payment-details" style="height: 65px;">
+                                    @foreach (var payment in Model.ORPaymentModes)
+                                    {
+                                        // Render the Razor variables into the HTML inside the loop
+
+                                        var result = (dynamic)null;
+                                        <script>
+                                     
+                                            var mop = "@payment.PAYMENT_MODE_DESC".toLowerCase().trim();
+                                            if (mop === 'cash') {
+                                                 result = "Cash";
+                                                
+                                            } else {
+                                                result = "@payment.REFERENCE_NO";
+                                                var spans = document.querySelectorAll(".ref_no_class");
+
+                                                // Loop through each span
+                                                for (var i = 0; i < spans.length; i++) {
+                                                    // Add the styles
+                                                    spans[i].style.position = "absolute";
+                                                    spans[i].style.left = "455px";
+                                                    spans[i].style.bottom = "230px";
+                                                }
+                                            }
+                                            document.getElementById("paymentMode-@payment.REFERENCE_NO").textContent = result;
+
+                                        </script>
+                                        <span class="text-span-6" style="width: 215px;" id="paymentMode-@payment.REFERENCE_NO"></span>
+                                    }
+
+
+                                    <div class="input-container-5">
+                                        <label class="ref_no_class" for="" style="font-weight: bolder;">@Model.OR_AMT.ToString("N2")</label>
+
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 215px;font-weight: bolder;">@Model.MVRSPaymentDetails.AIRCON_REF_DETAILS</span>
+                                    <div class="input-container">
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 150px;;font-weight:bolder">@Model.MVRSPaymentDetails.REGISTRATION_VALIDITY</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for=""></label>
+
+                                    </div>
+                                </div>
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 100%;">Not valid if not accompanied by CR and CPC if for hire.</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for=""></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tbl2">
+                                @foreach (var payment in Model.PaidTransactionFees)
+                                {
+                                    <div class="payment-details">
+                                        <span class="text-span-6" style="width: 200px;">@payment.FEE_DESC</span>
+                                        <div class="input-container">
+                                            <label class="mod-inputed-03" for="" style="font-weight: bolder;margin-bottom:0px !important">@payment.FEE_AMOUNT.ToString("N2")</label>
+
+                                        </div>
+                                    </div>
+                                }
+                                <div class="payment-details">
+                                    <span class="text-span-6" style="width: 100%;">**Nothing Follows**</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="or-fees-total">
+                        <div class="payment-details">
+                            <span class="text-span-6" style="width: 150px;font-weight: bolder;font-size: 11px;">THE TOTAL SUM OF</span>
+                            <div class="input-container-5">
+                                <span class="text-span-6" style="width: 175px;font-style: italic;">(in pesos)</span>
+                            </div>
+                            <span class="text-span-6" style="width: 190px;font-weight: bolder;font-size: 11px">TOTAL AMOUNT PAID:</span>
+                            <div class="input-container-5">
+                                @foreach (var payment in Model.ORPaymentModes)
+                                {
+                                    <span class="text-span-6" style="width: 80px;font-weight: bolder;font-size: 11px">*** @payment.PAYMENT_AMOUNT.ToString("N2") </span>
+                                }
+                            </div>
+                        </div>
+                        <div class="payment-details">
+                            <span class="text-span-6" style="width: 100%;font-weight: bolder;font-size: 12px;">@Model.AMT_IN_WORDS</span>
+                            <div class="input-container">
+                                <input type="text" value="" id="overpayment" class="mod-inputed-01" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or-sub-content-tbl-2">
+                        <div class="tbl3">
+                            <div class="payment-details-2">
+                                <div class="payment-details">
+                                    @foreach (var payment in Model.ORPaymentModes)
+                                    {
+                                        <span class="text-span-6" style="width: 100%;font-weight: bolder;font-size: 12px;" id="mop">MODE OF PAYMENT: @payment.PAYMENT_MODE_DESC</span>
+                                    }
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for="" style="font-weight: bolder;margin-bottom:0px !important"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display:flex">
+                                <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;">This is a system generated Official Receipt: No signatures needed.</span>
+                                <div class="input-container">
+                                    <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
+
+                                </div>
+                            </div>
+                            <div style="display:flex">
+                                <div style="display: flex;flex-direction: column;margin:0 auto">
+                                    <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;">RPGaray</span>
+
+                                    <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;font-weight: bolder;">CHIEF OF OFFICE</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
+
+                                    </div>
+
+                                </div>
+                                <div style="display: flex;flex-direction: column;margin:0 auto">
+                                    <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;">WWWRSAL_D02</span>
+
+                                    <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;font-weight: bolder;height:25px">CASHIER</span>
+                                    <div class="input-container">
+                                        <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tbl4">
+                            <div class="qr"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="or-cus-details">
-            <div class="or-sub-content-2">
-                <div class="contents-5">
-                    <div class="contents-3">
-                        <span class="text-span-6">RECEIVED FROM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="italic-text">Last Name, First Name, MI</span>)</span>
-                        <div class="input-container">
-                        </div>
-                    </div>
+        <div class="footer-container">
+            <div style="display: flex; margin-bottom: 25px;flex-direction: row-reverse;justify-content: center;">
 
-                    <div class="contents-6">
-                        <span class="text-span">TIN:</span>
-                        <div class="input-container">
-                            <input type="text" style="font-weight: bolder;" value="@Model.TIN" class="mod-input-3" placeholder="tin_no" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="or-sub-content-2">
-                <div class="contents">
-                    <div class="contents-3">
-                        <span class="text-span-6" style="font-weight: bolder;">@Model.CUSTOMER_NAME</span>
-                        <div class="input-container">
-                        </div>
-                    </div>
+                <div class="btn-container-3" style="gap: 10px;">
+                    <span class="text-left" id="ornum_printng" style="display:none;color:var(--accent);font-weight:bolder"></span>
+                    <input type="submit" value="PRINT" id="btn-process" class="btn-pay" />
 
-                    <div class="contents-2">
-
-                        <div class="input-container">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="or-sub-content-2">
-                <div class="contents">
-                    <div class="contents-3">
-                        <span class="text-span-6" style=" width: 500px;">ADDRESS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="italic-text">No., Street, City, Municipality, Province, Zip Code</span>)</span>
-                        <div class="input-container">
-                        </div>
-                    </div>
-
-                    <div class="contents-2">
-                    </div>
-                </div>
-            </div>
-            <div class="or-sub-content-2">
-                <div class="contents">
-                    <div class="contents-3">
-                        <span class="text-span-6" style="font-weight: bolder; width: 600px;">@Model.CUSTOMER_ADDRESS</span>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="or-fees-details">
-            <div class="overlay-display" ></div>
-            <div class="or-sub-content-tbl" style="z-index:999">
-                <div class="tbl1-0">
-                    <span>PAYMENT DETAILS</span>
-                </div>
-                <div class="tbl2-1">
-                    <span>BREAKDOWN OF PAYMENT</span>
-                </div>
-            </div>
-            <div class="or-sub-content-tbl">
-
-                <div class="tbl1">
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 75px;">Transaction: </span>
-                        <div class="input-container">
-                             @foreach (var txnCode in Model.TransactionTxnCodes)
-                             {
-                            <input type="text" value="@txnCode.TXN_CODE" id="overpayment" class="mod-inputed-01" />
-                             }
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 75px;"></span>
-                        <div class="input-container">
-
-                                    <input type="text" value="@Model.TXN_ID" id="overpayment" class="mod-inputed-01" />
-                             
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 27px;">Posted:</span>
-                        <div class="input-container">
-                            <input type="text" value="@formattedDate" id="dateInput" class="mod-inputed-02" />
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                                <span class="text-span-6" style="width: 150px;">@Model.MVRSPaymentDetails.MV_DESCRIPTION</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for=""></label>
-
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                                <span class="text-span-6" style="width: 150px;"></span>
-                        <div class="input-container">
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 150px;margin-left:5px">File No.: @Model.MVRSPaymentDetails.MV_FILE_NO</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for=""></label>
-
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                        <span class="text-span-7" style="width: 100%;">Plate No.: @Model.MVRSPaymentDetails.PLATE_NO</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for=""></label>
-
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 150px;height:100px;">Gross Weight: @Model.MVRSPaymentDetails.GROSS_WT</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for=""></label>
-
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 215px;">CASH</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for="" style="font-weight: bolder;">@Model.OR_AMT</label>
-
-                        </div>
-                    </div>
-                    <div class="payment-details" >
-                        <span class="text-span-6" style="width: 215px;font-weight: bolder;">@Model.MVRSPaymentDetails.AIRCON_REF_DETAILS</span>
-                        <div class="input-container">
-                        </div>
-                    </div>
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 100%;margin-top:20px;">Not valid if not accompanied by CR and CPC if for hire.</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for=""></label>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="tbl2">
-                      @foreach (var payment in Model.PaidTransactionFees)
-                             {
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 215px;">@payment.FEE_DESC</span>
-                        <div class="input-container">
-                                        <label class="mod-inputed-03" for="" style="font-weight: bolder;">@payment.FEE_AMOUNT.ToString("F2")</label>
-
-                        </div>
-                    </div>
-                             }
-                    <div class="payment-details">
-                        <span class="text-span-6" style="width: 100%;">**Nothing Follows**</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
-
-                        </div>
-                    </div>
                 </div>
 
             </div>
         </div>
-        <div class="or-fees-total">
-            <div class="payment-details">
-                <span class="text-span-6" style="width: 115px;font-weight: bolder;font-size: 11px;">THE TOTAL SUM OF</span>
-                <div class="input-container">
-                    <span class="text-span-6" style="width: 175px;font-style: italic;">(in pesos)</span>
-                </div>
-                <span class="text-span-6" style="width: 190px;font-weight: bolder;font-size: 11px">THE AMOUNT PAID:</span>
-                <div class="input-container">
-                       @foreach (var payment in Model.ORPaymentModes)
-                             {
-                    <span class="text-span-6" style="width: 55px;font-weight: bolder;font-size: 11px">*** @payment.PAYMENT_AMOUNT </span>
-                             }
-                </div>
-            </div>
-            <div class="payment-details">
-                <span class="text-span-6" style="width: 100%;font-weight: bolder;font-size: 12px;">@Model.AMT_IN_WORDS</span>
-                <div class="input-container">
-                    <input type="text" value="" id="overpayment" class="mod-inputed-01" />
-                </div>
-            </div>
-        </div>
-        <div class="or-sub-content-tbl-2">
-            <div class="tbl3">
-                <div class="payment-details-2">
-                    <div class="payment-details">
-                           @foreach (var payment in Model.ORPaymentModes)
-                             {
-                        <span class="text-span-6" style="width: 100%;font-weight: bolder;font-size: 12px;">MODE OF PAYMENT: @payment.PAYMENT_MODE_DESC</span>
-                             }
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
+        <div class="modal fade" id="alertmodal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="img-header">
+                            <img id="modalImage" src="/img/SUCCESS.webp" alt="Modal Image" />
                         </div>
-                    </div>
-                </div>
-                <div class="payment-details">
-                    <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;">This is a system generated Official Receipt: No signatures needed.</span>
-                    <div class="input-container">
-                        <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
+                        @*  *@
+                        <h5 class="modal-title" id="modal-title" hidden></h5>
 
                     </div>
-                </div>
-                <div style="display:flex">
-                    <div style="display: flex;flex-direction: column;margin:0 auto">
-                        <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;">RPGaray</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
-
-                        </div>
-                        <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;font-weight: bolder;">CHIEF OF OFFICE</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
-
-                        </div>
-
-                    </div>
-                    <div style="display: flex;flex-direction: column;margin:0 auto">
-                        <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;">WWWRSAL_D02</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
-
-                        </div>
-                        <span class="text-span-6" style="width: 100%;text-align: center;font-size: 11px;font-weight: bolder;">CASHIER</span>
-                        <div class="input-container">
-                            <label class="mod-inputed-03" for="" style="font-weight: bolder;"></label>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="tbl4">
-                <div class="qr"></div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div class="footer-container">
-        <div style="display: flex;
-    margin-bottom: 25px;
-    flex-direction: row-reverse;
-    justify-content: center;">
-            <div class="btn-container" style="
-    gap: 10px;
-    ">
-                <input type="submit" value="PRINT ALL" id="btn-process" class="btn-pay" />
-             
-            </div>
-
-        </div>
-    </div>
-    <div class="modal fade" id="alertmodal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="img-header">
-                        <img id="modalImage" src="/img/SUCCESS.webp" alt="Modal Image" />
-                    </div>
-                    @*  *@
-                    <h5 class="modal-title" id="modal-title" hidden></h5>
-
-                </div>
-                <div class="modal-body">
-                    <div style="
+                    <div class="modal-body">
+                        <div style="
                         width: 100%;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                    ">
-                        <span id="validation">ERROR</span>
-                        <span id="message"></span>
-                    </div>
+                        ">
+                            <span id="validation">ERROR</span>
+                            <span id="message"></span>
+                        </div>
 
-                </div>
-                <div style="display: flex;gap: 10px;width: 100%;justify-content: center;margin:30px 0px">
-                    <div class="input-container-button">
+                    </div>
+                    <div style="display: flex;gap: 10px;width: 100%;justify-content: center;margin:30px 0px">
+                        <div class="input-container-button">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    }
     <script>
         $(document).ready(function () {
             var myModal = new bootstrap.Modal(document.getElementById('alertmodal2'), {
                 backdrop: 'static',
                 keyboard: false  // Optional: Disable closing with ESC key
             });
-          
+            const textInputs = document.querySelectorAll('input[type="text"]');
+            textInputs.forEach(input => {
+                input.disabled = true;
+            });
             $("#btn-process").click(function () {
 
-                    var printContent = $(".content-div").html();
+                var printContent = $(".content-div").html();
 
-                    // Create a new window
-                    var printWindow = window.open('', '', 'height=756px,width=514px');
+                // Create a new window
+                var printWindow = window.open('', '', 'height=756px,width=514px');
 
-                    // Write the content into the new window
-                    printWindow.document.write('<html><head><title>Print</title>');
+                // Write the content into the new window
+                printWindow.document.write('<html><head><title>Print</title>');
 
-                    // Include your stylesheets (you can include multiple)
-                    $('link[rel=stylesheet]').each(function () {
-                        printWindow.document.write('<link rel="stylesheet" type="text/css" href="' + $(this).attr('href') + '">');
-                    });
+                // Include your stylesheets (you can include multiple)
+            
+                $('link[rel=stylesheet]').each(function () {
+                    printWindow.document.write(' <link rel="stylesheet" href="print.css" media="print">');
+                });
 
-                    // Optional: Add internal CSS for specific styles if needed
-                    printWindow.document.write('<style>'); // Add any additional styles here if needed
-                    printWindow.document.write(`
-                              * {
-                        font-family: 'Roboto', sans-serif;
-                    }
+                // Optional: Add internal CSS for specific styles if needed
+                printWindow.document.write('<style>'); // Add any additional styles here if needed
+                printWindow.document.write(`
+                            #layout-container
+                            {
+                                opacity: 1;
+                                display: block;
+                                width: 600px;
+                                height: 900px;
+                                top: 0px;
+                                transform: scale(1) translate(467px, 0px);
+                            }
+    
+                                      * {
+                                font-family: 'Roboto', sans-serif;
+                            }
+                            html, body
+                            {
+                                background-color:white !important;
+                            }
+                            .or-header-content {
+                                display: flex;
+                                width: 100%;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                margin: 10px 0;
+                            }
 
-                    .or-header-content {
-                        display: flex;
-                        width: 100%;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        margin: 10px 0;
-                    }
+                            .or-header-subcontent {
+                                display: flex;
+                                width: 100%;
+                                gap: 50px;
+                                margin-left: 20px;f
+                            }
 
-                    .or-header-subcontent {
-                        display: flex;
-                        width: 100%;
-                        gap: 50px;
-                        margin-left: 20px;f
-                    }
+                            .img-attr {
+                                width: 75px;
+                                height: 75px;
+                                object-fit: cover;
+                            }
 
-                    .img-attr {
-                        width: 75px;
-                        height: 75px;
-                        object-fit: cover;
-                    }
+                            .or-main-container {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center; /* Center content horizontally and vertically */
+                                margin: 0 auto;
+                                width: 514px;
+                                height: 756px;
+                                border: 4px solid black;
+                                flex-direction: column;
+                                position: relative;
+                                overflow: hidden; /* Ensures content doesn't overflow */
+                            }
+                            .input-container-5 {
+                                display: flex;
+                                align-items: flex-start;
+                             }
 
-                    .or-main-container {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center; /* Center content horizontally and vertically */
-                        margin: 0 auto;
-                        width: 514px;
-                        height: 756px;
-                        border: 4px solid black;
-                        flex-direction: column;
-                        position: relative;
-                        overflow: hidden; /* Ensures content doesn't overflow */
-                    }
+                            .or-header {
+                                margin: 0 auto;
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                border-bottom: 4px solid black;
+                                position: relative; /* Remove absolute positioning */
+                            }
 
-                    .or-header {
-                        margin: 0 auto;
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        border-bottom: 4px solid black;
-                        position: relative; /* Remove absolute positioning */
-                    }
+                            .or-header-content span {
+                                width: 100%;
+                                text-align: center;
+                                margin: 0 auto;
+                                margin-top: 5px;
+                            }
 
-                    .or-header-content span {
-                        width: 100%;
-                        text-align: center;
-                        margin: 0 auto;
-                        margin-top: 5px;
-                    }
+                            .header-span1 {
+                                font-size: 8px;
+                            }
 
-                    .header-span1 {
-                        font-size: 8px;
-                    }
+                            .header-span2 {
+                                font-size: 10px;
+                            }
 
-                    .header-span2 {
-                        font-size: 10px;
-                    }
+                            .header-span3 {
+                                font-size: 12px;
+                                font-weight: bolder;
+                            }
 
-                    .header-span3 {
-                        font-size: 12px;
-                        font-weight: bolder;
-                    }
+                            .header-text {
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                width: 320px;
+                                flex-grow: 1;
+                                margin-left: 15px;
+                                margin-top:15px;
+                            }
 
-                    .header-text {
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                        width: 320px;
-                        flex-grow: 1;
-                        margin-left: 15px;
-                        margin-top:10px;
-                    }
+                            .ref_no_class {
+                                background: none;
+                                border: none;
+                                width: 100%;
+                                font-size: 10px;
+                                text-align: left;
+                            }
+                            .logo-1 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-left:35px;
+                                margin-top:20px;
+                            }
+                            .logo-2
+                            {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 30px;
+                                margin-top: 20px;
+                            }
 
-                    .logo-1 {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-left:35px;
-                        margin-top:10px;
-                    }
-                    .logo-2
-                    {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-right: 30px;
-                        margin-top: 10px;
-                    }
+                            .content-text {
+                                margin-bottom: 10px;
+                            }
 
-                    .content-text {
-                        margin-bottom: 10px;
-                    }
+                            .content-text-fo {
+                                margin-bottom: 10px;
+                            }
 
-                    .content-text-fo {
-                        margin-bottom: 10px;
-                    }
+                            .sub-content {
+                                width: 500px;
+                            }r
 
-                    .sub-content {
-                        width: 500px;
-                    }r
+                            .or-sub-content {
+                                width: 100%; /* Full width container */
+                                margin: 2px 10px;
+                            }
 
-                    .or-sub-content {
-                        width: 100%; /* Full width container */
-                        margin: 2px 10px;
-                    }
+                            .or-sub-content-2 {
+                                width: 100%; /* Full width container */
+                                margin: 2px 10px;
+                                display: flex;
+                                flex-direction: row;
+                            }
 
-                    .or-sub-content-2 {
-                        width: 100%; /* Full width container */
-                        margin: 2px 10px;
-                        display: flex;
-                        flex-direction: row;
-                    }
+                            .or-sub-content-tbl {
+                                width: 100%; /* Full width container */
+                                display: flex;
+                            }
 
-                    .or-sub-content-tbl {
-                        width: 100%; /* Full width container */
-                        display: flex;
-                    }
+                            .or-sub-content-tbl-2 {
+                                width: 100%; /* Full width container */
+                                height: 100%;
+                                display: flex;
+                            }
 
-                    .or-sub-content-tbl-2 {
-                        width: 100%; /* Full width container */
-                        height: 100%;
-                        display: flex;
-                    }
+                            .contents {
+                                display: flex; /* Flexbox layout for side by side */
+                                justify-content: space-between; /* Ensures items are spaced side by side with maximum space between */
+                                gap: 20px; /* Optional: Adjust the gap between items */
+                                align-items: center; /* Aligns items vertically */
+                                z-index: 2;
+                                width: 100%;
+                            }
 
-                    .contents {
-                        display: flex; /* Flexbox layout for side by side */
-                        justify-content: space-between; /* Ensures items are spaced side by side with maximum space between */
-                        gap: 20px; /* Optional: Adjust the gap between items */
-                        align-items: center; /* Aligns items vertically */
-                        z-index: 2;
-                        width: 100%;
-                    }
+                            .contents-5 {
+                                display: flex;
+                                justify-content: space-between;
+                                gap: 20px;
+                                align-items: flex-start;
+                                z-index: 2;
+                            }
 
-                    .contents-5 {
-                        display: flex;
-                        justify-content: space-between;
-                        gap: 20px;
-                        align-items: flex-start;
-                        z-index: 2;
-                    }
+                            .contents-3 {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                width: 345px;
+                            }
 
-                    .contents-3 {
-                        flex: 1;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-start;
-                        width: 345px;
-                    }
+                            .contents-2 {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                position: relative;
+                                margin-right: 15px;
+                                margin-bottom: 10px;
+                            }
 
-                    .contents-2 {
-                        flex: 1;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-end;
-                        position: relative;
-                        margin-right: 15px;
-                        margin-bottom: 10px;
-                    }
+                            .contents-6 {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                position: relative;
+                                margin-right: 15px;
+                            }
 
-                    .contents-6 {
-                        flex: 1;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-end;
-                        position: relative;
-                        margin-right: 15px;
-                    }
+                            .contents-2 {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                position: relative;
+                                margin-right: 15px;
+                                margin-bottom: 10px;
+                            }
 
-                    .contents-2 {
-                        flex: 1;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-end;
-                        position: relative;
-                        margin-right: 15px;
-                        margin-bottom: 10px;
-                    }
-
-                    .input-container {
-                        display: flex;
-                        align-items: center;
-                    }
-
-
-                    .text-span {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        font-size: 10px;
-                        width: 80px;
-                        text-align: center;
-                    }
-
-                    .text-span-3 {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 12px;
-                        text-align: center;
-                        margin: 0 auto;
-                        background-color: black;
-                        width: 150px;
-                        color: white;
-                    }
-
-                    .text-span-2 {
-                        display: flex;
-                        justify-content: center; /* Centers text horizontally */
-                        align-items: center; /* Centers text vertically */
-                        font-size: 10px;
-                        text-align: center;
-                        margin: 0 auto;
-                        background-color: black;
-                        width: 100%;
-                        color: white;
-                    }
-
-                    .text-span-5 {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        font-size: 10px;
-                        width: 80px;
-                        text-align: center;
-                        margin-left: 7px;
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        left: 0;
-                    }
-
-                    .text-span-6 {
-                        font-size: 10px
-                    }
-
-                    .mod-inputed {
-                        background: none;
-                        border: none;
-                        border-bottom: 1px solid black;
-                        font-size: 10px;
-                        width: 200px;
-                        font-weight: bolder !important;
-                        color: black;
-                        position: relative;
-                        right: 25px;
-                    }
+                            .input-container {
+                                display: flex;
+                                align-items: center;
+                            }
 
 
-                    .mod-input-10 {
-                        background: none !important;
-                        border: none !important;
-                        font-weight: bolder !important;
-                        color: black !important;
-                        font-size: 15px !important;
-                    }
+                            .text-span {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                font-size: 10px;
+                                width: 80px;
+                                text-align: center;
+                            }
 
-                    .mod-input-2 {
-                        background: none;
-                        border: none;
-                        border-bottom: 1px solid black;
-                        width: 110px;
-                        font-size: 9px;
-                        position: absolute;
-                        text-align: center;
-                        font-weight: bolder;
-                        right: 0;
-                        top: 0;
-                    }
+                            .text-span-3 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 12px;
+                                text-align: center;
+                                margin: 0 auto;
+                                background-color: black;
+                                width: 150px;
+                                color: white;
+                            }
 
-                    .mod-inputed-01 {
-                        background: none;
-                        border: none;
-                        width: 100%;
-                        font-size: 12px;
-                        text-align: left;
-                        background-color:transparent !important;
-                    }
+                            .text-span-2 {
+                                display: flex;
+                                justify-content: center; /* Centers text horizontally */
+                                align-items: center; /* Centers text vertically */
+                                font-size: 10px;
+                                text-align: center;
+                                margin: 0 auto;
+                                background-color: black;
+                                width: 100%;
+                                color: white;
+                            }
 
-                    .mod-inputed-02 {
-                        background: none;
-                        border: none;
-                        width: 70px;
-                        font-size: 10px;
-                        text-align: center;
-                    }
+                            .text-span-5 {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                font-size: 10px;
+                                width: 80px;
+                                text-align: center;
+                                margin-left: 0px;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                left: 0;
+                            }
 
-                    .mod-inputed-03 {
-                        background: none;
-                        border: none;
-                        width: 100%;
-                        font-size: 10px;
-                        text-align: left;
-                    }
+                            .text-span-6 {
+                                font-size: 10px
+                            }
 
-                    .mod-input-3 {
-                        background: none;
-                        border: none;
-                        /* width: 70px; */
-                        font-size: 10px;
-                        position: relative;
-                        right: 55px;
-                        background-color:transparent !important;
-                    }
+                            .mod-inputed {
+                                background: none;
+                                border: none;
+                                border-bottom: 1px solid black;
+                                font-size: 10px;
+                                width: 200px;
+                                font-weight: bolder !important;
+                                color: black;
+                                position: relative;
+                                right: 25px;
+                            }
 
-                    .or-cus-details {
-                        /* margin: 0 auto; */
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        height: 90px;
-                        border-bottom: 4px solid black;
-                        /* Add margin-top to create space between header and customer details */
-                    }
 
-                    .or-fees-total {
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        height: 100%;
-                        border-bottom: 4px solid black;
-                    }
+                            .mod-input-10 {
+                                background: none !important;
+                                border: none !important;
+                                font-weight: bolder !important;
+                                color: black !important;
+                                font-size: 15px !important;
+                            }
 
-                    .or-fees-details {
-                        margin: 0 auto;
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        height: 395px;
-                        border-bottom: 4px solid black;
-                    }
+                            .mod-input-2 {
+                                background: none;
+                                border: none;
+                                border-bottom: 1px solid black;
+                                width: 110px;
+                                font-size: 9px;
+                                position: absolute;
+                                text-align: center;
+                                font-weight: bolder;
+                                right: 0;
+                                top: 0;
+                            }
 
-                    .italic-text {
-                        font-style: italic;
-                    }
+                            .mod-inputed-01 {
+                                background: none;
+                                border: none;
+                                width: 100%;
+                                font-size: 12px;
+                                text-align: left;
+                                background-color:transparent !important;
+                            }
 
-                    .overlay-display {
-                        position: absolute !important;
-                        top: 0 !important;
-                        left: 0 !important;
-                        width: 410px !important;
-                        height: 410px !important;
-                        margin-left: 50px !important;
-                        margin-top: 230px !important;
-                        background-image: url(/img/LTO_LOGO.bmp) !important;
-                        background-repeat: no-repeat !important;
-                        background-size: contain !important;
-                        background-position: center !important;
-                        opacity: 0.1 !important;
-                        z-index: 1;
-                    }
+                            .mod-inputed-02 {
+                                background: none;
+                                border: none;
+                                width: 70px;
+                                font-size: 10px;
+                                text-align: center;
+                            }
 
-                    .tbl1 {
-                        width: 50%;
-                        height: 370px;
-                        border-right: 4px solid black;
-                    }
+                            .mod-inputed-03 {
+                                background: none;
+                                border: none;
+                                width: 100%;
+                                font-size: 10px;
+                                text-align: left;
+                            }
 
-                    .tbl3 {
-                        width: 70%;
-                        height: 100%;
-                        border-right: 4px solid black;
-                    }
+                            .mod-input-3 {
+                                background: none;
+                                border: none;
+                                /* width: 70px; */
+                                font-size: 10px;
+                                position: relative;
+                                right: 55px;
+                                background-color:transparent !important;
+                            }
 
-                    .tbl4 {
-                        width: 30%;
-                        height: 100%;
-                    }
+                            .or-cus-details {
+                                /* margin: 0 auto; */
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                height: 90px;
+                                border-bottom: 4px solid black;
+                                /* Add margin-top to create space between header and customer details */
+                            }
 
-                    .qr {
-                        margin: 0 auto;
-                        background-image: url('/img/QR.jpg');
-                        background-repeat: no-repeat; /* Prevents the image from repeating */
-                        background-size: cover; /* Covers the entire div */
-                        background-position: center; /* Centers the image */
-                        width: 150px; /* Set the desired width */
-                        height: 95px; /* Set the desired height */
-                        margin: 2px;
-                    }
+                            .or-fees-total {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                height: 100%;
+                                border-bottom: 4px solid black;
+                            }
 
-                    .tbl1-0,
-                    .tbl2-1 {
-                        width: 50%;
-                        color: white;
-                        background-color: black;
-                        text-align: center;
-                        font-size: 14px;
-                    }
+                            .or-fees-details {
+                                margin: 0 auto;
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                height: 395px;
+                                border-bottom: 4px solid black;
+                            }
 
-                    .payment-details {
-                        display: flex;
-                        margin: 3px 5px 0px 5px;
-                    }
+                            .italic-text {
+                                font-style: italic;
+                            }
 
-                    .payment-details-2 {
-                        display: flex;
-                        border-bottom: 4px solid black;
-                        width: 100%;
-                    }
+                            .overlay-display {
+                                position: absolute !important;
+                                top: 0 !important;
+                                left: 0 !important;
+                                width: 410px !important;
+                                height: 410px !important;
+                                margin-left: 50px !important;
+                                margin-top: 230px !important;
+                                background-image: url(/img/LTO_LOGO.bmp) !important;
+                                background-repeat: no-repeat !important;
+                                background-size: contain !important;
+                                background-position: center !important;
+                                opacity: 0.1 !important;
+                                z-index: 1;
+                            }
 
-                    .text-span-7 {
-                        font-size: 18px;
-                        width: 100%;
-                    }
+                            .tbl1 {
+                                width: 50%;
+                                height: 370px;
+                                border-right: 4px solid black;
+                            }
 
-                    .parent-div {
-                        display: flex;
-                        flex-direction: column; /* Align content vertically */
-                        justify-content: center; /* Center the child */
-                        align-items: center; /* Center horizontally */
-                        width: 100%;
-                        height: 700px;
-                        overflow: scroll;
-                    }
+                            .tbl3 {
+                                width: 80%;
+                                height: 100%;
+                                border-right: 4px solid black;
+                            }
 
-                    .content-div {
-                        width: 100%; /* Set content width relative to the container */
-                        height: auto; /* Maintain aspect ratio */
-                        max-width: 100%; /* Prevent content from exceeding parent width */
-                        max-height: 100%; /* Prevent content from exceeding parent height */
-                        box-sizing: border-box; /* Include padding/border in width/height */
-                    }
-                    `);
-                    printWindow.document.write('</style>');
+                            .tbl4 {
+                                width: 20%;
+                                height: 100%;
+                            }
 
-                    printWindow.document.write('</head><body>');
-                    printWindow.document.write(printContent);
-                    printWindow.document.write('</body></html>');
+                            .qr {
+                                margin: 0 auto;
+                                background-image: url(/img/QR.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                width: 98px;
+                                height: 70px;
+                                margin: 2px;
+                            }
 
-                    // Close the document
-                    printWindow.document.close();
+                            .tbl1-0,
+                            .tbl2-1 {
+                                width: 50%;
+                                color: white;
+                                background-color: black;
+                                text-align: center;
+                                font-size: 14px;
+                            }
 
-                    // Focus on the new window and print
-                    printWindow.focus();
-                    printWindow.print();
-                    printWindow.onafterprint = function () {
+                            .payment-details {
+                                display: flex;
+                                margin: 0px 5px 0px 5px;
+                            }
+
+                            .payment-details-2 {
+                                display: flex;
+                                border-bottom: 4px solid black;
+                                width: 100%;
+                            }
+
+                            .text-span-7 {
+                                font-size: 18px;
+                                width: 100%;
+                            }
+
+                            .parent-div {
+                                display: flex;
+                                flex-direction: column; /* Align content vertically */
+                                justify-content: center; /* Center the child */
+                                align-items: center; /* Center horizontally */
+                                width: 100%;
+                                height: 700px;
+                                overflow: scroll;
+                            }
+
+                            .content-div {
+                                width: 514px;
+                                height: 756px;
+                                max-width: 100%; /* Prevent content from exceeding parent width */
+                                max-height: 100%; /* Prevent content from exceeding parent height */
+                                box-sizing: border-box; /* Include padding/border in width/height */
+                            }
+                            `);
+                printWindow.document.write('</style>');
+
+                printWindow.document.write('</head><body>');
+                printWindow.document.write(printContent);
+                printWindow.document.write('</body></html>');
+
+                // Close the document
+                printWindow.document.close();
+
+                // Focus on the new window and print
+                printWindow.focus();
+                printWindow.print();
+                printWindow.onafterprint = function () {
                     printWindow.close();
                 }; // Close the print window after printing
-                
-                let message, validation, status;
+
+                let message;
+                let validation;
+                let status;
 
                 message = 'OR PRINT SUCCESS CONFIRMATION';
                 validation = 'Did the Official Receipt (OR) print successfully?';
@@ -1268,32 +1390,37 @@
                 // Buttons setup
                 const payButton = '<input type="submit" value="YES" id="btn-process" class="btn-pay" onclick="ok()"/>';
                 const cancelButton = '<input type="submit" value="NO" id="btn-cancel" class="btn-NO" onclick="cancel()"/>';
-                const cancelButton2 = '<input type="submit" value="NO" id="btn-cancel" class="btn-NO" onclick="cancel()"/>';
-
+                const cancelButton2 = '<input type="submit" value="OK" id="btn-cancel" class="btn-pay" onclick="success()"/>';
+                const span_validation = '  <span id="validation"></span>';
+                const span_message = '   <span id="message"></span>';
                 // Clear and append buttons based on validation
                 $('.input-container-button').empty();
+                // alert(document.getElementById('validation').textContent)
                 if (validation !== 'Payment Confirmation') {
-                    $('.input-container-button').append(cancelButton2);
+                    $('.input-container-button').append(cancelButton);
                     $('.input-container-button').append(payButton);
                 } else {
                     $('.input-container-button').append(cancelButton);
                     $('.input-container-button').append(payButton);
                 }
-
+                $('#message-content').append(span_validation);
+                $('message-content').append(span_message);
                 // Update modal content styles
                 contents.forEach(content => {
-                    const borderColor = validation === 'Payment Confirmation' ? 'var(--dark)' : '#d03a4b';
+                    const borderColor = 'var(--dark)';
                     content.style.setProperty("border-radius", "15px 15px 15px 15px", "important");
                     content.style.setProperty("border-bottom", `7px ${borderColor} solid`, "important");
                 });
 
                 // Update modal header styles
                 elements.forEach(element => {
-                    const backgroundColor = validation === 'Payment Confirmation' ? 'var(--dark)' : '#d03a4b';
+                    const backgroundColor = 'var(--dark)';
                     element.style.setProperty("color", "white", "important");
                     element.style.setProperty("background-color", backgroundColor, "important");
                     element.style.setProperty("border-radius", "15px 15px 0 0", "important");
                     element.style.setProperty("text-align", "center", "important");
+                    element.style.setProperty("dispaly", "flex", "important");
+                    element.style.setProperty("justify-content", "center", "important");
                 });
 
                 // Update modal spans
@@ -1307,20 +1434,65 @@
 
                 document.getElementById('message').textContent = message;
                 document.getElementById('validation').textContent = validation;
+                document.getElementById('ornum_printng').textContent = 'Printing ' + localStorage.getItem('ornum') + '...';
+                document.getElementById("ornum_printng").style.display = "block";
+                // loadModal('/Dashboard/OR_Print?transid=' + encodeURIComponent(id), '#defaultmodal', 'MOTOR VEHICLE DETAILS', 'xl', false)
+                setTimeout(function () {
+                    loadModal('/Dashboard/AlertMessage?message=' + message + '&status=' + validation, '#alertmodal1', 'PRINT OFFICIAL RECEIPT OR', 'l', false)
+                    $("#defaultmodal").modal('hide');
+                }, 4000);
+                // loadModal('/Dashboard/AlertMessage?message=' + message + '&status=' + validation, '#alertmodal1', 'PRINT OFFICIAL RECEIPT OR', 'l', false)
+                // $("#defaultmodal").modal('hide');
 
-                // Show modal
-                $(this).modal("hide");
-                $("#alertmodal2").modal('show');
             });
         });
+        var data = {};
+        data.ornum = localStorage.getItem('ornum');
+        function success() {
+            $.ajax({
+                url: "/Dashboard/SetOrPrintedSttus",
+                data: {
+                    data: data
+                },
+                type: "POST",
+                datatype: "json"
+            })
+                .done(function (data) {
+                    console.log(data.stats);
+                    if (data.stats == 'Success') {
+                        location.reload();
+                        $("#defaultmodal").modal('hide');
+                        $("#alertmodal1").modal('hide');
+                    }
+                    else {
+                        $("#defaultmodal").modal('show');
+                        $("#alertmodal1").modal('hide');
+                    }
 
-        function ok()
-        {
-            window.location.href = '/Dashboard/Index';
+                });
+
+        }
+        function ok() {
+            let message;
+            let validation;
+            let status;
+            const cancelButton2 = '<input type="submit" value="OK" id="btn-cancel" class="btn-pay" onclick="success()"/>';
+            message = 'OR printed successfully';
+            validation = 'The Official Receipt (OR) - ' + localStorage.getItem('ornum') + ' has been successfully printed';
+
+            // Set a 2-second delay before executing the rest of the code
+            setTimeout(function () {
+                $('.input-container-button').empty();
+                $('.input-container-button').append(cancelButton2);
+
+                loadModal('/Dashboard/AlertMessage?message=' + message + '&status=' + validation, '#alertmodal1', 'PRINT OFFICIAL RECEIPT OR', 'l', false);
+            }, 2000);
+
         }
         function cancel() {
-
-            $("#alertmodal2").modal('hide');
+            document.getElementById('ornum_printng').textContent = '';
+            $("#defaultmodal").modal('show');
+            $("#alertmodal1").modal('hide');
         }
     </script>
 </body>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y9jzZZOEHGPVOd/55Q4msOFXI0Nf5j0SshnOeUn+kVQ=",
+  "Hash": "ktba5q3VAc/VoRP8h2iiKByBQRJTY3MFB8lkGG4gxCk=",
   "Source": "RCS",
   "BasePath": "_content/RCS",
   "Mode": "Default",
@@ -1820,6 +1820,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\mod-input.css"
+    },
+    {
+      "Identity": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\print.css",
+      "SourceId": "RCS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\",
+      "BasePath": "_content/RCS",
+      "RelativePath": "css/print.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\print.css"
     },
     {
       "Identity": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\print-layout.css",

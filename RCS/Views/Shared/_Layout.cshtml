@@ -14,7 +14,7 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   @*   <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css"> *@
-    <link rel="stylesheet" href="~/plugins/datatables-buttons/css/buttons.  ">
+
     <!-- Theme style -->
     <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -103,6 +103,36 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="alertmodal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="img-header">
+                        <img id="modalImage" src="/img/SUCCESS.webp" alt="Modal Image" />
+                    </div>
+                
+                    <h5 class="modal-title" id="modal-title" hidden></h5>
+
+                </div>
+                <div class="modal-body">
+                    <div id="message-content" style="
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    ">
+                  
+                    </div>
+
+                </div>
+                <div style="display: flex;gap: 10px;width: 100%;justify-content: center;margin:30px 0px">
+                    <div class="input-container-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     @Html.Partial("_SideBar")
     <main>
         @RenderBody()
@@ -140,7 +170,10 @@
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
     <!-- DataTables Responsive Bootstrap4 JS -->
     <script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
+    <script>
+       
 
+    </script>
     <script>
         $(".modal-dialog").draggable({
             handle: ".modal-header" 

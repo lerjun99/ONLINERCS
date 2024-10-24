@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RCS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86c74dd5bc1c0b3b813fe5800da306eb6ba735c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1f3a9bb3255d837f6468ee362721f8eab20b2ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("RCS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RCS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

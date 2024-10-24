@@ -141,6 +141,10 @@
       "PackagePath": "staticwebassets\\css\\print-layout.css"
     },
     {
+      "Id": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\print.css",
+      "PackagePath": "staticwebassets\\css\\print.css"
+    },
+    {
       "Id": "C:\\Users\\labarasona\\Desktop\\RCS\\RCS\\wwwroot\\css\\sidebar.css",
       "PackagePath": "staticwebassets\\css\\sidebar.css"
     },

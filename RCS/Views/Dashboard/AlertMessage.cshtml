@@ -1,5 +1,5 @@
 ﻿@model RCS.ApplicationEntityModels.EntityModels.AlertMessage;
-
+@using System.Globalization
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document with Footer</title>
     <style>
+        .btn-NO {
+            width: 100% !important;
+            position: relative !important;
+            border-radius: 99px !important;
+            border: 3px solid #d03a4b !important;
+            box-sizing: border-box !important;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 10px 55px !important;
+            color: #d03a4b !important;
+            transition: all 0.5s ease-in-out !important;
+        }
+
+        #message {
+            font-size: 20px;
+            text-align: center;
+        }
+        #validation {
+            font-weight: bolder;
+            font-size: 25px;
+            text-align:center;
+        }
         .btn-cancel {
             width: 100% !important;
             position: relative !important;
@@ -95,74 +119,90 @@
 
     </header>
 
-    <div style="text-align:center">
-        <label>@Model.Message</label>
-    </div>
-    <div style="    display: flex;
-    gap: 10px;
-    width: 100%;
-    justify-content: center;margin-top:50px">
 
-        @* <div class="input-container-button">
-          
-        </div> *@
+    <div style="
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    ">
+        <span id="validation">@Model.Message</span>
+        <span id="message">@Model.Status</span>
     </div>
-    
+        @section Scripts {
     <script>
-        var element = document.querySelectorAll(".modal-header");
-        var content = document.querySelectorAll(".modal-content");
-        var modal_span = document.querySelectorAll(".modal-header span");
-        // const modalview = document.getElementById('defaultmodal')
-        var stats = "@Model.Status"; // Ensure this is a string in JavaScript
-        // modal.style.setProperty("border-radius", "10px", "important");
-        var payButton = '<input type="submit" value="YES" id="btn-process" class="btn-pay" />';
-        var cancelButton = '<input type="submit" value="NO" id="btn-cancel" class="btn-NO" data-dismiss="modal"/>';
-        var cancelButton2 = '<input type="submit" value="CANCEL" id="btn-cancel" class="btn-NO" data-dismiss="modal"/>';
-        var status = '&lt;img id=&quot;modalImage&quot; src=&quot;/img/ERROR.webp&quot; alt=&quot;Modal Image&quot; /&gt;';
-        console.log(stats);
-        if (stats === status) {
+        $(document).ready(function () {
+
+                $("#defaultmodal").modal('hide');
+        });
+       
+         let message, validation, status;
+
+        // message = 'OR PRINT SUCCESS CONFIRMATION';
+        // validation = 'Did the Official Receipt (OR) print successfully?';
+        status = '<img id="modalImage" src="/img/SUCCESS.webp" alt="Modal Image" />';
+        const elements = document.querySelectorAll(".modal-header");
+        const contents = document.querySelectorAll(".modal-content");
+        const modalSpans = document.querySelectorAll(".modal-header span");
+
+        // Buttons setup
+        const payButton = '<input type="submit" value="YES" id="btn-process" class="btn-pay" onclick="ok()"/>';
+        const cancelButton = '<input type="submit" value="NO" id="btn-cancel" class="btn-NO" onclick="cancel()"/>';
+        const cancelButton2 = '<input type="submit" value="NO" id="btn-cancel" class="btn-NO" onclick="cancel()"/>';
+
+        // Clear and append buttons based on validation
+        $('.input-container-button').empty();
+        if (validation !== 'Payment Confirmation') {
             $('.input-container-button').append(cancelButton2);
-    
-        }
-        else {
+            $('.input-container-button').append(payButton);
+        } else {
             $('.input-container-button').append(cancelButton);
             $('.input-container-button').append(payButton);
-       
         }
-        content.forEach(content => {
-            if (stats === status) {
-                content.style.setProperty("border-radius", "15px 15px 15px 15px", "important");
-                content.style.setProperty("border-bottom", "7px #d03a4b solid", "important");
-             
-            }
-            else {
-                content.style.setProperty("border-radius", "15px 15px 15px 15px", "important");
-                content.style.setProperty("border-bottom", "7px var(--dark) solid", "important")
-             
-            }
-        }); 
-        modal_span.forEach(modal_span => {
-            modal_span.style.setProperty("text-align", "center", "important");
-            modal_span.style.setProperty("width", "100%", "important");
+
+        // Update modal content styles
+        contents.forEach(content => {
+            const borderColor = 'var(--dark)';
+            content.style.setProperty("border-radius", "15px 15px 15px 15px", "important");
+            content.style.setProperty("border-bottom", `7px ${borderColor} solid`, "important");
         });
-        element.forEach(element => {
-            if (stats === status) {
-                element.style.setProperty("color", "white", "important");
-                element.style.setProperty("background-color", "#d03a4b", "important");
-                element.style.setProperty("border-radius", "15px 15px 0 0", "important");
-                element.style.setProperty("text-align", "center", "important");
-            } else {
-                element.style.setProperty("color", "white", "important");
-                element.style.setProperty("background-color", "var(--dark)", "important");
-                element.style.setProperty("border-radius", "15px 15px 0 0", "important");
-            }
+
+        // Update modal header styles
+        elements.forEach(element => {
+            const backgroundColor = 'var(--dark)';
+            element.style.setProperty("color", "white", "important");
+            element.style.setProperty("background-color", backgroundColor, "important");
+            element.style.setProperty("border-radius", "15px 15px 0 0", "important");
+            element.style.setProperty("text-align", "center", "important");
         });
-        $('#btn-process').on('click', function (event) {
-            event.preventDefault();
-            localStorage.setItem('trigger', "1");
-            loadModal('/Dashboard/PrintOR?transid=' + localStorage.getItem('ornum'), '#defaultmodal', 'PRINT OFFICIAL RECEIPT OR', 'xl', false)
-           
+
+        // Update modal spans
+        modalSpans.forEach(span => {
+            span.style.setProperty("text-align", "center", "important");
+            span.style.setProperty("width", "100%", "important");
         });
+            // let message = 'The official';
+            // let validation = 'OR SUCCESSFULLY PRINTED!';
+            // document.getElementById('message').textContent = '';
+            // document.getElementById('validation').textContent = '';
+
+            // document.getElementById('message').textContent = message;
+            // document.getElementById('validation').textContent = validation;
+        // Display the message in the alert modal
+        // alert(message + "<br>" + validation + "<br>" + status + value);
+
+        // document.getElementById('message').textContent = message;
+        // document.getElementById('validation').textContent = validation;
+
+        // Show modal
+        function ok() {
+            window.location.href = '/Dashboard/Index';
+        }
+        function cancel() {
+
+            $("#alertmodal2").modal('hide');
+        }
     </script>
+        }
 </body>
 </html>

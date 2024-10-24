@@ -29,7 +29,7 @@ namespace RCS.ApplicationEntityModels
         public class OrDetailsVM
         {
             public string OR_NO { get; set; }
-            public DateTime OR_DATE { get; set; }
+            public string OR_DATE { get; set; }
             public string OFFICE_CODE { get; set; }
             public string OFFICE_NAME { get; set; }
             public string CUSTOMER_NAME { get; set; }
@@ -47,7 +47,11 @@ namespace RCS.ApplicationEntityModels
             public MVRSPaymentDetails MVRSPaymentDetails { get; set; }
             public int EOR_PRINT_COPIES { get; set; }
         }
-
+        public class MyViewModel
+        {
+            public OrDetailsVM Model1 { get; set; }
+            public Fees_Details Model2 { get; set; }
+        }
         public class ORPaymentMode
         {
             public string PAYMENT_MODE { get; set; }
@@ -91,6 +95,11 @@ namespace RCS.ApplicationEntityModels
             public BaseResult BaseResult { get; set; }
             public ChequeModel Data { get; set; }
         }
+        public class ReasonVM
+        {
+            public string? REASON_CODE { get; set; }
+            public string? REASON_DESC { get; set; }
+        }
         public class ChequeModel
         {
             public string? CHEQUE_TYPE_CODE { get; set; }
@@ -99,6 +108,28 @@ namespace RCS.ApplicationEntityModels
             public string? BANK_NAME { get; set; }
             public string? BANK_CLASSIFICATION { get; set; }
             public string? BANK_MNEMONIC { get; set; }
+
+        }
+        public class inquiryfilter
+        {
+            public string? dateto { get; set; }
+            public string? datefrom { get; set; }
+            public string? ornum { get; set; }
+            public string? fname { get; set; }
+            public string? lname { get; set; }
+            public string? mname { get; set; }
+            public string? orgname { get; set; }
+            public string? issuesite { get; set; }
+            public string? status { get; set; }
+
+
+        }
+        public class ORStatusModel
+        {
+            public string? CODE { get; set; }
+            public string? DESCRIPTION { get; set; }
+            public List<ORStatusModel>? Statuslist { get; set; }
+
 
         }
         public class PaidORModel

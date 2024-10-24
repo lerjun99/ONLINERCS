@@ -1,0 +1,10 @@
+@media print {
+    /* Style your printable div */
+    #printableDiv {
+        width: 900px; /* Set the width of the div */
+        height: 700px; /* Set the height of the div */
+        margin: 0 auto; /* Center the div horizontally */
+    }
+
+    /* ... other print styles ... */
+}
